@@ -1,0 +1,1442 @@
+{
+    "app_title": {
+        "message": "ASTEROID RUSH"
+    },
+    "app_header": {
+        "message": "ASTEROID RUSH"
+    },
+    "btn_fullscreen_title": {
+        "message": "Schermo Intero"
+    },
+    "btn_settings_title": {
+        "message": "Impostazioni"
+    },
+    "btn_instructions": {
+        "message": "📖 Istruzioni"
+    },
+    "btn_skip": {
+        "message": "⏩ Salta"
+    },
+    "btn_skip_tutorial_title": {
+        "message": "Salta tutorial"
+    },
+    "tutorial_welcome_title": {
+        "message": "Benvenuto"
+    },
+    "tutorial_loading": {
+        "message": "Caricamento..."
+    },
+    "btn_next": {
+        "message": "Avanti"
+    },
+    "legal_title": {
+        "message": "🚀 Protocollo di Sicurezza"
+    },
+    "legal_desc": {
+        "message": "Prima del decollo, accetta i termini galattici:"
+    },
+    "legal_terms_check": {
+        "message": "Accetto i Termini e le Condizioni"
+    },
+    "btn_read": {
+        "message": "Leggi"
+    },
+    "legal_privacy_check": {
+        "message": "Accetto l'Informativa sulla Privacy"
+    },
+    "btn_accept_continue": {
+        "message": "Accetta e Continua"
+    },
+    "confirm_delete_title": {
+        "message": "Eliminare i dati?"
+    },
+    "confirm_delete_desc_1": {
+        "message": "I tuoi record, le skin e le vite andranno persi. L'azione è irreversibile."
+    },
+    "confirm_delete_desc_2": {
+        "message": "Nota: I record sul server non verranno eliminati"
+    },
+    "btn_delete_all": {
+        "message": "ELIMINA TUTTO"
+    },
+    "btn_cancel": {
+        "message": "ANNULLA"
+    },
+    "new_record_title": {
+        "message": "🏆 Nuovo Record!"
+    },
+    "new_record_desc": {
+        "message": "Sei nella Top 100 mondiale. Inserisci il tuo nome:"
+    },
+    "new_record_warning": {
+        "message": "⚠️ Non usare il tuo vero nome."
+    },
+    "error_name_empty": {
+        "message": "⚠️ Il nome non può essere vuoto"
+    },
+    "input_nickname_placeholder": {
+        "message": "Il tuo nickname..."
+    },
+    "btn_submit": {
+        "message": "INVIA"
+    },
+    "btn_share": {
+        "message": "Condividi"
+    },
+    "import_status_title": {
+        "message": "Stato Operazione"
+    },
+    "btn_understood": {
+        "message": "Capito"
+    },
+    "save_game_title": {
+        "message": "Salva Partita"
+    },
+    "btn_no_slot": {
+        "message": "Nessun Slot"
+    },
+    "btn_close": {
+        "message": "Chiudi"
+    },
+    "mars_mission_success_title": {
+        "message": "🚩 Missione Compiuta"
+    },
+    "mars_mission_success_desc": {
+        "message": "Hai raggiunto la superficie di Marte."
+    },
+    "btn_mars_takeoff": {
+        "message": "🚀 Decolla e Continua"
+    },
+    "btn_mars_finish": {
+        "message": "🏁 Termina Missione"
+    },
+    "hud_level": {
+        "message": "LIVELLO 1"
+    },
+    "hud_level_prefix": {
+        "message": "LIVELLO"
+    },
+    "btn_mute_title": {
+        "message": "Disattiva audio"
+    },
+    "btn_pause_label": {
+        "message": "⏸️PAUSA"
+    },
+    "btn_pause_title": {
+        "message": "Metti in pausa"
+    },
+    "btn_skip_label": {
+        "message": "⏩SALTA"
+    },
+    "btn_skip_title": {
+        "message": "Salta animazione"
+    },
+    "overlay_main_title": {
+        "message": "ASTEROID RUSH"
+    },
+    "overlay_main_desc": {
+        "message": "Schiva i meteoriti, usa i power-up e conquista la TOP globale"
+    },
+    "overlay_mode_fast": {
+        "message": "Modalità: Veloce"
+    },
+    "overlay_mode_normal": {
+        "message": "Modalità: Normale"
+    },
+    "overlay_mode_zigzag": {
+        "message": "Modalità: ZigZag"
+    },
+    "btn_continue": {
+        "message": "▶️ CONTINUA"
+    },
+    "overlay_mode_info": {
+        "message": "Modalità: Normale"
+    },
+    "btn_start": {
+        "message": "▶ Inizia"
+    },
+    "mode_normal": {
+        "message": "Modalità Normale"
+    },
+    "mode_fast": {
+        "message": "Modalità Veloce"
+    },
+    "mode_zigzag": {
+        "message": "Modalità ZigZag"
+    },
+    "btn_save_quit": {
+        "message": "💾 Salva ed Esci"
+    },
+    "btn_finish": {
+        "message": "☠️ Termina"
+    },
+    "world_record_header": {
+        "message": "🌐 Record mondiale"
+    },
+    "world_record_loading": {
+        "message": "Caricamento..."
+    },
+    "btn_view_top100": {
+        "message": "Visualizza Top 100 mondiale"
+    },
+    "mode_normal_short": {
+        "message": "Normale"
+    },
+    "mode_fast_short": {
+        "message": "Veloce"
+    },
+    "mode_zigzag_short": {
+        "message": "ZigZag"
+    },
+    "btn_achievements": {
+        "message": "PREMI"
+    },
+    "btn_news": {
+        "message": "NOTIZIE"
+    },
+    "news_title": {
+        "message": "Notizie"
+    },
+    "achievements_title": {
+        "message": "Obiettivi Galattici"
+    },
+    "ach_first_steps_name": {
+        "message": "Primi passi"
+    },
+    "ach_first_steps_desc": {
+        "message": "Gioca la tua prima partita."
+    },
+    "ach_explorer_name": {
+        "message": "Esploratore"
+    },
+    "ach_explorer_desc": {
+        "message": "Raggiungi 5.000 punti in tutte le modalità di gioco."
+    },
+    "ach_bronze_name": {
+        "message": "Medaglia di Bronzo"
+    },
+    "ach_bronze_desc": {
+        "message": "Ottieni 10.000 punti."
+    },
+    "ach_silver_name": {
+        "message": "Medaglia d'Argento"
+    },
+    "ach_silver_desc": {
+        "message": "Ottieni 100.000 punti."
+    },
+    "ach_gold_name": {
+        "message": "Medaglia d'Oro"
+    },
+    "ach_gold_desc": {
+        "message": "Ottieni 150.000 punti."
+    },
+    "ach_galactic_legend_name": {
+        "message": "Leggenda"
+    },
+    "ach_galactic_legend_desc": {
+        "message": "Raggiungi i 500.000 punti."
+    },
+    "ach_impossible_name": {
+        "message": "IMPOSSIBILE"
+    },
+    "ach_impossible_desc": {
+        "message": "Supera le aspettative del creatore: 1.000.000 di punti!"
+    },
+    "ach_mars_hero_name": {
+        "message": "Eroe di Marte"
+    },
+    "ach_mars_hero_desc": {
+        "message": "Completa la missione su Marte (raggiungere 250.000 punti e atterrare)."
+    },
+    "ach_all_skins_name": {
+        "message": "Hangar Pieno"
+    },
+    "ach_all_skins_desc": {
+        "message": "Sblocca tutte le 10 skin."
+    },
+    "ach_iron_pilot_name": {
+        "message": "Pilota di Ferro"
+    },
+    "ach_iron_pilot_desc": {
+        "message": "Raggiungi il livello 25 senza raccogliere nessun power-up."
+    },
+    "ach_asteroid_buster_name": {
+        "message": "Cacciatore di Asteroidi"
+    },
+    "ach_asteroid_buster_desc": {
+        "message": "Distruggi 50 meteore."
+    },
+    "ach_pacifist_name": {
+        "message": "Pacifista"
+    },
+    "ach_pacifist_desc": {
+        "message": "Raggiungi il livello 25 senza sparare neanche una volta."
+    },
+    "ach_fast_elite_name": {
+        "message": "Demone Veloce"
+    },
+    "ach_fast_elite_desc": {
+        "message": "Raggiungi 100.000 punti giocando in Modalità Veloce."
+    },
+    "ach_zigzag_pro_name": {
+        "message": "ZigZag Pro"
+    },
+    "ach_zigzag_pro_desc": {
+        "message": "Ottieni 100.000 punti in Modalità ZigZag."
+    },
+    "settings_title": {
+        "message": "Impostazioni"
+    },
+    "settings_gameplay": {
+        "message": "🎮 Gameplay"
+    },
+    "settings_gameplay_desc": {
+        "message": "Regola il comportamento del gioco all'avvio."
+    },
+    "setting_remember_mode": {
+        "message": "Ricorda l'ultima modalità giocata"
+    },
+    "setting_language": {
+        "message": "Lingua"
+    },
+    "setting_show_fps": {
+        "message": "Mostra FPS (modalità avanzata)"
+    },
+    "settings_controls": {
+        "message": "🕹️ Controlli"
+    },
+    "settings_controls_desc": {
+        "message": "Opzioni di manovra e touch screen."
+    },
+    "setting_touch_controls": {
+        "message": "Attiva controlli touch"
+    },
+    "settings_graphics": {
+        "message": "🎛️ Grafica"
+    },
+    "settings_graphics_desc": {
+        "message": "Regola gli effetti visivi per bilanciare qualità e prestazioni."
+    },
+    "setting_smooth_animations": {
+        "message": "Animazioni fluide"
+    },
+    "setting_light_effects": {
+        "message": "Effetti di luce e bagliori"
+    },
+    "setting_safe_mode": {
+        "message": "Riduci lampi intensi"
+    },
+    "setting_show_hitboxes": {
+        "message": "Mostra Hitbox (Debug)"
+    },
+    "settings_sound": {
+        "message": "🔊 Audio"
+    },
+    "settings_sound_desc": {
+        "message": "Controlla la musica e gli effetti sonori."
+    },
+    "setting_sound_enabled": {
+        "message": "Audio attivato"
+    },
+    "setting_music_enabled": {
+        "message": "Musica di sottofondo"
+    },
+    "setting_sfx_enabled": {
+        "message": "Effetti sonori"
+    },
+    "settings_privacy": {
+        "message": "🔐 Privacy e dati"
+    },
+    "settings_privacy_desc": {
+        "message": "Controlla l'invio dei punteggi e la gestione dei dati."
+    },
+    "setting_send_scores": {
+        "message": "Invia punteggi alla classifica mondiale"
+    },
+    "setting_send_scores_note": {
+        "message": "⚠️ Se disattivi questa opzione, i tuoi record non appariranno nella Top 100."
+    },
+    "settings_backup_title": {
+        "message": "Backup"
+    },
+    "btn_export": {
+        "message": "⭳ Esporta dati"
+    },
+    "btn_import": {
+        "message": "⭱ Importa dati"
+    },
+    "settings_backup_desc": {
+        "message": "Esporta i dati locali in un file .csv o importane uno esistente."
+    },
+    "settings_reset_title": {
+        "message": "Ripristina progressi"
+    },
+    "btn_delete_local": {
+        "message": "🗑️ Elimina tutti i dati locali"
+    },
+    "settings_reset_desc": {
+        "message": "Azione irreversibile. Non elimina i record già inviati alla classifica mondiale."
+    },
+    "msg_game_saved": {
+        "message": "Partita salvata in"
+    },
+    "msg_come_back": {
+        "message": "Torna presto."
+    },
+    "msg_score_saved_local": {
+        "message": "💾 Punteggio salvato localmente ma non inviato alla classifica."
+    },
+    "msg_skins_unlocked": {
+        "message": "Nuove skin sbloccate!"
+    },
+    "msg_points_obtained_prefix": {
+        "message": "Hai ottenuto"
+    },
+    "msg_try_again": {
+        "message": "Riprova."
+    },
+    "msg_game_completed": {
+        "message": "Gioco Completato"
+    },
+    "msg_game_over": {
+        "message": "Game Over!"
+    },
+    "label_slot": {
+        "message": "Slot"
+    },
+    "label_empty": {
+        "message": "Vuoto"
+    },
+    "label_anonymous": {
+        "message": "Anonimo"
+    },
+    "label_no_new_record": {
+        "message": "Il tuo punteggio non supera il tuo record personale."
+    },
+    "label_go": {
+        "message": "VIA!"
+    },
+    "label_initial_skin": {
+        "message": "Skin Iniziale"
+    },
+    "label_unlock_prefix": {
+        "message": "Sblocco"
+    },
+    "label_pts": {
+        "message": "pt"
+    },
+    "btn_delete_slot_title": {
+        "message": "Elimina Slot"
+    },
+    "btn_fly": {
+        "message": "VOLA!"
+    },
+    "ranking_title_prefix": {
+        "message": "Top mondiale"
+    },
+    "table_header_name": {
+        "message": "Nome"
+    },
+    "table_header_score": {
+        "message": "Punti"
+    },
+    "ranking_position_label": {
+        "message": "Posizione"
+    },
+    "leaderboard_top100_title": {
+        "message": "Top 100 mondiale"
+    },
+    "instructions_title": {
+        "message": "Istruzioni"
+    },
+    "instr_controls_title": {
+        "message": "Controlli"
+    },
+    "instr_controls_move": {
+        "message": "Muoviti con <kbd>←</kbd> / <kbd>→</kbd>."
+    },
+    "instr_controls_shoot": {
+        "message": "Tieni premuto <kbd>↑</kbd> per caricare e sparare il laser auto."
+    },
+    "instr_controls_pause": {
+        "message": "Pausa: <kbd>Spazio</kbd>."
+    },
+    "instr_objective_title": {
+        "message": "Obiettivo"
+    },
+    "instr_objective_dodging": {
+        "message": "Schiva i meteoriti per sopravvivere e aumentare il punteggio."
+    },
+    "instr_objective_laser": {
+        "message": "Il laser aiuta a liberare la strada ma non dà punti extra."
+    },
+    "instr_objective_mars": {
+        "message": "Raggiungi 250.000 punti per completare la missione su Marte!"
+    },
+    "instr_powerups_title": {
+        "message": "Power-up"
+    },
+    "instr_powerups_shield": {
+        "message": "<b>Verde</b>: Scudo (30s di protezione completa)."
+    },
+    "instr_powerups_laser": {
+        "message": "<b>Rosso</b>: Superlaser (2s, distrugge tutto in linea retta)."
+    },
+    "instr_powerups_slow": {
+        "message": "<b>Blu</b>: Rallenta tutti i meteoriti per alcuni secondi."
+    },
+    "instr_levels_title": {
+        "message": "Livelli e difficoltà"
+    },
+    "instr_levels_points": {
+        "message": "Ogni 1000 punti sali di 1 livello."
+    },
+    "instr_levels_progression": {
+        "message": "La difficoltà aumenta progressivamente con il punteggio."
+    },
+    "instr_lives_title": {
+        "message": "Vite"
+    },
+    "instr_lives_max": {
+        "message": "Massimo 10 vite."
+    },
+    "instr_lives_normal": {
+        "message": "<b>Modalità Normale</b>: +1 vita ogni 3 minuti."
+    },
+    "instr_lives_fast": {
+        "message": "<b>Modalità Veloce</b>: +1 vita ogni minuto."
+    },
+    "instr_modes_title": {
+        "message": "Modalità di gioco"
+    },
+    "instr_modes_normal": {
+        "message": "<b>Normale</b>: Velocità standard."
+    },
+    "instr_modes_fast": {
+        "message": "<b>Veloce (x3)</b>: Tutto va 3 volte più rapido, vite più veloci."
+    },
+    "instr_modes_zigzag": {
+        "message": "<b>ZigZag</b>: Movimento orizzontale persistente."
+    },
+    "instr_slots_title": {
+        "message": "Slot di Salvataggio"
+    },
+    "instr_slots_count": {
+        "message": "Puoi salvare in 10 slot diversi."
+    },
+    "instr_slots_pause": {
+        "message": "Dal menu di pausa, puoi usare \"Salva ed Esci\"."
+    },
+    "instr_slots_death": {
+        "message": "Se muori, il salvataggio nello slot verrà eliminato."
+    },
+    "instr_slots_load": {
+        "message": "Per caricare, seleziona uno slot e premi \"Inizia\"."
+    },
+    "tut_step1_title": {
+        "message": "Movimento"
+    },
+    "tut_step1_text": {
+        "message": "Usa le frecce per muoverti. Attenzione all'inerzia!"
+    },
+    "tut_step2_title": {
+        "message": "☄️ Schiva i Meteoriti"
+    },
+    "tut_step2_text": {
+        "message": "I meteoriti cadono dall'alto. Evitali! Un urto costa una vita."
+    },
+    "tut_step3_title": {
+        "message": "Fuoco Auto"
+    },
+    "tut_step3_text": {
+        "message": "Tieni premuta la FRECCIA SU per caricare e sparare il laser."
+    },
+    "tut_step4_text": {
+        "message": "Verde: Scudo | Rosso: Laser | Blu: Rallenta."
+    },
+    "tut_step5_text": {
+        "message": "Se ti schianti perdi una vita. Si ricaricano col tempo."
+    },
+    "tut_step6_title": {
+        "message": "Scorciatoia"
+    },
+    "tut_step6_text": {
+        "message": "Premi SPAZIO per iniziare o mettere in pausa."
+    },
+    "mode_fast_explanation_title": {
+        "message": "MODALITÀ VELOCE"
+    },
+    "mode_fast_explanation_text": {
+        "message": "Tutto andrà 3 volte più veloce! I punti salgono e le vite si ricaricano ogni minuto."
+    },
+    "mode_fast_speed_tag": {
+        "message": "VELOCITÀ x3"
+    },
+    "mode_zigzag_explanation_title": {
+        "message": "MODALITÀ ZIGZAG"
+    },
+    "mode_zigzag_explanation_text": {
+        "message": "La nave non si ferma mai! Usa le frecce per cambiare direzione."
+    },
+    "mode_zigzag_visual_tag": {
+        "message": "ZIGZAG"
+    },
+    "powerup_shield": {
+        "message": "SCUDO"
+    },
+    "powerup_laser": {
+        "message": "LASER"
+    },
+    "powerup_slow": {
+        "message": "SLOW"
+    },
+    "pause_title": {
+        "message": "Pausa"
+    },
+    "pause_desc": {
+        "message": "Premi Spazio per continuare."
+    },
+    "status_loading": {
+        "message": "Caricamento..."
+    },
+    "error_no_lives": {
+        "message": "Non hai vite. Attendi che si ricarichino."
+    },
+    "submit_success": {
+        "message": "Record inviato con successo!"
+    },
+    "status_loading_ranking": {
+        "message": "Caricamento Top 100..."
+    },
+    "status_error_ranking": {
+        "message": "Errore nel caricamento della classifica."
+    },
+    "status_error_generic": {
+        "message": "Errore di caricamento."
+    },
+    "status_no_data": {
+        "message": "Nessun dato disponible."
+    },
+    "status_no_records": {
+        "message": "Ancora nessun record."
+    },
+    "status_no_world_records": {
+        "message": "Ancora nessun record mondiale."
+    },
+    "import_success_title": {
+        "message": "Operazione Riuscita"
+    },
+    "import_error_title": {
+        "message": "Errore Operazione"
+    },
+    "error_import_empty": {
+        "message": "Il file CSV è vuoto o non valido."
+    },
+    "error_import_format": {
+        "message": "Formato file non riconosciuto."
+    },
+    "error_import_incompatible": {
+        "message": "Formato dati non compatibile."
+    },
+    "import_success_msg_slots": {
+        "message": "Dati e slot importati correttamente."
+    },
+    "import_success_msg": {
+        "message": "Dati importati correttamente."
+    },
+    "import_success_note": {
+        "message": "Vite e skin attuale non vengono modificate."
+    },
+    "error_import_generic": {
+        "message": "Errore nell'importazione dei dati."
+    },
+    "submit_disabled": {
+        "message": "Invio record disattivato."
+    },
+    "error_submit_fail_record": {
+        "message": "Errore nell'invio del record."
+    },
+    "settings_info": {
+        "message": "ℹ️ Informazioni"
+    },
+    "info_version": {
+        "message": "Versione:"
+    },
+    "info_creator": {
+        "message": "Creato da:"
+    },
+    "info_last_update": {
+        "message": "Ultimo aggiornamento:"
+    },
+    "btn_read_terms": {
+        "message": "Leggi i Termini e le Condizioni"
+    },
+    "btn_read_privacy": {
+        "message": "Leggi la Privacy Policy"
+    },
+    "footer_created_by": {
+        "message": "Creato da Industrias GRM"
+    },
+    "mode_normal_key": {
+        "message": "normal"
+    },
+    "btn_review_rate": {
+        "message": "LASCIA UNA RECENSIONE"
+    },
+    "btn_review_later": {
+        "message": "Non ora"
+    },
+    "btn_review_never": {
+        "message": "Non chiedermelo più"
+    },
+    "share_footer": {
+        "message": "Pensi di poterlo battere? Scarica Asteroid Rush e lotta per il record!"
+    },
+    "share_mission_report": {
+        "message": "RAPPORTO DI MISSIONE COMPLETATA"
+    },
+    "share_total_points": {
+        "message": "PUNTI TOTALI"
+    },
+    "share_rank": {
+        "message": "POSIZIONE"
+    },
+    "review_title": {
+        "message": "Ti piace il gioco?"
+    },
+    "review_desc": {
+        "message": "Se ti stai divertendo con Asteroid Rush, per favore lascia una recensione. Ci aiuta molto!"
+    },
+    "stat_asteroids": {
+        "message": "Meteoriti distrutti"
+    },
+    "stat_powerups": {
+        "message": "Power-up raccolti"
+    },
+    "label_select_slot": {
+        "message": "SELEZIONA SLOT"
+    },
+    "label_save_quit": {
+        "message": "SALVA ED ESCI"
+    },
+    "slot_delete_title": {
+        "message": "Elimina slot"
+    },
+    "legal_move_left_title": {
+        "message": "Sposta a sinistra"
+    },
+    "legal_move_right_title": {
+        "message": "Sposta a destra"
+    },
+    "msg_perfect_run": {
+        "message": "Partita perfetta: nessuna vita persa"
+    },
+    "beta_section_title": {
+        "message": "Funzioni BETA"
+    },
+    "beta_section_desc": {
+        "message": "Funzioni sperimentali. Finché sono attive, non puoi inviare punteggi alla classifica mondiale."
+    },
+    "beta_disable": {
+        "message": "Disattiva modalità BETA"
+    },
+    "beta_disable_note": {
+        "message": "Disattivandola, la classifica tornerà a funzionare."
+    },
+    "beta_starting_score": {
+        "message": "Inizia da"
+    },
+    "beta_starting_score_note": {
+        "message": "Punteggio iniziale all'inizio della partita (0 = normale)."
+    },
+    "beta_ranking_blocked_note": {
+        "message": "🔒 Classifica disattivata in modalità BETA."
+    },
+    "beta_powerups_master": {
+        "message": "Potenziamenti sperimentali"
+    },
+    "beta_powerups_desc": {
+        "message": "Attiva potenziamenti sperimentali in gioco. Ognuno si sblocca a un certo livello."
+    },
+    "beta_powerups_list_title": {
+        "message": "Potenziamenti disponibili"
+    },
+    "beta_powerup_extralife": {
+        "message": "Vita extra"
+    },
+    "beta_powerup_bomb": {
+        "message": "Bomba"
+    },
+    "beta_powerup_multilaser": {
+        "message": "Multi-laser"
+    },
+    "beta_powerup_freeze": {
+        "message": "Congelare"
+    },
+    "beta_powerup_doublescore": {
+        "message": "x2 Punti"
+    },
+    "beta_powerup_ghost": {
+        "message": "Fantasma"
+    },
+    "beta_powerup_magnet": {
+        "message": "Magnete"
+    },
+    "beta_unlocked_at_level": {
+        "message": "Livello {n}"
+    },
+    "beta_enabled_toast": {
+        "message": "Hai attivato le funzioni BETA"
+    },
+    "skin_level_1": {
+        "message": "Standard"
+    },
+    "skin_level_2": {
+        "message": "Furtivo"
+    },
+    "skin_level_3": {
+        "message": "Caccia"
+    },
+    "skin_level_4": {
+        "message": "Distruttore"
+    },
+    "skin_part_desc": {
+        "message": "Pezzo decorativo per la tua nave"
+    },
+    "skin_hint_available": {
+        "message": "🔒 Disponibile nel Negozio 🚀"
+    },
+    "skin_hint_unavailable": {
+        "message": "🔒 Attualmente non disponibile"
+    },
+    "skin_bought": {
+        "message": "✓ Acquistata"
+    },
+    "skin_insufficient_coins": {
+        "message": "Skin-coins insufficienti"
+    },
+    "skin_insufficient_dust": {
+        "message": "Polvere insufficiente"
+    },
+    "skin_none_today": {
+        "message": "Nessun pezzo disponibile oggi. Torna domani."
+    },
+    "skin_already_owned": {
+        "message": "Possiedi già questo pezzo"
+    },
+    "skin_bought_format": {
+        "message": "✓ Acquistata per {amount} {icon}"
+    },
+    "shop_confirm_title": {
+        "message": "Conferma acquisto"
+    },
+    "shop_price_label": {
+        "message": "Prezzo:"
+    },
+    "shop_sold": {
+        "message": "✓ Acquistato"
+    },
+    "shop_not_enough_dust": {
+        "message": "Polvere insufficiente"
+    },
+    "shop_not_enough_coins": {
+        "message": "Monete insufficienti"
+    },
+    "shop_not_enough_tickets": {
+        "message": "Ticket insufficienti"
+    },
+    "shop_not_enough_skincoins": {
+        "message": "Skin-coins insufficienti"
+    },
+    "shop_max_purchased": {
+        "message": "Già acquistato al massimo"
+    },
+    "shop_max_daily": {
+        "message": "Limite giornaliero raggiunto"
+    },
+    "shop_item_not_found": {
+        "message": "Articolo non trovato"
+    },
+    "shop_error_default": {
+        "message": "Errore"
+    },
+    "currency_coins": {
+        "message": "Monete"
+    },
+    "currency_tickets": {
+        "message": "Ticket"
+    },
+    "currency_skincoins": {
+        "message": "Skin-coins"
+    },
+    "currency_dust": {
+        "message": "Polvere"
+    },
+    "skin_customize": {
+        "message": "Personalizza"
+    },
+    "skin_look_recent": {
+        "message": "Look recente {n}"
+    },
+    "skin_no_recent_looks": {
+        "message": "Nessun look recente"
+    },
+    "skin_open_customizer": {
+        "message": "Apri personalizzazione nave"
+    },
+    "skin_color_unique": {
+        "message": "Colore unico"
+    },
+    "skin_coming_soon": {
+        "message": "Altre skin\nin arrivo"
+    },
+    "skin_my_look": {
+        "message": "Il Mio Look"
+    },
+    "skin_remove_fav": {
+        "message": "⭐ Rimuovi Preferito"
+    },
+    "skin_mark_fav": {
+        "message": "☆ Segna come Preferito"
+    },
+    "exchange_target_title": {
+        "message": "Valuta di destinazione"
+    },
+    "exchange_lot_title": {
+        "message": "Lotto di polvere"
+    },
+    "exchange_cost_label": {
+        "message": "Costo"
+    },
+    "exchange_receive_label": {
+        "message": "Ricevi"
+    },
+    "exchange_confirm": {
+        "message": "Conferma cambio"
+    },
+    "exchange_success_format": {
+        "message": "✓ +{amount} {label}"
+    },
+    "exchange_error_no_dust": {
+        "message": "Polvere insufficiente"
+    },
+    "exchange_error_generic": {
+        "message": "Cambio non riuscito"
+    },
+    "exchange_preview_cost_format": {
+        "message": "💨 {amount} polvere"
+    },
+    "skin_type_base": {
+        "message": "Base"
+    },
+    "skin_type_cabina": {
+        "message": "Cabina"
+    },
+    "skin_type_alas": {
+        "message": "Ali"
+    },
+    "skin_type_propulsor": {
+        "message": "Propulsore"
+    },
+    "skin_type_montajes": {
+        "message": "Montaggi"
+    },
+    "skin_type_llavero": {
+        "message": "Portachiavi"
+    },
+    "skin_type_creacion": {
+        "message": "Creazione"
+    },
+    "skin_type_montaje_singular": {
+        "message": "Montaggio"
+    },
+    "skin_type_creacion_singular": {
+        "message": "Creazione"
+    },
+    "skin_llavero_0": {
+        "message": "Asteroid Rush"
+    },
+    "skin_llavero_1": {
+        "message": "Base"
+    },
+    "skin_llavero_2": {
+        "message": "Galassia"
+    },
+    "skin_llavero_3": {
+        "message": "Marte"
+    },
+    "skin_llavero_4": {
+        "message": "Terra"
+    },
+    "skin_creacion_0": {
+        "message": "Creazione 1"
+    },
+    "skin_creacion_1": {
+        "message": "Creazione 2"
+    },
+    "skin_creacion_2": {
+        "message": "Creazione 3"
+    },
+    "shop_title": {
+        "message": "🛒 Negozio"
+    },
+    "shop_tab_offers": {
+        "message": "🌟 Offerte"
+    },
+    "skin_panel_title": {
+        "message": "🎨 Personalizza Nave"
+    },
+    "shop_bought_format_regular": {
+        "message": "✓ Acquistato per {amount} {icon}"
+    },
+    "btn_confirm": {
+        "message": "Conferma"
+    },
+    "btn_top": {
+        "message": "TOP"
+    },
+    "btn_shop": {
+        "message": "NEGOZIO"
+    },
+    "ach_viajero_name": {
+        "message": "Viaggiatore"
+    },
+    "ach_viajero_desc": {
+        "message": "Gioca 2 ore in partita."
+    },
+    "ach_bounty_name": {
+        "message": "Cacciatore di Taglie"
+    },
+    "ach_bounty_desc": {
+        "message": "Sblocca 5 risultati."
+    },
+    "ach_destructor_name": {
+        "message": "Distruttore Stellare"
+    },
+    "ach_destructor_desc": {
+        "message": "Distruggi 250 asteroidi in totale."
+    },
+    "oferton": {
+        "message": "OFFERTA"
+    },
+    "username_title": {
+        "message": "Scegli il tuo soprannome"
+    },
+    "username_desc": {
+        "message": "Sarà il tuo nome in classifica. Non potrai cambiarlo in seguito."
+    },
+    "username_taken": {
+        "message": "Questo soprannome è già in uso."
+    },
+    "username_empty": {
+        "message": "Inserisci un soprannome."
+    },
+    "username_rank_reward": {
+        "message": "Ricompensa #1: skin Oro sbloccate!"
+    },
+    "username_rank_reward2": {
+        "message": "Ricompensa #2: skin Argento sbloccate!"
+    },
+    "username_rank_reward3": {
+        "message": "Ricompensa #3: skin Bronzo sbloccate!"
+    },
+    "username_warning": {
+        "message": "⚠ Non potrai cambiarlo in seguito."
+    },
+    "auth_title": {
+        "message": "Account"
+    },
+    "auth_tab_login": {
+        "message": "Accedi"
+    },
+    "auth_tab_register": {
+        "message": "Crea account"
+    },
+    "auth_btn_login": {
+        "message": "Accedi"
+    },
+    "auth_btn_register": {
+        "message": "Crea account"
+    },
+    "auth_guest_hint": {
+        "message": "Continua come ospite"
+    },
+    "auth_error_fill": {
+        "message": "Compila tutti i campi."
+    },
+    "auth_error_invalid": {
+        "message": "Email o password non validi."
+    },
+    "auth_error_password_short": {
+        "message": "La password deve avere almeno 6 caratteri."
+    },
+    "auth_sign_in": {
+        "message": "Accedi"
+    },
+    "auth_sign_out": {
+        "message": "Esci"
+    },
+    "auth_account": {
+        "message": "Account"
+    },
+    "auth_account_desc": {
+        "message": "Gli account saranno disponibili presto."
+    },
+    "coming_soon": {
+        "message": "Presto disponibile"
+    },
+    "nick_assigned_title": {
+        "message": "Pilota assegnato"
+    },
+    "astronaut": {
+        "message": "Astronauta"
+    },
+    "nick_assigned_desc": {
+        "message": "Sarà il tuo identificatore nella classifica mondiale."
+    },
+    "skin_default": {
+        "message": "Astronave predefinita"
+    },
+    "promo_happy_hour": {
+        "message": "🎉 HAPPY HOUR! −60% su tutto il negozio"
+    },
+    "promo_notif_title": {
+        "message": "HAPPY HOUR!"
+    },
+    "promo_notif_desc": {
+        "message": "−60% su tutto il negozio"
+    },
+    "setting_promo_notif": {
+        "message": "Avvisa all'inizio dell'happy hour"
+    },
+    "auth_guest_mode": {
+        "message": "Modalità ospite"
+    },
+    "welcome_to": {
+        "message": "BENVENUTO IN"
+    },
+    "welcome_how_to_continue": {
+        "message": "Come vuoi continuare?"
+    },
+    "reward_welcome_desc": {
+        "message": "Hai ricevuto {amount} 💨 come regalo di benvenuto!"
+    },
+    "reward_beta_desc": {
+        "message": "Hai ricevuto {amount} 💨 come regalo da giocatore BETA!"
+    },
+    "tut_step7_title": {
+        "message": "🧑‍🚀 Il tuo Pilota"
+    },
+    "tut_step7_text": {
+        "message": "Al termine del tutorial riceverai un numero pilota casuale. Sarà il tuo identificatore nella classifica mondiale."
+    },
+    "instr_pilot_title": {
+        "message": "Pilota"
+    },
+    "instr_pilot_assign": {
+        "message": "Completando il tutorial ti viene assegnato un <b>numero pilota casuale</b> (es. Astronauta 4821). Non puoi sceglierlo, ma è il tuo identificatore unico nella classifica."
+    },
+    "instr_shop_title": {
+        "message": "Negozio"
+    },
+    "instr_shop_currencies": {
+        "message": "Quattro valute: <b>💨 Polvere</b>, <b>🪙 Monete</b>, <b>🎟️ Ticket</b> e <b>🎨 Skin-Coins</b>. Ottenute giocando o tramite ricompense."
+    },
+    "instr_shop_skins": {
+        "message": "Il negozio ruota quotidianamente. Puoi acquistare pezzi di skin, potenziatori e pacchetti di polvere."
+    },
+    "instr_shop_promo": {
+        "message": "Ogni giorno dalle 20:00 alle 21:00 c'è l'<b>Happy Hour</b> con il 60% di sconto su tutto il negozio."
+    },
+    "instr_ranking_title": {
+        "message": "Classifica Mondiale"
+    },
+    "instr_ranking_top100": {
+        "message": "La Top 100 mondiale si aggiorna in tempo reale. Il tuo punteggio viene confrontato con quello di tutti i giocatori."
+    },
+    "instr_ranking_submit": {
+        "message": "I punteggi vengono inviati automaticamente al termine di una partita se sei nella Top 100. Puoi disattivare questa opzione nelle Impostazioni."
+    },
+    "instr_ranking_skins": {
+        "message": "Se sei nella Top 3, sblocchi skin esclusive <b>Oro 🥇</b>, <b>Argento 🥈</b> o <b>Bronzo 🥉</b>."
+    },
+    "instr_news_title": {
+        "message": "Notizie"
+    },
+    "instr_news_desc": {
+        "message": "Le notizie vengono caricate dal server e memorizzate nella cache locale."
+    },
+    "shop_max_lives": {
+        "message": "MAX — Vite al massimo"
+    },
+    "shop_max_lives_short": {
+        "message": "MAX"
+    },
+    "lives_max_tooltip": {
+        "message": "Vite al massimo"
+    },
+    "lives_max_tooltip_all": {
+        "message": "Tutte le vite al massimo"
+    },
+    "shop_error_max_lives": {
+        "message": "Vite al massimo"
+    },
+    "auth_forgot_password": {
+        "message": "Hai dimenticato la password?"
+    },
+    "auth_verify_check": {
+        "message": "Ho verificato"
+    },
+    "auth_verify_email": {
+        "message": "Verifica email"
+    },
+    "auth_verify_resend": {
+        "message": "Reinvia email"
+    },
+    "beta_slot_warning": {
+        "message": "Questo slot contiene dati BETA. Attivalo nelle Impostazioni per giocare."
+    },
+    "btn_powerups": {
+        "message": "Potenziamenti"
+    },
+    "btn_retry": {
+        "message": "▶ Gioca Ancora"
+    },
+    "btn_save": {
+        "message": "💾 Salva"
+    },
+    "dust_name": {
+        "message": "polvere"
+    },
+    "instr_asteroids_title": {
+        "message": "Ast."
+    },
+    "instr_rank_time": {
+        "message": "Tempo"
+    },
+    "label_skin": {
+        "message": "NAVE"
+    },
+    "lives_shop_title": {
+        "message": "Compra Vite"
+    },
+    "no_pilot_yet": {
+        "message": "Nessun pilota assegnato"
+    },
+    "reward_collect": {
+        "message": "Raccogli"
+    },
+    "reward_title": {
+        "message": "Ricompensa di benvenuto!"
+    },
+    "color_AMARILLO": {
+        "message": "Giallo"
+    },
+    "skin_color_AMARILLO": {
+        "message": "Giallo"
+    },
+    "color_AZUL": {
+        "message": "Blu"
+    },
+    "skin_color_AZUL": {
+        "message": "Blu"
+    },
+    "color_BLANCO": {
+        "message": "Bianco"
+    },
+    "skin_color_BLANCO": {
+        "message": "Bianco"
+    },
+    "color_CIAN": {
+        "message": "Ciano"
+    },
+    "skin_color_CIAN": {
+        "message": "Ciano"
+    },
+    "color_LILA": {
+        "message": "Lilla"
+    },
+    "skin_color_LILA": {
+        "message": "Lilla"
+    },
+    "color_MORADO": {
+        "message": "Viola"
+    },
+    "skin_color_MORADO": {
+        "message": "Viola"
+    },
+    "color_NARANJA": {
+        "message": "Arancione"
+    },
+    "skin_color_NARANJA": {
+        "message": "Arancione"
+    },
+    "color_ROJO": {
+        "message": "Rosso"
+    },
+    "skin_color_ROJO": {
+        "message": "Rosso"
+    },
+    "color_ROSA": {
+        "message": "Rosa"
+    },
+    "skin_color_ROSA": {
+        "message": "Rosa"
+    },
+    "color_VERDE": {
+        "message": "Verde"
+    },
+    "skin_color_VERDE": {
+        "message": "Verde"
+    },
+    "color_ORO": {
+        "message": "Oro"
+    },
+    "skin_color_ORO": {
+        "message": "Oro"
+    },
+    "color_PLATA": {
+        "message": "Argento"
+    },
+    "skin_color_PLATA": {
+        "message": "Argento"
+    },
+    "color_BRONCE": {
+        "message": "Bronzo"
+    },
+    "skin_color_BRONCE": {
+        "message": "Bronzo"
+    },
+    "reward_beta_llavero_title": {
+        "message": "Ricompensa Beta!"
+    },
+    "reward_beta_llavero_desc": {
+        "message": "Avevi le 10 navi della Beta! Hai ricevuto il portachiavi Asteroid Rush."
+    },
+    "reward_mars_llavero_title": {
+        "message": "Missione Marte completata!"
+    },
+    "reward_mars_llavero_desc": {
+        "message": "Hai raggiunto Marte in tutte e 3 le modalità! Hai ricevuto il portachiavi di Marte."
+    },
+    "ach_mars_trio_name": {
+        "message": "Trio di Marte"
+    },
+    "ach_mars_trio_desc": {
+        "message": "Raggiungi Marte in tutte le 3 modalità."
+    },
+    "shop_agotado": {
+        "message": "Esaurito"
+    },
+    "tut_hint_meteor": {
+        "message": "☄️ Meteorite!"
+    },
+    "tut_hint_dodge_right": {
+        "message": "Premi → per schivare"
+    },
+    "tut_hint_another": {
+        "message": "☄️ Un altro!"
+    },
+    "tut_hint_dodge_left": {
+        "message": "Ora ←"
+    },
+    "tut_hint_good_controls": {
+        "message": "Ottimi controlli!"
+    },
+    "tut_hint_try_laser": {
+        "message": "Prova il laser"
+    },
+    "tut_hint_shield_intro": {
+        "message": "🛡️ SCUDO: protegge 30s — Livello 1 (dall'inizio)"
+    },
+    "tut_hint_shield_active": {
+        "message": "🛡️ Scudo attivo!"
+    },
+    "tut_hint_laser_intro": {
+        "message": "🔫 LASER: distrugge in linea — Livello 10"
+    },
+    "tut_hint_laser_ready": {
+        "message": "🔫 Laser pronto! Tieni premuto ↑"
+    },
+    "tut_hint_slow_intro": {
+        "message": "❄️ RALLENTA: tutto va lento — Livello 50"
+    },
+    "tut_hint_well_done": {
+        "message": "👏 Ben fatto! Ora da solo"
+    },
+    "tut_pause_finish": {
+        "message": "TERMINA"
+    },
+    "tut_pause_finish_title": {
+        "message": "Termina tutorial"
+    },
+    "tut_complete_title": {
+        "message": "Tutorial completato!"
+    },
+    "tut_complete_desc": {
+        "message": "Hai imparato i controlli di base.<br>Ora il sistema solare è tuo!"
+    },
+    "tut_hit_title": {
+        "message": "Colpito!"
+    },
+    "tut_hit_desc": {
+        "message": "Ti sei schiantato durante il tutorial.<br>Vuoi riprovare?"
+    },
+    "tut_continue_anyway": {
+        "message": "Continua comunque"
+    },
+    "super_offer_badge": {
+        "message": "🔥 SUPER OFFERTA 🔥"
+    },
+    "super_offer_title": {
+        "message": "OFFERTA ESCLUSIVA!"
+    },
+    "super_offer_subtitle": {
+        "message": "+1 vita per solo"
+    },
+    "super_offer_note": {
+        "message": "e gioca all'istante!"
+    },
+    "super_offer_buy": {
+        "message": "⚡ ACQUISTA & GIOCA ⚡"
+    },
+    "super_offer_pass": {
+        "message": "Salta"
+    },
+    "setting_dual_mode": {
+        "message": "Modalità doppia (2 dispositivi)"
+    },
+    "setting_dual_mode_desc": {
+        "message": "Sincronizzazione tra due dispositivi con merge economia e rilevamento heartbeat."
+    },
+    "skin_old_reward_desc": {
+        "message": "Hai {count} vecchie skin. Ricevi +{reward} 🎨 Skin Coins!"
+    },
+    "btn_no_lives_shop": {
+        "message": "RICARICA! ACQUISTA VITE"
+    },
+    "skin_old_reward_title": {
+        "message": "VECCHIE SKIN"
+    },
+    "error_generic": {
+        "message": "ERRORE"
+    },
+    "promo_happy_hour_short": {
+        "message": "Happy Hour!"
+    },
+    "abbr_level": {
+        "message": "Lv."
+    },
+    "terms_updated_title": {
+        "message": "🚀 Termini aggiornati"
+    },
+    "terms_updated_desc": {
+        "message": "Abbiamo aggiornato i Termini e Condizioni e l'Informativa sulla Privacy. Accettali di nuovo per continuare."
+    },
+    "btn_reject": {
+        "message": "Rifiuta"
+    },
+    "terms_update_reject_desc": {
+        "message": "Se rifiuti, non potrai giocare finché non accetti. Puoi esportare i tuoi dati locali prima di uscire."
+    }
+}

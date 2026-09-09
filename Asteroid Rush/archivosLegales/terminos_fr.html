@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Conditions d'Utilisation — Asteroid Rush</title>
+  <link rel="stylesheet" href="legal-styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Conditions Générales d'Utilisation</h1>
+    <p><strong>Dernière mise à jour :</strong> 2 septembre 2026</p>
+    <p>Bienvenue dans Asteroid Rush. En installant, ouvrant ou utilisant ce logiciel ou son extension de navigateur (le « Jeu »), tu acceptes de respecter et de te soumettre sans condition aux Conditions Générales d'Utilisation suivantes.</p>
+
+    <h2>1. Logiciel en Phase BETA et Exclusion de Responsabilité</h2>
+    <p>Asteroid Rush se trouve en <strong>phase BETA (développement et tests actifs)</strong>. En utilisant le Jeu, tu comprends et acceptes expressément que :</p>
+    <ul>
+      <li>Le logiciel est fourni « TEL QUEL » (« AS IS »), sans aucune garantie de la part du développeur.</li>
+      <li>Le Jeu peut présenter des erreurs, bugs, blocages ou incompatibilités avec ton navigateur ou ton système d'exploitation.</li>
+      <li><strong>Le développeur décline toute responsabilité pour les pertes de données</strong>, y compris la suppression de progression, de slots de sauvegarde, de succès, de skins débloqués ou de soldes de monnaies virtuelles causée par des défaillances du système ou des mises à jour.</li>
+      <li>Le fonctionnement des systèmes en ligne (classement mondial et actualités) dépend de fournisseurs de réseau externes et peut être hors ligne, lent ou suspendu pour maintenance sans préavis.</li>
+      <li>La synchronisation horaire (utilisée pour l'<strong>Happy Hour 20:00–21:00</strong> et les promotions temporaires) est effectuée une fois par jour via l'en-tête HTTP <code>Date</code> de Google Firestore et calculée de façon monotone (<code>serverTime + (performance.now() − syncMono)</code>), donc changer l'horloge locale ne modifie pas l'heure du jeu. Aucune donnée personnelle n'est transmise lors de cette opération ; la valeur est stockée exclusivement sur votre appareil. Sans synchronisation préalable, aucune promo n'est active.</li>
+      <li><strong>Cache actualités 24h :</strong> Les actualités en ligne sont mises en cache localement 24h après la dernière requête serveur (cooldown 24h dans le SW). Passé ce délai elles sont redemandées ; détaillé en Confidentialité, noté ici à titre informatif.</li>
+      <li>Le système de comptes utilisateurs est actuellement <strong>désactivé (« Bientôt disponible »)</strong>. La synchronisation de la progression entre appareils n'est pas disponible dans cette version.</li>
+    </ul>
+
+    <h2>2. Licence d'Utilisation du Client (MIT)</h2>
+    <p>Le code client d'Asteroid Rush est distribué selon les termes de la Licence MIT. L'autorisation est gratuitement accordée d'utiliser, modifier, fusionner et distribuer le logiciel client sous ses conditions générales d'attribution. Tu peux consulter le texte complet sur <a href="https://mit-license.org/" target="_blank" style="color: #00bcd4;">https://mit-license.org/</a>. Cette licence open source ne couvre pas l'abus de nos API, l'accès non autorisé aux serveurs cloud ni la falsification frauduleuse du classement mondial.</p>
+
+    <h2>3. Stockage Local des Données</h2>
+    <p>Le jeu utilise la technologie <code>LocalStorage</code> du navigateur pour sauvegarder ta progression (skins, vies, records personnels, configuration et slots de sauvegarde) localement sur ton appareil. Ces données sont sous la responsabilité de l'utilisateur ; si tu vides le cache du navigateur, désinstalles l'extension ou utilises le mode navigation privée/incognito, la progression locale sera définitivement perdue sans possibilité de récupération.</p>
+
+    <h2>4. Pseudo de Pilote Automatique</h2>
+    <ul>
+      <li><strong>Attribution Aléatoire :</strong> Le Jeu attribue automatiquement à chaque installation un pseudo de pilote aléatoire (par exemple, « Astronauta4821 ») généré localement dans ton navigateur. Le pseudo ne peut pas être choisi ni personnalisé dans cette version et ne fait partie d'aucun compte utilisateur.</li>
+      <li><strong>Migration :</strong> Si tu proviens d'une version antérieure où tu avais choisi un pseudo, celui-ci est conservé comme identité de pilote.</li>
+      <li><strong>Support d'Instance Unique :</strong> Pour prévenir les défaillances et assurer l'intégrité des données locales, le Jeu inclut un système de communication à canal unique (BroadcastChannel). Si tu ouvres le Jeu dans une nouvelle fenêtre ou un nouvel onglet, l'instance active précédente sera automatiquement fermée de manière obligatoire. Toute partie en cours sans sauvegarde sur slot sera perdue à la fermeture de l'instance précédente.</li>
+    </ul>
+
+    <h2>5. Conduite de l'Utilisateur et Utilisation de l'API</h2>
+    <div class="api-notice">
+       <p><strong>⚠️ Avis de Sécurité : Clé API</strong><br>
+       La clé API incluse dans le code source a pour seule finalité de permettre la communication légitime entre le jeu et le serveur de classement. Il est <strong>strictement interdit</strong> d'extraire, partager ou utiliser cette clé dans des scripts, applications ou projets tiers. Tout abus détecté entraînera le blocage de l'accès. Étant intégrée au client, elle ne doit pas être considérée comme secrète ; son exposition n'implique pas d'autorisation d'usage externe.</p>
+    </div>
+    <p>Tu acceptes de ne pas utiliser le Jeu pour :</p>
+    <ul>
+      <li>Extraire, manipuler ou utiliser la clé API de l'extension à des fins autres que le fonctionnement normal du jeu.</li>
+      <li>Utiliser des triches (cheats), exploits, bots ou tout logiciel tiers pour modifier ou automatiser l'expérience de jeu.</li>
+      <li>Écraser malveillamment les entrées du classement en manipulant les données stockées localement.</li>
+      <li>Tenter d'interrompre ou de surcharger les serveurs du classement ou du cloud.</li>
+    </ul>
+    <p>Nous nous réservons le droit, à notre entière discrétion, de <strong>supprimer tout score</strong> du classement que nous jugerions inapproprié ou frauduleux, après vérification technique.</p>
+
+    <h2>6. Économie Virtuelle, Boutique et Inventaire Cosmétique</h2>
+    <p>Le Jeu intègre une économie virtuelle avec des monnaies obtenues en jouant ou via des récompenses (Poussière 💨, Pièces 🪙, Tickets 🎟️ et Skin-Coins 🎨) :</p>
+    <ul>
+      <li><strong>Sans Valeur Monétaire :</strong> Les soldes virtuels, succès et inventaires cosmétiques n'ont aucune valeur économique réelle. Ils n'appartiennent pas à l'utilisateur, ne peuvent pas être achetés avec de l'argent réel, échangés contre de la monnaie légale, ni commercialisés ou transférés à d'autres joueurs d'aucune manière. Le jeu est gratuit.</li>
+      <li><strong>Transactions Irréversibles :</strong> Tout échange de monnaies virtuelles (échange 💱) ou achat de cosmétiques et de packs dans la Boutique Rotative Quotidienne est final, irrévocable et irréversible au sein du système.</li>
+      <li><strong>Limites côté client :</strong> Les limites d'achat (`lifetimeBuys`, `dailyBuysMin/Max`, `hourlyLimit`) sont contrôlées localement sur ton appareil (`localStorage`) et sont techniquement manipulables ; elles ne constituent pas une garantie contractuelle ni un contrôle d'accès côté serveur.</li>
+      <li><strong>Réorganisation et Ajustements d'Inventaire :</strong> Le développeur se réserve le droit de modifier, retirer, restructurer ou supprimer des pièces de skins, porte-clés, créations ou montages du catalogue à tout moment. En cas de changements importants d'inventaire, le développeur pourra, de manière discrétionnaire et informelle, fournir des compensations automatiques en monnaies virtuelles aux joueurs concernés (comme l'attribution de pièces cosmétiques pour la perte d'anciens modèles), sans que cela constitue en aucun cas une obligation de remboursement financier ou autre.</li>
+      <li><strong>Skins de Rang (Or/Argent/Bronze) :</strong> Ces cosmétiques exclusifs sont directement liés à ta position active en temps réel dans les trois premières places du Top 100 mondial. Si un autre joueur dépasse ton score et que tu descends sous ce seuil, le Jeu révoquera immédiatement ton accès technique à ces éléments.</li>
+      <li><strong>Happy Hour (−60%) :</strong> Chaque jour de 20:00 à 21:00 (heure réelle du serveur) toute la boutique applique une remise automatique de 60% sur le prix de base. La fenêtre est vérifiée avec l'heure monotone du serveur décrite en §1 et n'est pas manipulable localement. La notification optionnelle est configurable dans <strong>Paramètres → Notifications promo</strong> et s'affiche au maximum une fois par jour.</li>
+    </ul>
+
+    <h2>7. Mécaniques de Jeu</h2>
+    <ul>
+      <li><strong>Mort Permanente des Slots de Sauvegarde :</strong> Tu disposes de 10 slots pour sauvegarder des parties manuellement ou automatiquement. La sauvegarde automatique a lieu toutes les 5 secondes en silence. Par conception et mécanique de jeu, si ton vaisseau est détruit pendant une partie en cours, <strong>le slot de sauvegarde associé sera automatiquement et irréversiblement supprimé</strong>.</li>
+      <li><strong>Diplômes de Vol :</strong> Le certificat et le diplôme de mission sont générés localement grâce au traitement graphique Canvas de ton navigateur. L'enregistrement et le partage de l'image résultante s'exécutent localement via les fonctions natives du système d'exploitation de ton appareil (Web Share API).</li>
+      <li><strong>Régénération automatique des vies :</strong> Les vies se régénèrent automatiquement avec le temps, même jeu fermé, jusqu'à un maximum de 10. Intervalle : 5 minutes en mode Normal et Zigzag, 2 minutes en mode Rapide. Le temps hors ligne s'accumule et est calculé à la réouverture. Vous pouvez aussi restaurer des vies instantanément dans la Boutique avec des monnaies virtuelles.</li>
+      <li><strong>Export portable :</strong> Le fichier de sauvegarde <code>.csv</code> est chiffré avec AES-GCM et portable entre installations ; il ne contient ni ne restaure votre pseudo de pilote, qui reste local et aléatoire par installation.</li>
+    </ul>
+
+    <h2>8. Fonctions Expérimentales (Mode BETA)</h2>
+    <p>En activant le menu caché de tests ou le Mode BETA, tu acceptes que :</p>
+    <ul>
+      <li>Le Jeu activera des bonus non équilibrés et des options de débogage.</li>
+      <li>Pour maintenir l'équité et la propreté compétitive, <strong>l'envoi de records et de scores au Classement Mondial sera complètement bloqué</strong> tant que le Mode BETA est actif. Ton score ne sera soumis d'aucune manière au Top 100 mondial.</li>
+    </ul>
+
+    <h2>9. Avertissement Santé : Photosensibilité et Épilepsie</h2>
+    <div class="api-notice">
+       <p><strong>⚠️ AVERTISSEMENT SANTÉ CRITIQUE — À LIRE AVANT DE JOUER :</strong><br>
+       Un pourcentage de la population peut présenter des convulsions ou des évanouissements lorsqu'elle est exposée à certains stimulus visuels, tels que des flashs, des lumières clignotantes, des explosions ou des secousses rapides de l'écran (<em>screen shake</em>), même sans antécédents médicaux d'épilepsie.</p>
+       <p>Si tu ressens des vertiges, une vision altérée, une désorientation, des spasmes oculaires ou une perte de connaissance, <strong>arrête immédiatement de jouer</strong> et consulte un médecin. Le développeur décline toute responsabilité pour les problèmes de santé résultant de l'omission de cet avertissement. Nous te recommandons d'activer le <strong>« Mode Sûr »</strong> et de désactiver les <strong>« Effets de lumière »</strong> dans le panneau de Réglages pour atténuer ces effets visuels.</p>
+    </div>
+
+    <h2>10. Données du Classement Mondial et Permanence des Records</h2>
+    <p>Lorsque tu envoies un score au Top 100 mondial, les données suivantes sont stockées et publiquement visibles :</p>
+    <ul>
+      <li><strong>Pseudo de pilote :</strong> Attribué aléatoirement par le jeu (public)</li>
+      <li><strong>Score :</strong> Ton score final en points (public)</li>
+      <li><strong>Mode de jeu :</strong> Normal, Rapide ou Swingcopter (implicite dans le tableau)</li>
+      <li><strong>Durée de la partie :</strong> Temps de survie (public, utilisé pour la vérification anti-triche)</li>
+      <li><strong>Statistiques de vol agrégées :</strong> Astéroïdes détruits et power-ups collectés (public)</li>
+    </ul>
+    <p>En interne, le système stocke également les champs techniques <code>score_actual</code> et <code>tiempo</code> dans Firestore pour la validation anti-triche (vérification mathématique entre score et durée). Aucune donnée personnelle, adresse e-mail ni identifiant de compte n'est publié. Les scores restent au classement tant qu'ils figurent dans le Top 100 ; néanmoins, tu peux demander à tout moment la suppression ou la correction d'un score associé à ton installation en écrivant à l'e-mail de contact indiqué dans ces Conditions.</p>
+
+    <h2>11. Contrôle de Confidentialité et Gestion des Données</h2>
+    <ul>
+      <li><strong>Désactiver le Classement :</strong> Tu peux désactiver l'envoi de scores au classement mondial à tout moment depuis <strong>Paramètres → Confidentialité</strong>. Si tu le désactives, aucun score ne sera envoyé et le jeu reste en local, mais il fera toujours des requêtes HTTPS pour les actualités et la synchro horaire et exposera techniquement ton IP à Google.</li>
+      <li><strong>Exporter :</strong> Tu peux télécharger un fichier <code>.csv</code> chiffré (AES-GCM, clé portable) contenant une sauvegarde de ta progression locale et de tes slots depuis les Paramètres. Le fichier est portable entre appareils/navigateurs et <strong>ne contient pas votre pseudo de pilote</strong>.</li>
+      <li><strong>Importer :</strong> Tu peux restaurer des données depuis un fichier exporté précédemment.</li>
+            <li><strong>Supprimer les Données Locales:</strong> Tu peux effacer toutes tes données locales —y compris tes scores du classement mondial dans tous les modes— à tout moment depuis les Réglages. Cette action efface ta progression locale et supprime automatiquement tes entrées du Top 100 ; elle est irréversible tant localement que sur le classement.</li>
+    </ul>
+
+    <h2>12. Âge Minimum</h2>
+    <p>Tu dois avoir au moins <strong>14 ans</strong>, ou l'âge minimum requis par la législation de ton pays pour utiliser des services numériques de ce type, si celui-ci est supérieur.</p>
+
+    <h2>13. Modifications des Conditions</h2>
+    <p>Nous pouvons modifier ces Conditions en publiant la version mise à jour sur cette page avec sa date de dernière mise à jour et d'entrée en vigueur. Pour les changements substantiels (affectant droits, économie virtuelle, classement ou confidentialité) nous donnerons un préavis raisonnable via avis en jeu et/ou section actualités. L'utilisation continue après l'entrée en vigueur vaut acceptation ; si tu n'acceptes pas, tu dois cesser l'utilisation et tu peux demander la suppression de tes scores. Lorsque le RGPD exige un nouveau consentement, nous le solliciterons à nouveau.</p>
+
+    <h2>14. Loi Applicable et Juridiction</h2>
+    <p>Ces Conditions sont régies et interprétées selon les lois espagnoles, y compris le Règlement (UE) 2016/679 (RGPD) et la Loi Organique 3/2018 (LOPDGDD).</p>
+    <p><strong>Consommateurs :</strong> si tu agis en tant que consommateur, tu ne perds pas le for impératif de ton domicile ; la soumission exclusive au domicile du titulaire ne t'est pas opposable. <strong>Professionnels :</strong> si tu agis en tant que professionnel, les parties se soumettent expressément aux tribunaux du domicile du titulaire (Espagne), en renonçant à tout autre for.</p>
+
+    <h2>15. Responsable et Contact</h2>
+    <p><strong>Titulaire :</strong> développeur particulier sous le pseudonyme <strong>“Industrias GRM”</strong> (nom commercial / nick, pas une société). Aucun NIF/CIF d'entreprise. Au sens du RGPD et LSSICE art.10, le prestataire est la personne physique titulaire du projet.</p>
+    <p>Si tu as des questions sur ces Conditions, ou si tu souhaites exercer tes droits légaux (réponse max. 1 mois, prorogeable 2 mois avec avis), contacte-nous à :</p>
+    <p>📧 <strong>Email :</strong> asteroidrushoficial@gmail.com</p>
+
+    <h2>16. Langue Officielle</h2>
+    <p><em>En cas de divergence, conflit ou doute d'interprétation entre la version espagnole et les traductions dans d'autres langues des présentes Conditions, <strong>la version espagnole prévaudra</strong> et sera la seule juridiquement contraignante à tous égards, y compris dans les procédures judiciaires et administratives.</em></p>
+
+    <div class="copyright">
+      <p>&copy; 2026 Industrias GRM. Le code d'Asteroid Rush est distribué sous <a href="https://mit-license.org/" target="_blank">licence MIT</a>. La dénomination commerciale &ldquo;Industrias GRM&rdquo; et son logo sont la propriété du développeur. Toute utilisation non autorisée est interdite.</p>
+    </div>
+
+  </div>
+</body>
+</html>
