@@ -1,0 +1,27 @@
+# === Keys & Secrets (NEVER commit these) ===
+keys.js
+server/.env.local
+server/node_modules/
+
+# === Build output ===
+dist/
+build/
+
+# === OS files ===
+.DS_Store
+Thumbs.db
+
+# === IDE ===
+.idea/
+.vscode/
+*.swp
+
+# === Backup (do not push to GitHub) ===
+_backup-cuentas/
+
+# === Local only ===
+__serve.js
+console.log(Object.keys(m)))
+
+# === TypeScript compiled ===
+*.log

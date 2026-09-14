@@ -1,0 +1,1442 @@
+{
+    "app_title": {
+        "message": "ASTEROID RUSH"
+    },
+    "app_header": {
+        "message": "ASTEROID RUSH"
+    },
+    "btn_fullscreen_title": {
+        "message": "Pantalla Completa"
+    },
+    "btn_settings_title": {
+        "message": "Configuració"
+    },
+    "btn_instructions": {
+        "message": "📖 Instruccions"
+    },
+    "btn_skip": {
+        "message": "⏩ Saltar"
+    },
+    "btn_skip_tutorial_title": {
+        "message": "Saltar tutorial"
+    },
+    "tutorial_welcome_title": {
+        "message": "Benvingut"
+    },
+    "tutorial_loading": {
+        "message": "Carregant..."
+    },
+    "btn_next": {
+        "message": "Següent"
+    },
+    "legal_title": {
+        "message": "🚀 Protocol de Seguretat"
+    },
+    "legal_desc": {
+        "message": "Abans d'enlairar-te, accepta els termes galàctics:"
+    },
+    "legal_terms_check": {
+        "message": "Accepto els Termes i Condicions"
+    },
+    "btn_read": {
+        "message": "Llegir"
+    },
+    "legal_privacy_check": {
+        "message": "Accepto la Política de Privacitat"
+    },
+    "btn_accept_continue": {
+        "message": "Acceptar i Continuar"
+    },
+    "confirm_delete_title": {
+        "message": "Esborrar Dades?"
+    },
+    "confirm_delete_desc_1": {
+        "message": "Es perdran els teus rècords, skins i vides. Aquesta acció és irreversible."
+    },
+    "confirm_delete_desc_2": {
+        "message": "Nota: Els teus rècords al servidor no seran eliminats"
+    },
+    "btn_delete_all": {
+        "message": "ESBORRAR TOT"
+    },
+    "btn_cancel": {
+        "message": "CANCEL·LAR"
+    },
+    "new_record_title": {
+        "message": "🏆 Nou Rècord!"
+    },
+    "new_record_desc": {
+        "message": "Has entrat al Top 100 mundial. Introdueix el teu nom:"
+    },
+    "new_record_warning": {
+        "message": "⚠️ No utilitzis el teu nom real."
+    },
+    "error_name_empty": {
+        "message": "⚠️ El nom no pot estar buit"
+    },
+    "input_nickname_placeholder": {
+        "message": "El teu sobrenom..."
+    },
+    "btn_submit": {
+        "message": "ENVIAR"
+    },
+    "btn_share": {
+        "message": "Compartir"
+    },
+    "import_status_title": {
+        "message": "Estat de l'Operació"
+    },
+    "btn_understood": {
+        "message": "Entès"
+    },
+    "save_game_title": {
+        "message": "Guardar Partida"
+    },
+    "btn_no_slot": {
+        "message": "Sense Slot"
+    },
+    "btn_close": {
+        "message": "Tancar"
+    },
+    "mars_mission_success_title": {
+        "message": "🚩 Missió Complerta"
+    },
+    "mars_mission_success_desc": {
+        "message": "Has arribat a la superfície de Mart."
+    },
+    "btn_mars_takeoff": {
+        "message": "🚀 Enlairar-se i Continuar"
+    },
+    "btn_mars_finish": {
+        "message": "🏁 Finalitzar Missió"
+    },
+    "hud_level": {
+        "message": "NIVELL 1"
+    },
+    "hud_level_prefix": {
+        "message": "NIVELL"
+    },
+    "btn_mute_title": {
+        "message": "Silenciar so"
+    },
+    "btn_pause_label": {
+        "message": "⏸️PAUSA"
+    },
+    "btn_pause_title": {
+        "message": "Pausar joc"
+    },
+    "btn_skip_label": {
+        "message": "⏩SALTAR"
+    },
+    "btn_skip_title": {
+        "message": "Saltar animació"
+    },
+    "overlay_main_title": {
+        "message": "ASTEROID RUSH"
+    },
+    "overlay_main_desc": {
+        "message": "Esquiva meteorits, usa power-ups i conquereix el TOP global"
+    },
+    "overlay_mode_fast": {
+        "message": "Mode: Ràpid"
+    },
+    "overlay_mode_normal": {
+        "message": "Mode: Normal"
+    },
+    "overlay_mode_zigzag": {
+        "message": "Mode: ZigZag"
+    },
+    "btn_continue": {
+        "message": "▶️ CONTINUAR"
+    },
+    "overlay_mode_info": {
+        "message": "Mode: Normal"
+    },
+    "btn_start": {
+        "message": "▶ Començar"
+    },
+    "mode_normal": {
+        "message": "Mode Normal"
+    },
+    "mode_fast": {
+        "message": "Mode Ràpid"
+    },
+    "mode_zigzag": {
+        "message": "Mode ZigZag"
+    },
+    "btn_save_quit": {
+        "message": "💾 Guardar i Sortir"
+    },
+    "btn_finish": {
+        "message": "☠️ Finalitzar"
+    },
+    "world_record_header": {
+        "message": "🌐 Rècord mundial"
+    },
+    "world_record_loading": {
+        "message": "Carregant..."
+    },
+    "btn_view_top100": {
+        "message": "Veure Top 100 mundial"
+    },
+    "mode_normal_short": {
+        "message": "Normal"
+    },
+    "mode_fast_short": {
+        "message": "Ràpid"
+    },
+    "mode_zigzag_short": {
+        "message": "ZigZag"
+    },
+    "btn_achievements": {
+        "message": "ÈXITS"
+    },
+    "btn_news": {
+        "message": "NOTÍCIES"
+    },
+    "news_title": {
+        "message": "Notícies"
+    },
+    "achievements_title": {
+        "message": "Assoliments Galàctics"
+    },
+    "ach_first_steps_name": {
+        "message": "Primers passos"
+    },
+    "ach_first_steps_desc": {
+        "message": "Juga la teva primera partida."
+    },
+    "ach_explorer_name": {
+        "message": "Explorador"
+    },
+    "ach_explorer_desc": {
+        "message": "Arriba als 5.000 punts en tots els modes de joc."
+    },
+    "ach_bronze_name": {
+        "message": "Medalla de Bronze"
+    },
+    "ach_bronze_desc": {
+        "message": "Aconsegueix 10.000 punts."
+    },
+    "ach_silver_name": {
+        "message": "Medalla de Plata"
+    },
+    "ach_silver_desc": {
+        "message": "Aconsegueix 100.000 punts."
+    },
+    "ach_gold_name": {
+        "message": "Medalla d'Or"
+    },
+    "ach_gold_desc": {
+        "message": "Aconsegueix 150.000 punts."
+    },
+    "ach_galactic_legend_name": {
+        "message": "Llegenda Galàctica"
+    },
+    "ach_galactic_legend_desc": {
+        "message": "Arriba als 500.000 punts."
+    },
+    "ach_impossible_name": {
+        "message": "IMPOSSIBLE"
+    },
+    "ach_impossible_desc": {
+        "message": "Supera les expectatives del creador: 1.000.000 de punts!"
+    },
+    "ach_mars_hero_name": {
+        "message": "Heroi de Mart"
+    },
+    "ach_mars_hero_desc": {
+        "message": "Completa la missió a Mart (arribar a 250.000 punts i aterrar)."
+    },
+    "ach_all_skins_name": {
+        "message": "Hangar Complet"
+    },
+    "ach_all_skins_desc": {
+        "message": "Desbloqueja les 10 skins."
+    },
+    "ach_iron_pilot_name": {
+        "message": "Pilot de Ferro"
+    },
+    "ach_iron_pilot_desc": {
+        "message": "Arriba al nivell 25 sense recollir cap power-up."
+    },
+    "ach_asteroid_buster_name": {
+        "message": "Caçador d'Asteroides"
+    },
+    "ach_asteroid_buster_desc": {
+        "message": "Destrueix 50 meteorits en un run."
+    },
+    "ach_pacifist_name": {
+        "message": "Pacifista"
+    },
+    "ach_pacifist_desc": {
+        "message": "Arriba al nivell 25 sense disparar ni una sola vegada."
+    },
+    "ach_fast_elite_name": {
+        "message": "Dimoni Veloç"
+    },
+    "ach_fast_elite_desc": {
+        "message": "Arriba als 100.000 punts jugant en Mode Ràpid."
+    },
+    "ach_zigzag_pro_name": {
+        "message": "ZigZag Pro"
+    },
+    "ach_zigzag_pro_desc": {
+        "message": "Aconsegueix 100.000 punts en el Mode ZigZag."
+    },
+    "settings_title": {
+        "message": "Configuració"
+    },
+    "settings_gameplay": {
+        "message": "🎮 Jugabilitat"
+    },
+    "settings_gameplay_desc": {
+        "message": "Ajusta com es comporta el joc en arrencar."
+    },
+    "setting_remember_mode": {
+        "message": "Recordar últim mode jugat"
+    },
+    "setting_language": {
+        "message": "Idioma"
+    },
+    "setting_show_fps": {
+        "message": "Mostrar FPS (mode avançat)"
+    },
+    "settings_controls": {
+        "message": "🕹️ Controls"
+    },
+    "settings_controls_desc": {
+        "message": "Opcions de maneig i pantalla tàctil."
+    },
+    "setting_touch_controls": {
+        "message": "Activar controls tàctils"
+    },
+    "settings_graphics": {
+        "message": "🎛️ Configuració de gràfics"
+    },
+    "settings_graphics_desc": {
+        "message": "Ajusta efectes visuals per equilibrar qualitat i rendiment."
+    },
+    "setting_smooth_animations": {
+        "message": "Animacions suaus"
+    },
+    "setting_light_effects": {
+        "message": "Efectes de llum i brillos"
+    },
+    "setting_safe_mode": {
+        "message": "Reduir flaixos intensos"
+    },
+    "setting_show_hitboxes": {
+        "message": "Mostrar Hitboxes (Debug)"
+    },
+    "settings_sound": {
+        "message": "🔊 So"
+    },
+    "settings_sound_desc": {
+        "message": "Controla la música i els efectes de so."
+    },
+    "setting_sound_enabled": {
+        "message": "So activat"
+    },
+    "setting_music_enabled": {
+        "message": "Música de fons"
+    },
+    "setting_sfx_enabled": {
+        "message": "Efectes de so"
+    },
+    "settings_privacy": {
+        "message": "🔐 Privacitat i dades"
+    },
+    "settings_privacy_desc": {
+        "message": "Controla l'enviament de puntuacions i la gestió de dades."
+    },
+    "setting_send_scores": {
+        "message": "Enviar puntuacions al rànquing mundial"
+    },
+    "setting_send_scores_note": {
+        "message": "⚠️ Si desactives això, els teus rècords no apareixeran al Top 100 mundial."
+    },
+    "settings_backup_title": {
+        "message": "Còpia de seguretat"
+    },
+    "btn_export": {
+        "message": "⭳ Exportar dades"
+    },
+    "btn_import": {
+        "message": "⭱ Importar dades"
+    },
+    "settings_backup_desc": {
+        "message": "Exporta les dades locals a un fitxer .csv o importa'n un de guardat."
+    },
+    "settings_reset_title": {
+        "message": "Restablir progrés"
+    },
+    "btn_delete_local": {
+        "message": "🗑️ Esborrar totes les dades locals"
+    },
+    "settings_reset_desc": {
+        "message": "Aquesta acció és irreversible. No esborra els rècords enviats al rànquing mundial."
+    },
+    "msg_game_saved": {
+        "message": "Partida guardada a"
+    },
+    "msg_come_back": {
+        "message": "Torna aviat."
+    },
+    "msg_score_saved_local": {
+        "message": "💾 La teva puntuació s'ha guardat localment però no s'ha enviat al rànquing."
+    },
+    "msg_skins_unlocked": {
+        "message": "Has desbloquejat noves skins!"
+    },
+    "msg_points_obtained_prefix": {
+        "message": "Has aconseguit"
+    },
+    "msg_try_again": {
+        "message": "Torna-ho a provar."
+    },
+    "msg_game_completed": {
+        "message": "Joc Completat"
+    },
+    "msg_game_over": {
+        "message": "Game Over!"
+    },
+    "label_slot": {
+        "message": "Slot"
+    },
+    "label_empty": {
+        "message": "Buit"
+    },
+    "label_anonymous": {
+        "message": "Anònim"
+    },
+    "label_no_new_record": {
+        "message": "La teva puntuació no supera el teu rècord personal."
+    },
+    "label_go": {
+        "message": "JA!"
+    },
+    "label_initial_skin": {
+        "message": "Skin Inicial"
+    },
+    "label_unlock_prefix": {
+        "message": "Desbloqueig"
+    },
+    "label_pts": {
+        "message": "pts"
+    },
+    "btn_delete_slot_title": {
+        "message": "Esborrar Slot"
+    },
+    "btn_fly": {
+        "message": "A VOLAR!"
+    },
+    "ranking_title_prefix": {
+        "message": "Top mundial"
+    },
+    "table_header_name": {
+        "message": "Nom"
+    },
+    "table_header_score": {
+        "message": "Punts"
+    },
+    "ranking_position_label": {
+        "message": "Posició"
+    },
+    "leaderboard_top100_title": {
+        "message": "Top 100 mundial"
+    },
+    "instructions_title": {
+        "message": "Instruccions"
+    },
+    "instr_controls_title": {
+        "message": "Controls"
+    },
+    "instr_controls_move": {
+        "message": "Mou-te amb <kbd>←</kbd> / <kbd>→</kbd>."
+    },
+    "instr_controls_shoot": {
+        "message": "Mantén <kbd>↑</kbd> per carregar i disparar el làser automàtic."
+    },
+    "instr_controls_pause": {
+        "message": "Pausa: <kbd>Espai</kbd>."
+    },
+    "instr_objective_title": {
+        "message": "Objectiu"
+    },
+    "instr_objective_dodging": {
+        "message": "Esquiva meteorits per sobreviure i augmentar la puntuació."
+    },
+    "instr_objective_laser": {
+        "message": "El làser t'ajuda a netejar el camí, però no dóna punts extra."
+    },
+    "instr_objective_mars": {
+        "message": "Arriba a 250,000 punts per completar la missió a Mart!"
+    },
+    "instr_powerups_title": {
+        "message": "Power-ups"
+    },
+    "instr_powerups_shield": {
+        "message": "<b>Verd</b>: Escut (30 s de protecció completa)."
+    },
+    "instr_powerups_laser": {
+        "message": "<b>Vermell</b>: Superlàser (2 s, ho destrueix tot en línia recta)."
+    },
+    "instr_powerups_slow": {
+        "message": "<b>Blau</b>: Ralenteix els meteorits durant uns segons."
+    },
+    "instr_levels_title": {
+        "message": "Nivells i dificultat"
+    },
+    "instr_levels_points": {
+        "message": "Cada 1000 punts puges 1 nivell."
+    },
+    "instr_levels_progression": {
+        "message": "La dificultat augmenta progressivament amb la puntuació."
+    },
+    "instr_lives_title": {
+        "message": "Vides"
+    },
+    "instr_lives_max": {
+        "message": "Màxim 10 vides."
+    },
+    "instr_lives_normal": {
+        "message": "<b>Mode Normal</b>: +1 vida cada 3 minuts."
+    },
+    "instr_lives_fast": {
+        "message": "<b>Mode Ràpid</b>: +1 vida cada 1 minut."
+    },
+    "instr_modes_title": {
+        "message": "Modes de joc"
+    },
+    "instr_modes_normal": {
+        "message": "<b>Normal</b>: Velocitat estàndard."
+    },
+    "instr_modes_fast": {
+        "message": "<b>Ràpid (x3)</b>: Tot va 3 cops més ràpid, però les vides es recarreguen abans."
+    },
+    "instr_modes_zigzag": {
+        "message": "<b>ZigZag</b>: Moviment horitzontal persistent."
+    },
+    "instr_slots_title": {
+        "message": "Slots de Guardat"
+    },
+    "instr_slots_count": {
+        "message": "Pots guardar el progrés en 10 slots diferents."
+    },
+    "instr_slots_pause": {
+        "message": "Des del menú de pausa, pots \"Guardar i Sortir\"."
+    },
+    "instr_slots_death": {
+        "message": "Si mores, la partida guardada a l'slot s'esborrarà."
+    },
+    "instr_slots_load": {
+        "message": "Per carregar, selecciona un slot al menú principal i prem \"Començar\"."
+    },
+    "tut_step1_title": {
+        "message": "Moviment"
+    },
+    "tut_step1_text": {
+        "message": "Fes servir les fletxes per moure't. Compte amb la inèrcia!"
+    },
+    "tut_step2_title": {
+        "message": "☄️ Esquiva Meteorits"
+    },
+    "tut_step2_text": {
+        "message": "Els meteorits cauen des de dalt. Evita'ls! Si et toquen, perdràs una vida."
+    },
+    "tut_step3_title": {
+        "message": "Dispar Automàtic"
+    },
+    "tut_step3_text": {
+        "message": "Mantén premuda la FLETXA AMUNT per carregar i disparar un làser."
+    },
+    "tut_step4_text": {
+        "message": "Verd: Escut | Vermell: Làser | Blau: Ralentir."
+    },
+    "tut_step5_text": {
+        "message": "Si xoques perds una vida. Es recarreguen soles."
+    },
+    "tut_step6_title": {
+        "message": "Drecera"
+    },
+    "tut_step6_text": {
+        "message": "Prem ESPAI per començar o pausar el joc."
+    },
+    "mode_fast_explanation_title": {
+        "message": "MODE RÀPID"
+    },
+    "mode_fast_explanation_text": {
+        "message": "Tot anirà 3 cops més ràpid! Els punts pugen abans i les vides es recarreguen cada minut."
+    },
+    "mode_fast_speed_tag": {
+        "message": "VELOCITAT x3"
+    },
+    "mode_zigzag_explanation_title": {
+        "message": "MODE ZIGZAG"
+    },
+    "mode_zigzag_explanation_text": {
+        "message": "La nau mai s'atura! Prem les fletxes per canviar de direcció."
+    },
+    "mode_zigzag_visual_tag": {
+        "message": "ZIGZAG"
+    },
+    "powerup_shield": {
+        "message": "ESCUT"
+    },
+    "powerup_laser": {
+        "message": "LÀSER"
+    },
+    "powerup_slow": {
+        "message": "SLOW"
+    },
+    "pause_title": {
+        "message": "Pausa"
+    },
+    "pause_desc": {
+        "message": "Prem espai per continuar."
+    },
+    "status_loading": {
+        "message": "Carregant..."
+    },
+    "error_no_lives": {
+        "message": "No tens vides en aquest mode. Espera que es recarreguin."
+    },
+    "submit_success": {
+        "message": "El teu rècord s'ha enviat!"
+    },
+    "status_loading_ranking": {
+        "message": "Carregant top 100..."
+    },
+    "status_error_ranking": {
+        "message": "Error al carregar el rànquing."
+    },
+    "status_error_generic": {
+        "message": "Error al carregar."
+    },
+    "status_no_data": {
+        "message": "Sense dades encara."
+    },
+    "status_no_records": {
+        "message": "Encara no hi ha rècords."
+    },
+    "status_no_world_records": {
+        "message": "Encara no hi ha rècords mundials."
+    },
+    "import_success_title": {
+        "message": "Operació Exitosa"
+    },
+    "import_error_title": {
+        "message": "Error en l'Operació"
+    },
+    "error_import_empty": {
+        "message": "El fitxer CSV està buit o no és vàlid."
+    },
+    "error_import_format": {
+        "message": "Format de fitxer no reconegut."
+    },
+    "error_import_incompatible": {
+        "message": "Format de dades no compatible."
+    },
+    "import_success_msg_slots": {
+        "message": "Dades i slots d'enviament importats correctament."
+    },
+    "import_success_msg": {
+        "message": "Dades importades correctament."
+    },
+    "import_success_note": {
+        "message": "Les vides i la skin actual no es modifiquen."
+    },
+    "error_import_generic": {
+        "message": "Error en importar dades."
+    },
+    "submit_disabled": {
+        "message": "Enviament de rècords desactivat."
+    },
+    "error_submit_fail_record": {
+        "message": "Error en enviar el teu rècord."
+    },
+    "settings_info": {
+        "message": "ℹ️ Informació"
+    },
+    "info_version": {
+        "message": "Versió:"
+    },
+    "info_creator": {
+        "message": "Creat per:"
+    },
+    "info_last_update": {
+        "message": "Última actualització:"
+    },
+    "btn_read_terms": {
+        "message": "Llegir els Termes i condicions"
+    },
+    "btn_read_privacy": {
+        "message": "Llegir la Política de privacitat"
+    },
+    "footer_created_by": {
+        "message": "Creat per Industrias GRM"
+    },
+    "mode_normal_key": {
+        "message": "normal"
+    },
+    "btn_review_rate": {
+        "message": "DEIXAR RESSENYA"
+    },
+    "btn_review_later": {
+        "message": "Ara no puc"
+    },
+    "btn_review_never": {
+        "message": "No em tornis a molestar"
+    },
+    "share_footer": {
+        "message": "Creus que pots superar-ho? Descarrega Asteroid Rush i lluita pel rècord!"
+    },
+    "share_mission_report": {
+        "message": "INFORME DE MISSIÓ FINALITZADA"
+    },
+    "share_total_points": {
+        "message": "PUNTS TOTALS"
+    },
+    "share_rank": {
+        "message": "POSICIÓ"
+    },
+    "review_title": {
+        "message": "T'agrada el joc?"
+    },
+    "review_desc": {
+        "message": "Si estàs gaudint d'Asteroid Rush, si us plau deixa una ressenya. Ens ajuda molt!"
+    },
+    "stat_asteroids": {
+        "message": "Meteorits destruïts"
+    },
+    "stat_powerups": {
+        "message": "Power-ups recollits"
+    },
+    "label_select_slot": {
+        "message": "SELECCIONAR SLOT"
+    },
+    "label_save_quit": {
+        "message": "GUARDAR I SORTIR"
+    },
+    "slot_delete_title": {
+        "message": "Esborrar slot"
+    },
+    "legal_move_left_title": {
+        "message": "Moure a l'esquerra"
+    },
+    "legal_move_right_title": {
+        "message": "Moure a la dreta"
+    },
+    "msg_perfect_run": {
+        "message": "Partida perfecta: sense perdre vides"
+    },
+    "beta_section_title": {
+        "message": "Funcions BETA"
+    },
+    "beta_section_desc": {
+        "message": "Funcions experimentals. Mentres estiguin actives, no podràs enviar puntuacions al rànquing mundial."
+    },
+    "beta_disable": {
+        "message": "Desactivar mode BETA"
+    },
+    "beta_disable_note": {
+        "message": "En desactivar-lo, el rànquing tornarà a funcionar."
+    },
+    "beta_starting_score": {
+        "message": "Començar des de"
+    },
+    "beta_starting_score_note": {
+        "message": "Puntuació inicial en començar la partida (0 = normal)."
+    },
+    "beta_ranking_blocked_note": {
+        "message": "🔒 Rànquing desactivat en mode BETA."
+    },
+    "beta_powerups_master": {
+        "message": "Potenciadors experimentals"
+    },
+    "beta_powerups_desc": {
+        "message": "Activa potenciadors experimentals a la partida. Cadascun es desbloqueja en un nivell."
+    },
+    "beta_powerups_list_title": {
+        "message": "Potenciadors disponibles"
+    },
+    "beta_powerup_extralife": {
+        "message": "Vida extra"
+    },
+    "beta_powerup_bomb": {
+        "message": "Bomba"
+    },
+    "beta_powerup_multilaser": {
+        "message": "Multi-làser"
+    },
+    "beta_powerup_freeze": {
+        "message": "Congelar"
+    },
+    "beta_powerup_doublescore": {
+        "message": "x2 Punts"
+    },
+    "beta_powerup_ghost": {
+        "message": "Fantasma"
+    },
+    "beta_powerup_magnet": {
+        "message": "Imant"
+    },
+    "beta_unlocked_at_level": {
+        "message": "Nivell {n}"
+    },
+    "beta_enabled_toast": {
+        "message": "Has activat les funcions BETA"
+    },
+    "skin_level_1": {
+        "message": "Estàndard"
+    },
+    "skin_level_2": {
+        "message": "Sigilós"
+    },
+    "skin_level_3": {
+        "message": "Caça"
+    },
+    "skin_level_4": {
+        "message": "Destructor"
+    },
+    "skin_part_desc": {
+        "message": "Peça decorativa per a la teva nau"
+    },
+    "skin_hint_available": {
+        "message": "🔒 Disponible a la Botiga 🚀"
+    },
+    "skin_hint_unavailable": {
+        "message": "🔒 No disponible actualment"
+    },
+    "skin_bought": {
+        "message": "✓ Comprada"
+    },
+    "skin_insufficient_coins": {
+        "message": "Skin-coins insuficients"
+    },
+    "skin_insufficient_dust": {
+        "message": "Pols insuficient"
+    },
+    "skin_none_today": {
+        "message": "No hi ha peces disponibles avui. Torna demà."
+    },
+    "skin_already_owned": {
+        "message": "Ja tens aquesta peça"
+    },
+    "skin_bought_format": {
+        "message": "✓ Comprada per {amount} {icon}"
+    },
+    "shop_confirm_title": {
+        "message": "Confirmar compra"
+    },
+    "shop_price_label": {
+        "message": "Preu:"
+    },
+    "shop_sold": {
+        "message": "✓ Comprada"
+    },
+    "shop_not_enough_dust": {
+        "message": "Pols insuficient"
+    },
+    "shop_not_enough_coins": {
+        "message": "Monedes insuficients"
+    },
+    "shop_not_enough_tickets": {
+        "message": "Tickets insuficients"
+    },
+    "shop_not_enough_skincoins": {
+        "message": "Skin-coins insuficients"
+    },
+    "shop_max_purchased": {
+        "message": "Ja adquirit al màxim"
+    },
+    "shop_max_daily": {
+        "message": "Límit diari assolit"
+    },
+    "shop_item_not_found": {
+        "message": "Element no trobat"
+    },
+    "shop_error_default": {
+        "message": "Error"
+    },
+    "currency_coins": {
+        "message": "Monedes"
+    },
+    "currency_tickets": {
+        "message": "Tickets"
+    },
+    "currency_skincoins": {
+        "message": "Skin-coins"
+    },
+    "currency_dust": {
+        "message": "Pols"
+    },
+    "skin_customize": {
+        "message": "Personalitzar"
+    },
+    "skin_look_recent": {
+        "message": "Look recent {n}"
+    },
+    "skin_no_recent_looks": {
+        "message": "Sense looks recents"
+    },
+    "skin_open_customizer": {
+        "message": "Obrir personalització de nau"
+    },
+    "skin_color_unique": {
+        "message": "Color únic"
+    },
+    "skin_coming_soon": {
+        "message": "Més skins\npròximament"
+    },
+    "skin_my_look": {
+        "message": "El Meu Look"
+    },
+    "skin_remove_fav": {
+        "message": "⭐ Treure Favorit"
+    },
+    "skin_mark_fav": {
+        "message": "☆ Marcar com a Favorit"
+    },
+    "exchange_target_title": {
+        "message": "Moneda de destí"
+    },
+    "exchange_lot_title": {
+        "message": "Lot de pols"
+    },
+    "exchange_cost_label": {
+        "message": "Cost"
+    },
+    "exchange_receive_label": {
+        "message": "Rebs"
+    },
+    "exchange_confirm": {
+        "message": "Confirmar canvi"
+    },
+    "exchange_success_format": {
+        "message": "✓ +{amount} {label}"
+    },
+    "exchange_error_no_dust": {
+        "message": "Pols insuficient"
+    },
+    "exchange_error_generic": {
+        "message": "No s'ha pogut convertir"
+    },
+    "exchange_preview_cost_format": {
+        "message": "💨 {amount} pols"
+    },
+    "skin_type_base": {
+        "message": "Base"
+    },
+    "skin_type_cabina": {
+        "message": "Cabina"
+    },
+    "skin_type_alas": {
+        "message": "Ales"
+    },
+    "skin_type_propulsor": {
+        "message": "Propulsor"
+    },
+    "skin_type_montajes": {
+        "message": "Muntatges"
+    },
+    "skin_type_llavero": {
+        "message": "Porter"
+    },
+    "skin_type_creacion": {
+        "message": "Creació"
+    },
+    "skin_type_montaje_singular": {
+        "message": "Muntatge"
+    },
+    "skin_type_creacion_singular": {
+        "message": "Creació"
+    },
+    "skin_llavero_0": {
+        "message": "Asteroid Rush"
+    },
+    "skin_llavero_1": {
+        "message": "Base"
+    },
+    "skin_llavero_2": {
+        "message": "Galàxia"
+    },
+    "skin_llavero_3": {
+        "message": "Mart"
+    },
+    "skin_llavero_4": {
+        "message": "Terra"
+    },
+    "skin_creacion_0": {
+        "message": "Creació 1"
+    },
+    "skin_creacion_1": {
+        "message": "Creació 2"
+    },
+    "skin_creacion_2": {
+        "message": "Creació 3"
+    },
+    "shop_title": {
+        "message": "🛒 Botiga"
+    },
+    "shop_tab_offers": {
+        "message": "🌟 Ofertes"
+    },
+    "skin_panel_title": {
+        "message": "🎨 Personalitzar Nau"
+    },
+    "shop_bought_format_regular": {
+        "message": "✓ Comprada per {amount} {icon}"
+    },
+    "btn_confirm": {
+        "message": "Confirmar"
+    },
+    "btn_top": {
+        "message": "TOP"
+    },
+    "btn_shop": {
+        "message": "BOTIGA"
+    },
+    "ach_viajero_name": {
+        "message": "Viatger"
+    },
+    "ach_viajero_desc": {
+        "message": "Juga 2 hores en partida."
+    },
+    "ach_bounty_name": {
+        "message": "Caça Recompenses"
+    },
+    "ach_bounty_desc": {
+        "message": "Aconsegueix 5 assoliments."
+    },
+    "ach_destructor_name": {
+        "message": "Destructor Estel·lar"
+    },
+    "ach_destructor_desc": {
+        "message": "Destrueix 250 asteroides en total."
+    },
+    "oferton": {
+        "message": "OFERTA"
+    },
+    "username_title": {
+        "message": "Trieu el vostre sobrenom"
+    },
+    "username_desc": {
+        "message": "Serà el vostre nom al rànquing. No el podreu canviar després."
+    },
+    "username_taken": {
+        "message": "Aquest sobrenom ja està en ús."
+    },
+    "username_empty": {
+        "message": "Escriviu un sobrenom."
+    },
+    "username_rank_reward": {
+        "message": "Recompensa #1: skins Or desbloquejades!"
+    },
+    "username_rank_reward2": {
+        "message": "Recompensa #2: skins Plata desbloquejades!"
+    },
+    "username_rank_reward3": {
+        "message": "Recompensa #3: skins Bronze desbloquejades!"
+    },
+    "username_warning": {
+        "message": "⚠ No el podreu canviar després."
+    },
+    "auth_title": {
+        "message": "Compte"
+    },
+    "auth_tab_login": {
+        "message": "Iniciar sessió"
+    },
+    "auth_tab_register": {
+        "message": "Crear compte"
+    },
+    "auth_btn_login": {
+        "message": "Iniciar sessió"
+    },
+    "auth_btn_register": {
+        "message": "Crear compte"
+    },
+    "auth_guest_hint": {
+        "message": "Continuar com a convidat"
+    },
+    "auth_error_fill": {
+        "message": "Omple tots els camps."
+    },
+    "auth_error_invalid": {
+        "message": "Email o contrasenya incorrectes."
+    },
+    "auth_error_password_short": {
+        "message": "La contrasenya ha de tenir almenys 6 caràcters."
+    },
+    "auth_sign_in": {
+        "message": "Iniciar sessió"
+    },
+    "auth_sign_out": {
+        "message": "Tancar sessió"
+    },
+    "auth_account": {
+        "message": "Compte"
+    },
+    "auth_account_desc": {
+        "message": "Els comptes estaran disponibles properament."
+    },
+    "coming_soon": {
+        "message": "Properament"
+    },
+    "nick_assigned_title": {
+        "message": "Pilot assignat"
+    },
+    "astronaut": {
+        "message": "Astronauta"
+    },
+    "nick_assigned_desc": {
+        "message": "Serà el teu identificador al rànquing mundial."
+    },
+    "skin_default": {
+        "message": "Nau per defecte"
+    },
+    "promo_happy_hour": {
+        "message": "🎉 HORA FELIÇ! −60% a tota la botiga"
+    },
+    "promo_notif_title": {
+        "message": "HORA FELITZ!"
+    },
+    "promo_notif_desc": {
+        "message": "−60% a tota la botiga"
+    },
+    "setting_promo_notif": {
+        "message": "Avisar en començar l'hora feliç"
+    },
+    "auth_guest_mode": {
+        "message": "Mode convidat"
+    },
+    "welcome_to": {
+        "message": "BENVINGUT A"
+    },
+    "welcome_how_to_continue": {
+        "message": "Com vols continuar?"
+    },
+    "reward_welcome_desc": {
+        "message": "Has rebut {amount} 💨 de benvinguda!"
+    },
+    "reward_beta_desc": {
+        "message": "Has rebut {amount} 💨 de regal per ser jugador BETA!"
+    },
+    "tut_step7_title": {
+        "message": "🧑‍🚀 El teu Pilot"
+    },
+    "tut_step7_text": {
+        "message": "En acabar el tutorial rebràs un número de pilot aleatori. Serà el teu identificador al rànquing mundial."
+    },
+    "instr_pilot_title": {
+        "message": "Pilot"
+    },
+    "instr_pilot_assign": {
+        "message": "En completar el tutorial se t'assigna un <b>número de pilot aleatori</b> (p. ex. Astronauta 4821). No pots triar-lo, però és el teu identificador únic al rànquing."
+    },
+    "instr_shop_title": {
+        "message": "Botiga"
+    },
+    "instr_shop_currencies": {
+        "message": "Quatre divises: <b>💨 Pols</b>, <b>🪙 Monedes</b>, <b>🎟️ Tickets</b> i <b>🎨 Skin-Coins</b>. S'obtenen jugant o amb recompenses."
+    },
+    "instr_shop_skins": {
+        "message": "La botiga rota diàriament. Pots comprar peces de skins, potenciadors i paquets de pols."
+    },
+    "instr_shop_promo": {
+        "message": "Cada dia de 20:00 a 21:00 hi ha <b>Hora Feliç</b> amb un 60% de descompte a tota la botiga."
+    },
+    "instr_ranking_title": {
+        "message": "Rànquing Mundial"
+    },
+    "instr_ranking_top100": {
+        "message": "El Top 100 mundial s'actualitza en temps real. La teva puntuació es compara amb la de tots els jugadors."
+    },
+    "instr_ranking_submit": {
+        "message": "Les puntuacions s'envien automàticament en finalitzar una partida si ets al Top 100. Pots desactivar-ho a Configuració."
+    },
+    "instr_ranking_skins": {
+        "message": "Si ets al Top 3, desbloquejes skins d'<b>Oro 🥇</b>, <b>Plata 🥈</b> o <b>Bronze 🥉</b> exclusives."
+    },
+    "instr_news_title": {
+        "message": "Notícies"
+    },
+    "instr_news_desc": {
+        "message": "Les notícies es carreguen des del servidor i s'emmagatzemen en memòria cau local."
+    },
+    "shop_max_lives": {
+        "message": "MAX — Vides al màxim"
+    },
+    "shop_max_lives_short": {
+        "message": "MAX"
+    },
+    "lives_max_tooltip": {
+        "message": "Vides al màxim"
+    },
+    "lives_max_tooltip_all": {
+        "message": "Totes les vides al màxim"
+    },
+    "shop_error_max_lives": {
+        "message": "Vides al màxim"
+    },
+    "auth_forgot_password": {
+        "message": "Has oblidat la contrasenya?"
+    },
+    "auth_verify_check": {
+        "message": "Ja he verificat"
+    },
+    "auth_verify_email": {
+        "message": "Verificar email"
+    },
+    "auth_verify_resend": {
+        "message": "Reenviar email"
+    },
+    "beta_slot_warning": {
+        "message": "Aquest slot conté dades del mode BETA. Activa'l a Configuració per jugar aquesta partida."
+    },
+    "btn_powerups": {
+        "message": "Poders"
+    },
+    "btn_retry": {
+        "message": "▶ Tornar a Jugar"
+    },
+    "btn_save": {
+        "message": "💾 Guardar"
+    },
+    "dust_name": {
+        "message": "pols"
+    },
+    "instr_asteroids_title": {
+        "message": "Ast."
+    },
+    "instr_rank_time": {
+        "message": "Temps"
+    },
+    "label_skin": {
+        "message": "NAU"
+    },
+    "lives_shop_title": {
+        "message": "Comprar Vides"
+    },
+    "no_pilot_yet": {
+        "message": "Sense pilot assignat"
+    },
+    "reward_collect": {
+        "message": "Recollir"
+    },
+    "reward_title": {
+        "message": "Recompensa de benvinguda!"
+    },
+    "color_AMARILLO": {
+        "message": "Groc"
+    },
+    "skin_color_AMARILLO": {
+        "message": "Groc"
+    },
+    "color_AZUL": {
+        "message": "Blau"
+    },
+    "skin_color_AZUL": {
+        "message": "Blau"
+    },
+    "color_BLANCO": {
+        "message": "Blanc"
+    },
+    "skin_color_BLANCO": {
+        "message": "Blanc"
+    },
+    "color_CIAN": {
+        "message": "Cian"
+    },
+    "skin_color_CIAN": {
+        "message": "Cian"
+    },
+    "color_LILA": {
+        "message": "Lila"
+    },
+    "skin_color_LILA": {
+        "message": "Lila"
+    },
+    "color_MORADO": {
+        "message": "Morat"
+    },
+    "skin_color_MORADO": {
+        "message": "Morat"
+    },
+    "color_NARANJA": {
+        "message": "Taronja"
+    },
+    "skin_color_NARANJA": {
+        "message": "Taronja"
+    },
+    "color_ROJO": {
+        "message": "Vermell"
+    },
+    "skin_color_ROJO": {
+        "message": "Vermell"
+    },
+    "color_ROSA": {
+        "message": "Rosa"
+    },
+    "skin_color_ROSA": {
+        "message": "Rosa"
+    },
+    "color_VERDE": {
+        "message": "Verd"
+    },
+    "skin_color_VERDE": {
+        "message": "Verd"
+    },
+    "color_ORO": {
+        "message": "Or"
+    },
+    "skin_color_ORO": {
+        "message": "Or"
+    },
+    "color_PLATA": {
+        "message": "Plata"
+    },
+    "skin_color_PLATA": {
+        "message": "Plata"
+    },
+    "color_BRONCE": {
+        "message": "Bronze"
+    },
+    "skin_color_BRONCE": {
+        "message": "Bronze"
+    },
+    "reward_beta_llavero_title": {
+        "message": "Recompensa Beta!"
+    },
+    "reward_beta_llavero_desc": {
+        "message": "Tenies les 10 naus de la Beta! Has rebut el clauer Asteroid Rush."
+    },
+    "reward_mars_llavero_title": {
+        "message": "Missió Mart Completada!"
+    },
+    "reward_mars_llavero_desc": {
+        "message": "Has arribat a Mart en els 3 modes! Has rebut el clauer de Mart."
+    },
+    "ach_mars_trio_name": {
+        "message": "Trio de Mart"
+    },
+    "ach_mars_trio_desc": {
+        "message": "Arriba a Mart en els 3 modes de joc."
+    },
+    "shop_agotado": {
+        "message": "Esgotat"
+    },
+    "tut_hint_meteor": {
+        "message": "☄️ Meteorit!"
+    },
+    "tut_hint_dodge_right": {
+        "message": "Prem → per esquivar"
+    },
+    "tut_hint_another": {
+        "message": "☄️ Un altre!"
+    },
+    "tut_hint_dodge_left": {
+        "message": "Ara ←"
+    },
+    "tut_hint_good_controls": {
+        "message": "Bons controls!"
+    },
+    "tut_hint_try_laser": {
+        "message": "Prova el làser"
+    },
+    "tut_hint_shield_intro": {
+        "message": "🛡️ ESCUT: protegeix 30s — Nivell 1 (des de l'inici)"
+    },
+    "tut_hint_shield_active": {
+        "message": "🛡️ Escut actiu!"
+    },
+    "tut_hint_laser_intro": {
+        "message": "🔫 LÀSER: destrueix en línia — Nivell 10"
+    },
+    "tut_hint_laser_ready": {
+        "message": "🔫 Làser llest! Mantín ↑"
+    },
+    "tut_hint_slow_intro": {
+        "message": "❄️ RALENTIR: tot va lent — Nivell 50"
+    },
+    "tut_hint_well_done": {
+        "message": "👏 Ben fet! Ara tot sol"
+    },
+    "tut_pause_finish": {
+        "message": "FINALITZAR"
+    },
+    "tut_pause_finish_title": {
+        "message": "Finalitzar tutorial"
+    },
+    "tut_complete_title": {
+        "message": "Tutorial complet!"
+    },
+    "tut_complete_desc": {
+        "message": "Has après els controls bàsics.<br>Ara el sistema solar és teu!"
+    },
+    "tut_hit_title": {
+        "message": "T'han donat!"
+    },
+    "tut_hit_desc": {
+        "message": "Has xocat durant el tutorial.<br>Vols tornar-ho a provar?"
+    },
+    "tut_continue_anyway": {
+        "message": "Continuar igualment"
+    },
+    "super_offer_badge": {
+        "message": "🔥 OFERTA 🔥"
+    },
+    "super_offer_title": {
+        "message": "OFERTA EXCLUSIVA!"
+    },
+    "super_offer_subtitle": {
+        "message": "+1 vida per només"
+    },
+    "super_offer_note": {
+        "message": "i juga a l'instant!"
+    },
+    "super_offer_buy": {
+        "message": "⚡ COMPRAR I JUGAR ⚡"
+    },
+    "super_offer_pass": {
+        "message": "Passar"
+    },
+    "setting_dual_mode": {
+        "message": "Mode dual (2 dispositius)"
+    },
+    "setting_dual_mode_desc": {
+        "message": "Sincronització entre dos dispositius amb fusió d'economia i detecció de heartbeat."
+    },
+    "skin_old_reward_desc": {
+        "message": "Tens {count} skin(s) antiga(es). Rep +{reward} 🎨 Skin Coins!"
+    },
+    "btn_no_lives_shop": {
+        "message": "RECARREGANT! COMPRAR VIDES"
+    },
+    "skin_old_reward_title": {
+        "message": "SKINS ANTIGUES"
+    },
+    "error_generic": {
+        "message": "ERROR"
+    },
+    "promo_happy_hour_short": {
+        "message": "Happy Hour!"
+    },
+    "abbr_level": {
+        "message": "Nv."
+    },
+    "terms_updated_title": {
+        "message": "🚀 Termes actualitzats"
+    },
+    "terms_updated_desc": {
+        "message": "Hem actualitzat els Termes i Condicions i la Política de Privacitat. Has d'acceptar-los de nou per continuar."
+    },
+    "btn_reject": {
+        "message": "Rebutjar"
+    },
+    "terms_update_reject_desc": {
+        "message": "Si rebutges, no podràs jugar fins que acceptis. Pots exportar les teves dades locals abans de sortir."
+    }
+}

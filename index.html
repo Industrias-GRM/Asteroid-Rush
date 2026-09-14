@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!--
+  Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
+  index.html — Punto de entrada para modo web.
+  Redirige automáticamente a popup.html en modo fullscreen.
+-->
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asteroid Rush BETA</title>
+  <script>
+    // Si ya estamos en popup.html con fullscreen, no redirigir en bucle
+    if (window.location.pathname.endsWith('index.html')) {
+      window.location.replace('popup.html?fullscreen=true');
+    }
+  </script>
+</head>
+<body>
+  <p data-i18n="status_loading" data-i18n-html="false">Cargando…</p>
+</body>
+</html>

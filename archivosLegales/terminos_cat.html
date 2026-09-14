@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>Termes i Condicions — Asteroid Rush</title>
+  <link rel="stylesheet" href="legal-styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Termes i Condicions d'Ús</h1>
+    <p><strong>Darrera actualització:</strong> 2 de setembre de 2026</p>
+    <p>Benvingut a Asteroid Rush. En instal·lar, obrir o utilitzar aquest programari o la seva extensió de navegador (el "Joc"), acceptes complir i sotmetre't incondicionalment als següents Termes i Condicions d'Ús.</p>
+
+    <h2>1. Programari en Fase BETA i Exclusió de Responsabilitat</h2>
+    <p>Asteroid Rush es troba en <strong>fase BETA (desenvolupament i proves actives)</strong>. En utilitzar el Joc, comprends i acceptes explícitament que:</p>
+    <ul>
+      <li>El programari es proporciona "TAL COM ÉS" ("AS IS"), sense garanties de cap mena per part del desenvolupador.</li>
+      <li>El Joc pot presentar errors, bugs, penjades o incompatibilitats amb el teu navegador o sistema operatiu.</li>
+      <li><strong>El desenvolupador declina tota responsabilitat per pèrdues de dades</strong>, inclosa l'eliminació de progrés, slots de desament, assoliments, skins desbloquejades o saldos de divises virtuals causada per fallides del sistema o actualitzacions.</li>
+      <li>El funcionament dels sistemes en línia (rànquing mundial i notícies) depèn de proveïdors de xarxa externs i pot quedar fora de línia, lent o suspendre's per manteniment sense avís previ.</li>
+      <li>La sincronització horària (utilitzada per a l'<strong>Hora Feliç 20:00–21:00</strong> i promocions temporals) es realitza una vegada al dia mitjançant la capçalera HTTP <code>Date</code> de Google Firestore i es calcula de forma monòtona (<code>serverTime + (performance.now() − syncMono)</code>), per la qual cosa canviar el rellotge local no modifica l'hora del joc. No es transmeten dades personals en aquesta operació; el valor s'emmagatzema exclusivament al vostre dispositiu. Sense sincronització prèvia no hi ha promo activa.</li>
+      <li><strong>Cau de notícies 24h:</strong> Les notícies online es desen a la cau local 24 hores després de l'última sol·licitud al servidor (cooldown de 24h al SW). Passat aquest termini es tornen a sol·licitar; detallat a Privacitat, aquí a títol informatiu.</li>
+      <li>El sistema de comptes d'usuari està actualment <strong>desactivat ("Properament")</strong>. La sincronització del progrés entre dispositius no està disponible en aquesta versió.</li>
+    </ul>
+
+    <h2>2. Llicència d'Ús del Client (MIT)</h2>
+    <p>El codi client d'Asteroid Rush es distribueix sota els termes de la Llicència MIT. Es concedeix permís gratuït per usar, modificar, fusionar i distribuir el programari client sota les seves condicions generals d'atribució. Pots consultar el text complet a <a href="https://mit-license.org/" target="_blank" style="color: #00bcd4;">https://mit-license.org/</a>. Aquesta llicència de codi obert no empara l'abús de les nostres API, l'accés no autoritzat als servidors al núvol ni l'alteració fraudulenta del rànquing global.</p>
+
+    <h2>3. Emmagatzematge Local de Dades</h2>
+    <p>El joc utilitza la tecnologia <code>LocalStorage</code> del navegador per desar el teu progrés (skins, vides, rècords personals, configuració i slots de desament) localment al teu dispositiu. Aquestes dades són responsabilitat de l'usuari; si buides la memòria cau del navegador, desinstal·les l'extensió o utilitzes el mode de navegació privada/incògnit, el progrés local es perdrà permanentment sense possibilitat de recuperació.</p>
+
+    <h2>4. Àlies de Pilot Automàtic</h2>
+    <ul>
+      <li><strong>Assignació Aleatòria:</strong> El Joc assigna automàticament a cada instal·lació un àlies de pilot aleatori (per exemple, "Astronauta4821") generat localment al teu navegador. L'àlies no és elegible ni personalitzable en aquesta versió i no forma part de cap compte d'usuari.</li>
+      <li><strong>Migració:</strong> Si provens d'una versió anterior en què vas triar un àlies, aquest es conserva com a identitat de pilot.</li>
+      <li><strong>Suport d'Instància Única:</strong> Per prevenir fallides i assegurar la integritat de les dades locals, el Joc inclou un sistema de comunicació de canal únic (BroadcastChannel). Si obres el Joc en una finestra o pestanya nova del navegador, la instància activa anterior es tancarà automàticament de manera obligatòria. Qualsevol partida en curs sense desar en slot es perdrà en tancar-se la instància anterior.</li>
+    </ul>
+
+    <h2>5. Conducta de l'Usuari i Ús de l'API</h2>
+    <div class="api-notice">
+       <p><strong>⚠️ Avís de Seguretat: Clau API</strong><br>
+       La clau API inclosa al codi font té com a única finalitat permetre la comunicació legítima entre el joc i el servidor de classificació. Està <strong>terminantment prohibit</strong> extreure, compartir o utilitzar aquesta clau en scripts, aplicacions o projectes de tercers. Qualsevol abús detectat comportarà el bloqueig de l'accés. En estar embeguda al client, no s'ha de considerar secreta; la seva exposició no implica autorització per a ús extern.</p>
+    </div>
+    <p>Acceptes no utilitzar el Joc per a:</p>
+    <ul>
+      <li>Extreure, manipular o utilitzar la clau API de l'extensió per a fins diferents del funcionament normal del joc.</li>
+      <li>Utilitzar trampes (cheats), exploits, bots o qualsevol programari de tercers per modificar o automatitzar l'experiència de joc.</li>
+      <li>Sobreescriure maliciosament les entrades del rànquing manipulant les dades emmagatzemades localment.</li>
+      <li>Intentar interrompre o sobrecarregar els servidors del rànquing o del núvol.</li>
+    </ul>
+    <p>Nosaltres ens reservem el dret, a la nostra entera discreció, d'<strong>eliminar qualsevol puntuació</strong> del rànquing que considerem inapropiada o fraudulenta, prèvia verificació tècnica.</p>
+
+    <h2>6. Economia Virtual, Tenda i Inventari Cosmètic</h2>
+    <p>El Joc integra una economia virtual amb divises de joc que s'obtenen jugant o mitjançant recompenses (Pols 💨, Monedes 🪙, Entrades 🎟️ i Skin-Coins 🎨):</p>
+    <ul>
+      <li><strong>Sense Valor Monetari:</strong> Els saldos virtuals, els assoliments i els inventaris cosmètics manquen de tot valor econòmic real. No són propietat de l'usuari, no es poden comprar amb diners de veritat, no es poden canviar per divises legals i no es poden comercialitzar ni transferir a altres jugadors de cap manera. El joc és d'accés gratuït.</li>
+      <li><strong>Transaccions Irreversibles:</strong> Qualsevol intercanvi de divises virtuals (intercanvi 💱) o compra de cosmètics i paquets a la Tenda Rotativa Diària és final, irrevocable i irreversible dins del sistema.</li>
+      <li><strong>Límits client-side:</strong> Els límits de compra (`lifetimeBuys`, `dailyBuysMin/Max`, `hourlyLimit`) es controlen localment al teu dispositiu (`localStorage`) i són manipulables tècnicament; no constitueixen una garantia contractual ni control d'accés al servidor.</li>
+      <li><strong>Reorganització i Ajustos d'Inventari:</strong> El desenvolupador es reserva el dret de modificar, retirar, reestructurar o eliminar peces de skins, clauerers, creacions o muntatges del catàleg en qualsevol moment. Davant canvis importants d'inventari, el desenvolupador podrà, de manera discrecional i informal, proporcionar compensacions automàtiques en monedes virtuals de joc als jugadors afectats (com l'assignació de monedes cosmètiques per la pèrdua de models antics), sense que això constitueixi en cap cas una obligació de reemborsament financer o de cap altra índole.</li>
+      <li><strong>Skins de Rang (Or/Plata/Bronze):</strong> Aquests cosmètics exclusius estan vinculats directament a la teva posició activa en temps real dins de les tres primeres places del Top 100 mundial. En cas que un altre jugador superi la teva puntuació i caiguis d'aquest llindar, el Joc revocarà el teu accés tècnic a aquests elements de forma immediata.</li>
+      <li><strong>Hora Feliç (−60%):</strong> Cada dia de 20:00 a 21:00 (hora real del servidor) tota la botiga aplica un descompte automàtic del 60% sobre el preu base. La finestra es verifica amb l'hora monòtona de servidor descrita a §1 i no és manipulable localment. La notificació opcional és configurable a <strong>Configuració → Notificacions de promo</strong> i es mostra com a màxim una vegada al dia.</li>
+    </ul>
+
+    <h2>7. Mecàniques de Joc</h2>
+    <ul>
+      <li><strong>Permamuerte en Slots de Desament:</strong> Disposes de 10 slots per desar partides de forma manual o automàtica. L'autodesament passa cada 5 segons de forma silenciosa. Per disseny i mecànica de joc, si la teva nau és destruïda durant una partida en curs, <strong>el slot desat associat s'eliminarà de forma automàtica i irreversible</strong>.</li>
+      <li><strong>Diplomes de Vol:</strong> El certificat i el diploma de missió es generen de forma local utilitzant processament gràfic de Canvas al teu navegador. El desament i compartició de la imatge resultant s'executen de manera local i mitjançant les funcions natives del sistema operatiu del teu dispositiu (Web Share API).</li>
+      <li><strong>Regeneració automàtica de vides:</strong> Les vides es regeneren automàticament amb el temps, fins i tot amb el joc tancat, fins a un màxim de 10. Interval: 5 minuts en mode Normal i Zigzag, 2 minuts en mode Ràpid. El temps offline s'acumula i es calcula en reobrir el joc. També pots reposar vides instantàniament a la Botiga amb divises virtuals.</li>
+      <li><strong>Exportació portable:</strong> El fitxer <code>.csv</code> de còpia de seguretat està xifrat amb AES-GCM i és portable entre instal·lacions; no conté ni restaura el teu àlies de pilot, que roman local i aleatori per instal·lació.</li>
+    </ul>
+
+    <h2>8. Funcions Experimentals (Mode BETA)</h2>
+    <p>En activar el menú ocult de proves o Mode BETA, acceptes que:</p>
+    <ul>
+      <li>El Joc habilitarà potenciadors no equilibrats i opcions de depuració.</li>
+      <li>Per mantenir l'equitat i la neteja competitiva, <strong>l'enviament de rècords i puntuacions al Rànquing Mundial quedarà completament bloquejat</strong> mentre el Mode BETA estigui actiu. La teva puntuació no es pujarà de cap manera al Top 100 mundial.</li>
+    </ul>
+
+    <h2>9. Advertència de Salut: Fotosensibilitat i Epilèpsia</h2>
+    <div class="api-notice">
+       <p><strong>⚠️ AVÍS DE SALUT CRÍTIC — LLEGIR ABANS DE JUGAR:</strong><br>
+       Un percentatge de la població pot experimentar convulsions o desmais en exposar-se a certs estímuls visuals, com flaixos, llums parpellejants, explosions o sacsejades ràpides de pantalla (<em>screen shake</em>), fins i tot sense antecedents mèdics d'epilèpsia.</p>
+       <p>Si experimentes marejos, visió alterada, desorientació, espasmes oculars o pèrdua de coneixement, <strong>interromp immediatament el joc</strong> i consulta un metge. El desenvolupador declina tota responsabilitat per problemes de salut derivats de l'omissió d'aquest avís. Et recomanem activar el <strong>"Mode Segur"</strong> i apagar els <strong>"Efectes de llum"</strong> al panell d'Ajustos per mitigar aquests efectes visuals.</p>
+    </div>
+
+    <h2>10. Dades del Rànquing Mundial i Permanència de Règims</h2>
+    <p>Quan envies una puntuació al Top 100 mundial, s'emmagatzemen i són públicament visibles les dades següents:</p>
+    <ul>
+      <li><strong>Àlies de pilot:</strong> Assignat aleatòriament pel joc (públic)</li>
+      <li><strong>Puntuació:</strong> La teva puntuació final en punts (pública)</li>
+      <li><strong>Mode de joc:</strong> Normal, Ràpid o Swingcopter (implícit a la taula)</li>
+      <li><strong>Durada de la partida:</strong> Temps de supervivència (públic, usat per a verificació anti-trampes)</li>
+      <li><strong>Estadístiques agregades de vol:</strong> Meteorits destruïts i potenciadors recollits (públic)</li>
+    </ul>
+    <p>Internament, el sistema emmagatzema addicionalment els camps tècnics <code>score_actual</code> i <code>tiempo</code> a Firestore per a validació anti-trampes (comprovació matemàtica entre puntuació i durada). No es publiquen dades personals, adreces electròniques ni identificadors de compte. Les puntuacions romanen al rànquing mentre siguin dins del seu Top 100; tanmateix, pots sol·licitar en qualsevol moment la supressió o correcció d'una puntuació associada a la teva instal·lació escrivint al correu de contacte indicat en aquests Termes.</p>
+
+    <h2>11. Control de Privacitat i Gestió de Dades</h2>
+    <ul>
+      <li><strong>Desactivar el Rànquing:</strong> Pots desactivar l'enviament de puntuacions al rànquing mundial en qualsevol moment des de <strong>Configuració → Privacitat</strong>. Si ho desactives, no s'enviaran puntuacions i el joc seguirà en local, però continuarà fent peticions HTTPS per a notícies i sincronització horària i exposarà tècnicament la teva IP a Google.</li>
+      <li><strong>Exportar:</strong> Pots descarregar un fitxer <code>.csv</code> xifrat (AES-GCM, clau portable) amb una còpia de seguretat del teu progrés local i slots de desament des de Configuració. El fitxer és portable entre dispositius/navegadors i <strong>no inclou el teu àlies de pilot</strong>.</li>
+      <li><strong>Importar:</strong> Pots restaurar dades des d'un fitxer exportat prèviament.</li>
+      <li><strong>Esborrar Dades Locals:</strong> Pots eliminar totes les teves dades locals —incloses les puntuacions del rànquing mundial en tots els modes— en qualsevol moment des de Configuració. Aquesta acció esborra el teu progrés local i elimina automàticament les teves entrades del Top 100; és irreversible tant a nivell local com al rànquing.</li>
+    </ul>
+
+    <h2>12. Edat Mínima</h2>
+    <p>Has de tenir almenys <strong>14 anys</strong>, o l'edat mínima requerida per la legislació del teu país per utilitzar serveis digitals d'aquest tipus, si és superior.</p>
+
+    <h2>13. Modificacions dels Termes</h2>
+    <p>Podem modificar aquests Termes publicant la versió actualitzada en aquesta pàgina amb la seva data d'última actualització i vigència. Per a canvis substancials (que afectin drets, economia virtual, rànquing o privacitat) ho comunicarem amb antelació raonable mitjançant avís al joc i/o secció de notícies. L'ús continuat després de l'entrada en vigor implica acceptació; si no acceptes, has de cessar l'ús i podràs sol·licitar la supressió de les teves puntuacions. Quan el RGPD exigeixi nou consentiment, el sol·licitarem de forma renovada.</p>
+
+    <h2>14. Llei Aplicable i Jurisdicció</h2>
+    <p>Aquests Termes es regeixen i interpreten sota les lleis espanyoles, inclòs el Reglament (UE) 2016/679 (RGPD) i la Llei Orgànica 3/2018 (LOPDGDD).</p>
+    <p><strong>Consumidors:</strong> si actues com a consumidor, no perds el fur imperatiu del teu domicili; la submissió exclusiva al domicili del titular no t'és oposable. <strong>Professionals/empreses:</strong> si actues com a professional, les parts se sotmeten expressament als Jutjats i Tribunals del domicili del titular (Espanya), amb renúncia a qualsevol altre fur.</p>
+
+    <h2>15. Responsable i Contacte</h2>
+    <p><strong>Titular:</strong> desenvolupador particular sota el pseudònim <strong>“Industrias GRM”</strong> (nom comercial / nick, no societat mercantil). No existeix NIF/CIF empresarial. A efectes de RGPD i LSSICE art.10, el prestador és la persona física titular del projecte.</p>
+    <p>Si tens alguna pregunta sobre aquests Termes, o desitges exercir els teus drets legals (resposta màx. 1 mes, prorrogable 2 mesos amb avís), contacta'ns a:</p>
+    <p>📧 <strong>Email:</strong> asteroidrushoficial@gmail.com</p>
+
+    <h2>16. Idioma Oficial</h2>
+    <p><em>En cas de qualsevol discrepància, conflicte o dubte d'interpretació entre la versió espanyola i les traduccions a altres idiomes dels presents Termes i Condicions, <strong>prevaldrà la versió espanyola</strong> i serà l'única legalment vinculant per a tots els propòsits, incloent-hi procediments judicials i administratius.</em></p>
+
+    <div class="copyright">
+      <p>&copy; 2026 Industrias GRM. El codi d'Asteroid Rush es distribueix sota <a href="https://mit-license.org/" target="_blank">llicència MIT</a>. La denominació comercial &ldquo;Industrias GRM&rdquo; i el seu logotip són propietat del desenvolupador. Se'n prohibeix l'ús no autoritzat.</p>
+    </div>
+
+  </div>
+</body>
+</html>

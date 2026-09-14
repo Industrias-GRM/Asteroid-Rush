@@ -1,0 +1,1442 @@
+{
+    "app_title": {
+        "message": "ASTEROID RUSH"
+    },
+    "app_header": {
+        "message": "ASTEROID RUSH"
+    },
+    "btn_fullscreen_title": {
+        "message": "全画面表示"
+    },
+    "btn_settings_title": {
+        "message": "設定"
+    },
+    "btn_instructions": {
+        "message": "📖 遊び方"
+    },
+    "btn_skip": {
+        "message": "⏩ スキップ"
+    },
+    "btn_skip_tutorial_title": {
+        "message": "チュートリアルをスキップ"
+    },
+    "tutorial_welcome_title": {
+        "message": "ようこそ"
+    },
+    "tutorial_loading": {
+        "message": "読み込み中..."
+    },
+    "btn_next": {
+        "message": "次へ"
+    },
+    "legal_title": {
+        "message": "🚀 セキュリティプロトコル"
+    },
+    "legal_desc": {
+        "message": "離陸する前に、銀河の規約に同意してください："
+    },
+    "legal_terms_check": {
+        "message": "利用規約に同意する"
+    },
+    "btn_read": {
+        "message": "読む"
+    },
+    "legal_privacy_check": {
+        "message": "プライバシーポリシーに同意する"
+    },
+    "btn_accept_continue": {
+        "message": "同意して続行"
+    },
+    "confirm_delete_title": {
+        "message": "データを削除しますか？"
+    },
+    "confirm_delete_desc_1": {
+        "message": "記録、スキン、ライフが失われます。この操作は取り消せません。"
+    },
+    "confirm_delete_desc_2": {
+        "message": "注：サーバー上の記録は削除されません"
+    },
+    "btn_delete_all": {
+        "message": "すべて削除"
+    },
+    "btn_cancel": {
+        "message": "キャンセル"
+    },
+    "new_record_title": {
+        "message": "🏆 新記録！"
+    },
+    "new_record_desc": {
+        "message": "世界トップ100に入りました。名前を入力してください："
+    },
+    "new_record_warning": {
+        "message": "⚠️ 本名を使用しないでください。"
+    },
+    "error_name_empty": {
+        "message": "⚠️ 名前を入力してください"
+    },
+    "input_nickname_placeholder": {
+        "message": "ニックネーム..."
+    },
+    "btn_submit": {
+        "message": "送信"
+    },
+    "import_status_title": {
+        "message": "操作ステータス"
+    },
+    "btn_understood": {
+        "message": "了解"
+    },
+    "save_game_title": {
+        "message": "ゲームを保存"
+    },
+    "btn_no_slot": {
+        "message": "スロットなし"
+    },
+    "btn_close": {
+        "message": "閉じる"
+    },
+    "mars_mission_success_title": {
+        "message": "🚩 ミッション完了"
+    },
+    "mars_mission_success_desc": {
+        "message": "火星の表面に到達しました。"
+    },
+    "btn_mars_takeoff": {
+        "message": "🚀 離陸して続行"
+    },
+    "btn_mars_finish": {
+        "message": "🏁 ミッション終了"
+    },
+    "hud_level": {
+        "message": "レベル 1"
+    },
+    "hud_level_prefix": {
+        "message": "レベル"
+    },
+    "btn_mute_title": {
+        "message": "サウンドを消音"
+    },
+    "btn_pause_label": {
+        "message": "⏸️一時停止"
+    },
+    "btn_pause_title": {
+        "message": "ゲームを一時停止"
+    },
+    "btn_skip_label": {
+        "message": "⏩スキップ"
+    },
+    "btn_skip_title": {
+        "message": "アニメーションをスキップ"
+    },
+    "overlay_main_title": {
+        "message": "ASTEROID RUSH"
+    },
+    "overlay_main_desc": {
+        "message": "隕石を避け、パワーアップを使い、グローバルトップを目指せ"
+    },
+    "overlay_mode_fast": {
+        "message": "モード：高速"
+    },
+    "overlay_mode_normal": {
+        "message": "モード：通常"
+    },
+    "overlay_mode_zigzag": {
+        "message": "モード：ジグザグ"
+    },
+    "btn_continue": {
+        "message": "▶️ 続行"
+    },
+    "overlay_mode_info": {
+        "message": "モード：通常"
+    },
+    "btn_start": {
+        "message": "▶ 開始"
+    },
+    "mode_normal": {
+        "message": "通常モード"
+    },
+    "mode_fast": {
+        "message": "高速モード"
+    },
+    "mode_zigzag": {
+        "message": "ジグザグモード"
+    },
+    "btn_save_quit": {
+        "message": "💾 保存して終了"
+    },
+    "btn_finish": {
+        "message": "☠️ 終了"
+    },
+    "world_record_header": {
+        "message": "🌐 世界記録"
+    },
+    "world_record_loading": {
+        "message": "読み込み中..."
+    },
+    "btn_view_top100": {
+        "message": "世界トップ100を見る"
+    },
+    "mode_normal_short": {
+        "message": "通常"
+    },
+    "mode_fast_short": {
+        "message": "高速"
+    },
+    "mode_zigzag_short": {
+        "message": "ジグザグ"
+    },
+    "btn_achievements": {
+        "message": "実績"
+    },
+    "btn_news": {
+        "message": "お知らせ"
+    },
+    "news_title": {
+        "message": "お知らせ"
+    },
+    "achievements_title": {
+        "message": "銀河の実績"
+    },
+    "ach_first_steps_name": {
+        "message": "最初の一歩"
+    },
+    "ach_first_steps_desc": {
+        "message": "初めてプレイする。"
+    },
+    "ach_explorer_name": {
+        "message": "エクスプローラー"
+    },
+    "ach_explorer_desc": {
+        "message": "全モードで5,000ポイントに到達する。"
+    },
+    "ach_bronze_name": {
+        "message": "銅メダル"
+    },
+    "ach_bronze_desc": {
+        "message": "10,000ポイント獲得。"
+    },
+    "ach_silver_name": {
+        "message": "銀メダル"
+    },
+    "ach_silver_desc": {
+        "message": "100,000ポイント獲得。"
+    },
+    "ach_gold_name": {
+        "message": "金メダル"
+    },
+    "ach_gold_desc": {
+        "message": "150,000ポイント獲得。"
+    },
+    "ach_galactic_legend_name": {
+        "message": "銀河の伝説"
+    },
+    "ach_galactic_legend_desc": {
+        "message": "500,000ポイントに到達。"
+    },
+    "ach_impossible_name": {
+        "message": "インポッシブル"
+    },
+    "ach_impossible_desc": {
+        "message": "制作者の期待を超えろ：1,000,000ポイント！"
+    },
+    "ach_mars_hero_name": {
+        "message": "火星の英雄"
+    },
+    "ach_mars_hero_desc": {
+        "message": "火星ミッション完了（250,000ポイント到達と着陸）。"
+    },
+    "ach_all_skins_name": {
+        "message": "ハンガーコンプリート"
+    },
+    "ach_all_skins_desc": {
+        "message": "10種類のスキンをすべてアンロック。"
+    },
+    "ach_iron_pilot_name": {
+        "message": "アイアンパイロット"
+    },
+    "ach_iron_pilot_desc": {
+        "message": "パワーアップを取らずにレベル25に到達。"
+    },
+    "ach_asteroid_buster_name": {
+        "message": "アステロイド・バスター"
+    },
+    "ach_asteroid_buster_desc": {
+        "message": "1ランで50個の隕石を破壊。"
+    },
+    "ach_pacifist_name": {
+        "message": "平和主義者"
+    },
+    "ach_pacifist_desc": {
+        "message": "一度も射撃せずにレベル25に到達。"
+    },
+    "ach_fast_elite_name": {
+        "message": "スピード・デーモン"
+    },
+    "ach_fast_elite_desc": {
+        "message": "高速モードで100,000ポイントに到達。"
+    },
+    "ach_zigzag_pro_name": {
+        "message": "ジグザグ・プロ"
+    },
+    "ach_zigzag_pro_desc": {
+        "message": "ジグザグモードで100,000ポイント獲得。"
+    },
+    "settings_title": {
+        "message": "設定"
+    },
+    "settings_gameplay": {
+        "message": "🎮 ゲームプレイ"
+    },
+    "settings_gameplay_desc": {
+        "message": "起動時の動作を調整します。"
+    },
+    "setting_remember_mode": {
+        "message": "最後にプレイしたモードを記憶"
+    },
+    "setting_language": {
+        "message": "言語"
+    },
+    "setting_show_fps": {
+        "message": "FPSを表示（高度な設定）"
+    },
+    "settings_controls": {
+        "message": "🕹️ コントロール"
+    },
+    "settings_controls_desc": {
+        "message": "操作とタッチパネルの設定。"
+    },
+    "setting_touch_controls": {
+        "message": "タッチコントロールを有効にする"
+    },
+    "settings_graphics": {
+        "message": "🎛️ グラフィック設定"
+    },
+    "settings_graphics_desc": {
+        "message": "品質とパフォーマンスのバランスを調整。"
+    },
+    "setting_smooth_animations": {
+        "message": "スムーズなアニメーション"
+    },
+    "setting_light_effects": {
+        "message": "光源と光彩のエフェクト"
+    },
+    "setting_safe_mode": {
+        "message": "強いフラッシュを軽減"
+    },
+    "setting_show_hitboxes": {
+        "message": "ヒットボックスを表示 (Debug)"
+    },
+    "settings_sound": {
+        "message": "🔊 サウンド"
+    },
+    "settings_sound_desc": {
+        "message": "音楽と効果音の設定。"
+    },
+    "setting_sound_enabled": {
+        "message": "サウンド有効"
+    },
+    "setting_music_enabled": {
+        "message": "BGM"
+    },
+    "setting_sfx_enabled": {
+        "message": "効果音"
+    },
+    "settings_privacy": {
+        "message": "🔐 プライバシーとデータ"
+    },
+    "settings_privacy_desc": {
+        "message": "スコア送信とデータ管理の設定。"
+    },
+    "setting_send_scores": {
+        "message": "世界ランキングにスコアを送信"
+    },
+    "setting_send_scores_note": {
+        "message": "⚠️ 無効にすると、世界トップ100に乗りません。"
+    },
+    "settings_backup_title": {
+        "message": "バックアップ"
+    },
+    "btn_export": {
+        "message": "⭳ データをエクスポート"
+    },
+    "btn_import": {
+        "message": "⭱ データをインポート"
+    },
+    "settings_backup_desc": {
+        "message": "ローカルデータをCSVに書き出すか、読み込みます。"
+    },
+    "settings_reset_title": {
+        "message": "進行状況をリセット"
+    },
+    "btn_delete_local": {
+        "message": "🗑️ ローカルデータをすべて削除"
+    },
+    "settings_reset_desc": {
+        "message": "この操作は取り消せません。ランキングの記録は消えません。"
+    },
+    "msg_game_saved": {
+        "message": "ゲームを保存しました："
+    },
+    "msg_come_back": {
+        "message": "また会いましょう。"
+    },
+    "msg_score_saved_local": {
+        "message": "💾 スコアはローカルに保存されましたが、ランキングには送信されませんでした。"
+    },
+    "msg_skins_unlocked": {
+        "message": "新しいスキンをアンロックしました！"
+    },
+    "msg_points_obtained_prefix": {
+        "message": "獲得スコア："
+    },
+    "msg_try_again": {
+        "message": "もう一度挑戦してください。"
+    },
+    "msg_game_completed": {
+        "message": "ゲームクリア"
+    },
+    "msg_game_over": {
+        "message": "ゲームオーバー！"
+    },
+    "label_slot": {
+        "message": "スロット"
+    },
+    "label_empty": {
+        "message": "空き"
+    },
+    "label_anonymous": {
+        "message": "名無し"
+    },
+    "label_no_new_record": {
+        "message": "スコアが自己ベストを超えていません。"
+    },
+    "label_go": {
+        "message": "GO!"
+    },
+    "label_initial_skin": {
+        "message": "初期スキン"
+    },
+    "label_unlock_prefix": {
+        "message": "解放条件"
+    },
+    "label_pts": {
+        "message": "pts"
+    },
+    "btn_delete_slot_title": {
+        "message": "スロット削除"
+    },
+    "btn_fly": {
+        "message": "離陸！"
+    },
+    "ranking_title_prefix": {
+        "message": "世界トップ"
+    },
+    "table_header_name": {
+        "message": "名前"
+    },
+    "table_header_score": {
+        "message": "スコア"
+    },
+    "ranking_position_label": {
+        "message": "順位"
+    },
+    "leaderboard_top100_title": {
+        "message": "世界トップ100"
+    },
+    "instructions_title": {
+        "message": "遊び方"
+    },
+    "instr_controls_title": {
+        "message": "操作方法"
+    },
+    "instr_controls_move": {
+        "message": "<kbd>←</kbd> / <kbd>→</kbd> で移動。"
+    },
+    "instr_controls_shoot": {
+        "message": "<kbd>↑</kbd> 長押しでオートレーザーをチャージ・発射。"
+    },
+    "instr_controls_pause": {
+        "message": "一時停止：<kbd>スペース</kbd>。"
+    },
+    "instr_objective_title": {
+        "message": "目的"
+    },
+    "instr_objective_dodging": {
+        "message": "隕石を避けて生き残り、スコアを伸ばしましょう。"
+    },
+    "instr_objective_laser": {
+        "message": "レーザーは道を切り開きますが、ボーナス点はありません。"
+    },
+    "instr_objective_mars": {
+        "message": "250,000ポイントに到達して火星ミッションを完了せよ！"
+    },
+    "instr_powerups_title": {
+        "message": "パワーアップ"
+    },
+    "instr_powerups_shield": {
+        "message": "<b>緑</b>：シールド（30秒間完全保護）。"
+    },
+    "instr_powerups_laser": {
+        "message": "<b>赤</b>：スーパーレーザー（2秒間、直線のすべてを破壊）。"
+    },
+    "instr_powerups_slow": {
+        "message": "<b>青</b>：数秒間、隕石をスローにします。"
+    },
+    "instr_levels_title": {
+        "message": "レベルと難易度"
+    },
+    "instr_levels_points": {
+        "message": "1000ポイントごとに1レベル上がります。"
+    },
+    "instr_levels_progression": {
+        "message": "スコアに応じて難易度が上がります。"
+    },
+    "instr_lives_title": {
+        "message": "ライフ"
+    },
+    "instr_lives_max": {
+        "message": "最大10ライフ。"
+    },
+    "instr_lives_normal": {
+        "message": "<b>通常モード</b>：3分ごとに1回復。"
+    },
+    "instr_lives_fast": {
+        "message": "<b>高速モード</b>：1分ごとに1回復。"
+    },
+    "instr_modes_title": {
+        "message": "ゲームモード"
+    },
+    "instr_modes_normal": {
+        "message": "<b>通常</b>：標準的な速度。"
+    },
+    "instr_modes_fast": {
+        "message": "<b>高速 (x3)</b>：すべてが3倍速ですが、ライフの回復も早いです。"
+    },
+    "instr_modes_zigzag": {
+        "message": "<b>ジグザグ</b>：持続的な水平移動。"
+    },
+    "instr_slots_title": {
+        "message": "セーブスロット"
+    },
+    "instr_slots_count": {
+        "message": "10個のスロットに保存できます。"
+    },
+    "instr_slots_pause": {
+        "message": "ポーズメニューから「保存して終了」が可能です。"
+    },
+    "instr_slots_death": {
+        "message": "ミスすると、そのスロットのセーブデータは削除されます。"
+    },
+    "instr_slots_load": {
+        "message": "メインメニューでスロットを選び「開始」でロードします。"
+    },
+    "tut_step1_title": {
+        "message": "移動"
+    },
+    "tut_step1_text": {
+        "message": "矢印キーで移動します。慣性に注意！"
+    },
+    "tut_step2_title": {
+        "message": "☄️ 隕石回避"
+    },
+    "tut_step2_text": {
+        "message": "上から隕石が降ってきます。避けましょう！当たるとライフを失います。"
+    },
+    "tut_step3_title": {
+        "message": "オートショット"
+    },
+    "tut_step3_text": {
+        "message": "上キーを長押ししてチャージし、レーザーを発射します。"
+    },
+    "tut_step4_text": {
+        "message": "緑：シールド | 赤：レーザー | 青：スロー"
+    },
+    "tut_step5_text": {
+        "message": "衝突するとライフを失います。時間で回復します。"
+    },
+    "tut_step6_title": {
+        "message": "ショートカット"
+    },
+    "tut_step6_text": {
+        "message": "スペースキーで開始または一時停止します。"
+    },
+    "mode_fast_explanation_title": {
+        "message": "高速モード"
+    },
+    "mode_fast_explanation_text": {
+        "message": "すべてが3倍速になります！スコア上昇も早く、ライフも1分で回復します。"
+    },
+    "mode_fast_speed_tag": {
+        "message": "速度 x3"
+    },
+    "mode_zigzag_explanation_title": {
+        "message": "ジグザグモード"
+    },
+    "mode_zigzag_explanation_text": {
+        "message": "機体は止まりません！矢印キーで方向転換します。"
+    },
+    "mode_zigzag_visual_tag": {
+        "message": "ジグザグ"
+    },
+    "powerup_shield": {
+        "message": "シールド"
+    },
+    "powerup_laser": {
+        "message": "レーザー"
+    },
+    "powerup_slow": {
+        "message": "スロー"
+    },
+    "pause_title": {
+        "message": "一時停止"
+    },
+    "pause_desc": {
+        "message": "スペースキーで続行。"
+    },
+    "status_loading": {
+        "message": "読み込み中..."
+    },
+    "error_no_lives": {
+        "message": "このモードのライフがありません。回復を待ってください。"
+    },
+    "submit_success": {
+        "message": "記録を送信しました！"
+    },
+    "status_loading_ranking": {
+        "message": "ランキングを読み込み中..."
+    },
+    "status_error_ranking": {
+        "message": "ランキングの読み込みに失敗しました。"
+    },
+    "status_error_generic": {
+        "message": "読み込みエラー。"
+    },
+    "status_no_data": {
+        "message": "データがありません。"
+    },
+    "status_no_records": {
+        "message": "まだ記録がありません。"
+    },
+    "status_no_world_records": {
+        "message": "まだ記録がありません。"
+    },
+    "import_success_title": {
+        "message": "操作成功"
+    },
+    "import_error_title": {
+        "message": "操作失敗"
+    },
+    "error_import_empty": {
+        "message": "CSVファイルが空か無効です。"
+    },
+    "error_import_format": {
+        "message": "ファイル形式が正しくありません。"
+    },
+    "error_import_incompatible": {
+        "message": "互換性のないデータ形式です。"
+    },
+    "import_success_msg_slots": {
+        "message": "データとセーブスロットを正常に読み込みました。"
+    },
+    "import_success_msg": {
+        "message": "データを正常に読み込みました。"
+    },
+    "import_success_note": {
+        "message": "ライフと現在のスキンは変更されません。"
+    },
+    "error_import_generic": {
+        "message": "データの読み込みに失敗しました。"
+    },
+    "submit_disabled": {
+        "message": "スコア送信が無効です。"
+    },
+    "error_submit_fail_record": {
+        "message": "スコアの送信に失敗しました。"
+    },
+    "settings_info": {
+        "message": "ℹ️ 情報"
+    },
+    "info_version": {
+        "message": "バージョン："
+    },
+    "info_creator": {
+        "message": "制作："
+    },
+    "info_last_update": {
+        "message": "最終更新日："
+    },
+    "btn_read_terms": {
+        "message": "利用規約を読む"
+    },
+    "btn_read_privacy": {
+        "message": "プライバシーポリシーを読む"
+    },
+    "footer_created_by": {
+        "message": "Industrias GRM 制作"
+    },
+    "mode_normal_key": {
+        "message": "normal"
+    },
+    "btn_review_rate": {
+        "message": "レビューを書く"
+    },
+    "btn_review_later": {
+        "message": "後で"
+    },
+    "btn_review_never": {
+        "message": "二度と表示しない"
+    },
+    "share_footer": {
+        "message": "これを超えられるか？Asteroid Rushをダウンロードして記録に挑戦しよう！"
+    },
+    "share_mission_report": {
+        "message": "ミッション完了レポート"
+    },
+    "share_total_points": {
+        "message": "合計ポイント"
+    },
+    "share_rank": {
+        "message": "順位"
+    },
+    "review_title": {
+        "message": "ゲームは楽しめていますか？"
+    },
+    "review_desc": {
+        "message": "アステロイド・ラッシュをお楽しみいただけているなら、ぜひレビューをお願いします！大きな励みになります！"
+    },
+    "btn_share": {
+        "message": "共有"
+    },
+    "stat_asteroids": {
+        "message": "破壊された隕石"
+    },
+    "stat_powerups": {
+        "message": "獲得したパワーアップ"
+    },
+    "label_select_slot": {
+        "message": "スロットを選択"
+    },
+    "label_save_quit": {
+        "message": "保存して終了"
+    },
+    "slot_delete_title": {
+        "message": "スロットを削除"
+    },
+    "legal_move_left_title": {
+        "message": "左へ移動"
+    },
+    "legal_move_right_title": {
+        "message": "右へ移動"
+    },
+    "msg_perfect_run": {
+        "message": "パーフェクトラン：ライフ消費なし！"
+    },
+    "beta_section_title": {
+        "message": "BETA機能"
+    },
+    "beta_section_desc": {
+        "message": "実験的な機能です。有効な間、ワールドランキングにスコアを送信できません。"
+    },
+    "beta_disable": {
+        "message": "BETAモードを無効化"
+    },
+    "beta_disable_note": {
+        "message": "無効化するとランキングが再び機能します。"
+    },
+    "beta_starting_score": {
+        "message": "開始スコア"
+    },
+    "beta_starting_score_note": {
+        "message": "ゲーム開始時の初期スコア（0 = 通常）。"
+    },
+    "beta_ranking_blocked_note": {
+        "message": "🔒 BETAモードではランキングは無効です。"
+    },
+    "beta_powerups_master": {
+        "message": "実験的パワーアップ"
+    },
+    "beta_powerups_desc": {
+        "message": "ゲーム内で実験的なパワーアップを有効化します。各レベルで解除されます。"
+    },
+    "beta_powerups_list_title": {
+        "message": "利用可能なパワーアップ"
+    },
+    "beta_powerup_extralife": {
+        "message": "残機アップ"
+    },
+    "beta_powerup_bomb": {
+        "message": "ボム"
+    },
+    "beta_powerup_multilaser": {
+        "message": "マルチレーザー"
+    },
+    "beta_powerup_freeze": {
+        "message": "フリーズ"
+    },
+    "beta_powerup_doublescore": {
+        "message": "x2 スコア"
+    },
+    "beta_powerup_ghost": {
+        "message": "ゴースト"
+    },
+    "beta_powerup_magnet": {
+        "message": "マグネット"
+    },
+    "beta_unlocked_at_level": {
+        "message": "レベル {n}"
+    },
+    "beta_enabled_toast": {
+        "message": "BETA機能を有効化しました"
+    },
+    "skin_level_1": {
+        "message": "標準"
+    },
+    "skin_level_2": {
+        "message": "ステルス"
+    },
+    "skin_level_3": {
+        "message": "ハンター"
+    },
+    "skin_level_4": {
+        "message": "デストロイヤー"
+    },
+    "skin_part_desc": {
+        "message": "あなたの船の装飾パーツ"
+    },
+    "skin_hint_available": {
+        "message": "🔒 ショップで入手可能 🚀"
+    },
+    "skin_hint_unavailable": {
+        "message": "🔒 現在利用できません"
+    },
+    "skin_bought": {
+        "message": "✓ 購入済み"
+    },
+    "skin_insufficient_coins": {
+        "message": "スキンコイン不足"
+    },
+    "skin_insufficient_dust": {
+        "message": "ダスト不足"
+    },
+    "skin_none_today": {
+        "message": "今日は利用可能なパーツがありません。また明日来てください。"
+    },
+    "skin_already_owned": {
+        "message": "このパーツは既に所有しています"
+    },
+    "skin_bought_format": {
+        "message": "✓ {amount} {icon} で購入しました"
+    },
+    "shop_confirm_title": {
+        "message": "購入を確認"
+    },
+    "shop_price_label": {
+        "message": "価格:"
+    },
+    "shop_sold": {
+        "message": "✓ 購入済み"
+    },
+    "shop_not_enough_dust": {
+        "message": "ダスト不足"
+    },
+    "shop_not_enough_coins": {
+        "message": "コイン不足"
+    },
+    "shop_not_enough_tickets": {
+        "message": "チケット不足"
+    },
+    "shop_not_enough_skincoins": {
+        "message": "スキンコイン不足"
+    },
+    "shop_max_purchased": {
+        "message": "最大購入数に達しました"
+    },
+    "shop_max_daily": {
+        "message": "1日の制限に達しました"
+    },
+    "shop_item_not_found": {
+        "message": "アイテムが見つかりません"
+    },
+    "shop_error_default": {
+        "message": "エラー"
+    },
+    "currency_coins": {
+        "message": "コイン"
+    },
+    "currency_tickets": {
+        "message": "チケット"
+    },
+    "currency_skincoins": {
+        "message": "スキンコイン"
+    },
+    "currency_dust": {
+        "message": "ダスト"
+    },
+    "skin_customize": {
+        "message": "カスタマイズ"
+    },
+    "skin_look_recent": {
+        "message": "最近のルック {n}"
+    },
+    "skin_no_recent_looks": {
+        "message": "最近のルックはありません"
+    },
+    "skin_open_customizer": {
+        "message": "船のカスタマイズを開く"
+    },
+    "skin_color_unique": {
+        "message": "ユニークカラー"
+    },
+    "skin_coming_soon": {
+        "message": "さらにスキン\n近日公開"
+    },
+    "skin_my_look": {
+        "message": "マイ ルック"
+    },
+    "skin_remove_fav": {
+        "message": "⭐ お気に入りから削除"
+    },
+    "skin_mark_fav": {
+        "message": "☆ お気に入りに追加"
+    },
+    "exchange_target_title": {
+        "message": "変換先通貨"
+    },
+    "exchange_lot_title": {
+        "message": "ダストロット"
+    },
+    "exchange_cost_label": {
+        "message": "コスト"
+    },
+    "exchange_receive_label": {
+        "message": "受け取り"
+    },
+    "exchange_confirm": {
+        "message": "交換を確認"
+    },
+    "exchange_success_format": {
+        "message": "✓ +{amount} {label}"
+    },
+    "exchange_error_no_dust": {
+        "message": "ダスト不足"
+    },
+    "exchange_error_generic": {
+        "message": "交換に失敗しました"
+    },
+    "exchange_preview_cost_format": {
+        "message": "💨 {amount} ダスト"
+    },
+    "skin_type_base": {
+        "message": "ベース"
+    },
+    "skin_type_cabina": {
+        "message": "キャビン"
+    },
+    "skin_type_alas": {
+        "message": "ウィング"
+    },
+    "skin_type_propulsor": {
+        "message": "エンジン"
+    },
+    "skin_type_montajes": {
+        "message": "モンタージュ"
+    },
+    "skin_type_llavero": {
+        "message": "キーホルダー"
+    },
+    "skin_type_creacion": {
+        "message": "クリエイション"
+    },
+    "skin_type_montaje_singular": {
+        "message": "モンタージュ"
+    },
+    "skin_type_creacion_singular": {
+        "message": "クリエイション"
+    },
+    "skin_llavero_0": {
+        "message": "Asteroid Rush"
+    },
+    "skin_llavero_1": {
+        "message": "ベース"
+    },
+    "skin_llavero_2": {
+        "message": "ギャラクシー"
+    },
+    "skin_llavero_3": {
+        "message": "マーズ"
+    },
+    "skin_llavero_4": {
+        "message": "アース"
+    },
+    "skin_creacion_0": {
+        "message": "クリエイション 1"
+    },
+    "skin_creacion_1": {
+        "message": "クリエイション 2"
+    },
+    "skin_creacion_2": {
+        "message": "クリエイション 3"
+    },
+    "shop_title": {
+        "message": "🛒 ショップ"
+    },
+    "shop_tab_offers": {
+        "message": "🌟 オファー"
+    },
+    "skin_panel_title": {
+        "message": "🎨 船をカスタマイズ"
+    },
+    "shop_bought_format_regular": {
+        "message": "✓ {amount} {icon} で購入しました"
+    },
+    "btn_confirm": {
+        "message": "確認"
+    },
+    "btn_top": {
+        "message": "TOP"
+    },
+    "btn_shop": {
+        "message": "ショップ"
+    },
+    "ach_viajero_name": {
+        "message": "旅人"
+    },
+    "ach_viajero_desc": {
+        "message": "ゲーム内で2時間プレイする。"
+    },
+    "ach_bounty_name": {
+        "message": "バウンティハンター"
+    },
+    "ach_bounty_desc": {
+        "message": "5つの実績を解除する。"
+    },
+    "ach_destructor_name": {
+        "message": "スター・デストロイヤー"
+    },
+    "ach_destructor_desc": {
+        "message": "合計250個の小惑星を破壊する。"
+    },
+    "oferton": {
+        "message": "セール"
+    },
+    "username_title": {
+        "message": "ニックネームを選んでください"
+    },
+    "username_desc": {
+        "message": "ランキングに表示される名前です。後から変更できません。"
+    },
+    "username_taken": {
+        "message": "そのニックネームは既に使われています。"
+    },
+    "username_empty": {
+        "message": "ニックネームを入力してください。"
+    },
+    "username_rank_reward": {
+        "message": "1位報酬：ゴールドスキン解放！"
+    },
+    "username_rank_reward2": {
+        "message": "2位報酬：シルバースキン解放！"
+    },
+    "username_rank_reward3": {
+        "message": "3位報酬：ブロンズスキン解放！"
+    },
+    "username_warning": {
+        "message": "⚠ 後から変更できません。"
+    },
+    "auth_title": {
+        "message": "アカウント"
+    },
+    "auth_tab_login": {
+        "message": "ログイン"
+    },
+    "auth_tab_register": {
+        "message": "アカウント作成"
+    },
+    "auth_btn_login": {
+        "message": "ログイン"
+    },
+    "auth_btn_register": {
+        "message": "アカウント作成"
+    },
+    "auth_guest_hint": {
+        "message": "ゲストとして続ける"
+    },
+    "auth_error_fill": {
+        "message": "すべての項目を入力してください。"
+    },
+    "auth_error_invalid": {
+        "message": "メールアドレスまたはパスワードが無効です。"
+    },
+    "auth_error_password_short": {
+        "message": "パスワードは6文字以上必要です。"
+    },
+    "auth_sign_in": {
+        "message": "ログイン"
+    },
+    "auth_sign_out": {
+        "message": "ログアウト"
+    },
+    "auth_account": {
+        "message": "アカウント"
+    },
+    "auth_account_desc": {
+        "message": "アカウント機能は近日公開予定です。"
+    },
+    "coming_soon": {
+        "message": "近日公開"
+    },
+    "nick_assigned_title": {
+        "message": "パイロット名を設定しました"
+    },
+    "astronaut": {
+        "message": "宇宙飛行士"
+    },
+    "nick_assigned_desc": {
+        "message": "これがワールドランキングでのあなたのIDになります。"
+    },
+    "skin_default": {
+        "message": "デフォルトの船"
+    },
+    "promo_happy_hour": {
+        "message": "🎉 ハッピーアワー！ショップ全体60%オフ"
+    },
+    "promo_notif_title": {
+        "message": "ハッピーアワー！"
+    },
+    "promo_notif_desc": {
+        "message": "ショップ全体60%オフ"
+    },
+    "setting_promo_notif": {
+        "message": "ハッピーアワー開始時に通知する"
+    },
+    "auth_guest_mode": {
+        "message": "ゲストモード"
+    },
+    "welcome_to": {
+        "message": "ようこそ"
+    },
+    "welcome_how_to_continue": {
+        "message": "どう続けますか？"
+    },
+    "reward_welcome_desc": {
+        "message": "ウェルカムギフトとして{amount}💨を受け取りました！"
+    },
+    "reward_beta_desc": {
+        "message": "BETAプレイヤー特典として{amount}💨を受け取りました！"
+    },
+    "tut_step7_title": {
+        "message": "🧑‍🚀 あなたのパイロット"
+    },
+    "tut_step7_text": {
+        "message": "チュートリアル完了後、ランダムなパイロット番号が割り当てられます。世界ランキングでのあなたの識別番号です。"
+    },
+    "instr_pilot_title": {
+        "message": "パイロット"
+    },
+    "instr_pilot_assign": {
+        "message": "チュートリアルを完了すると、<b>ランダムなパイロット番号</b>（例：宇宙飛行士4821）が割り当てられます。選べませんが、ランキングでの独自の識別番号です。"
+    },
+    "instr_shop_title": {
+        "message": "ショップ"
+    },
+    "instr_shop_currencies": {
+        "message": "4種類の通貨：<b>💨 ダスト</b>、<b>🪙 コイン</b>、<b>🎟️ チケット</b>、<b>🎨 スキンコイン</b>。プレイや報酬で獲得できます。"
+    },
+    "instr_shop_skins": {
+        "message": "ショップは毎日ローテーションします。スキンパーツ、パワーアップ、ダストパックを購入できます。"
+    },
+    "instr_shop_promo": {
+        "message": "毎日20:00〜21:00に全アイテム60%OFFの<b>ハッピーアワー</b>があります。"
+    },
+    "instr_ranking_title": {
+        "message": "世界ランキング"
+    },
+    "instr_ranking_top100": {
+        "message": "世界トップ100はリアルタイムで更新されます。あなたのスコアは全プレイヤーと比較されます。"
+    },
+    "instr_ranking_submit": {
+        "message": "トップ100に入っている場合、ゲーム終了時にスコアが自動送信されます。設定で無効化できます。"
+    },
+    "instr_ranking_skins": {
+        "message": "トップ3に入ると、排他的な<b>ゴールド🥇</b>、<b>シルバー🥈</b>、<b>ブロンズ🥉</b>スキンが解除されます。"
+    },
+    "instr_news_title": {
+        "message": "ニュース"
+    },
+    "instr_news_desc": {
+        "message": "ニュースはサーバーから読み込まれ、ローカルにキャッシュされます。"
+    },
+    "shop_max_lives": {
+        "message": "MAX — ライフ最大"
+    },
+    "shop_max_lives_short": {
+        "message": "MAX"
+    },
+    "lives_max_tooltip": {
+        "message": "ライフ最大"
+    },
+    "lives_max_tooltip_all": {
+        "message": "全ライフ最大"
+    },
+    "shop_error_max_lives": {
+        "message": "ライフ最大"
+    },
+    "auth_forgot_password": {
+        "message": "パスワードをお忘れですか？"
+    },
+    "auth_verify_check": {
+        "message": "確認しました"
+    },
+    "auth_verify_email": {
+        "message": "メールを確認"
+    },
+    "auth_verify_resend": {
+        "message": "メールを再送信"
+    },
+    "beta_slot_warning": {
+        "message": "このスロットにはBETAデータが含まれています。設定で有効にしてください。"
+    },
+    "btn_powerups": {
+        "message": "パワーアップ"
+    },
+    "btn_retry": {
+        "message": "▶ もう一度プレイ"
+    },
+    "btn_save": {
+        "message": "💾 保存"
+    },
+    "dust_name": {
+        "message": "ダスト"
+    },
+    "instr_asteroids_title": {
+        "message": "小惑星"
+    },
+    "instr_rank_time": {
+        "message": "時間"
+    },
+    "label_skin": {
+        "message": "機体"
+    },
+    "lives_shop_title": {
+        "message": "ライフを購入"
+    },
+    "no_pilot_yet": {
+        "message": "パイロット未割り当て"
+    },
+    "reward_collect": {
+        "message": "受け取る"
+    },
+    "reward_title": {
+        "message": "ウェルカム報酬！"
+    },
+    "color_AMARILLO": {
+        "message": "黄"
+    },
+    "skin_color_AMARILLO": {
+        "message": "黄"
+    },
+    "color_AZUL": {
+        "message": "青"
+    },
+    "skin_color_AZUL": {
+        "message": "青"
+    },
+    "color_BLANCO": {
+        "message": "白"
+    },
+    "skin_color_BLANCO": {
+        "message": "白"
+    },
+    "color_CIAN": {
+        "message": "シアン"
+    },
+    "skin_color_CIAN": {
+        "message": "シアン"
+    },
+    "color_LILA": {
+        "message": "ライラック"
+    },
+    "skin_color_LILA": {
+        "message": "ライラック"
+    },
+    "color_MORADO": {
+        "message": "紫"
+    },
+    "skin_color_MORADO": {
+        "message": "紫"
+    },
+    "color_NARANJA": {
+        "message": "オレンジ"
+    },
+    "skin_color_NARANJA": {
+        "message": "オレンジ"
+    },
+    "color_ROJO": {
+        "message": "赤"
+    },
+    "skin_color_ROJO": {
+        "message": "赤"
+    },
+    "color_ROSA": {
+        "message": "ピンク"
+    },
+    "skin_color_ROSA": {
+        "message": "ピンク"
+    },
+    "color_VERDE": {
+        "message": "緑"
+    },
+    "skin_color_VERDE": {
+        "message": "緑"
+    },
+    "color_ORO": {
+        "message": "金"
+    },
+    "skin_color_ORO": {
+        "message": "金"
+    },
+    "color_PLATA": {
+        "message": "銀"
+    },
+    "skin_color_PLATA": {
+        "message": "銀"
+    },
+    "color_BRONCE": {
+        "message": "ブロンズ"
+    },
+    "skin_color_BRONCE": {
+        "message": "ブロンズ"
+    },
+    "reward_beta_llavero_title": {
+        "message": "ベータ報酬！"
+    },
+    "reward_beta_llavero_desc": {
+        "message": "ベータで10隻の船を持っていました！Asteroid Rushキーホルダーを獲得しました。"
+    },
+    "reward_mars_llavero_title": {
+        "message": "火星ミッション完了！"
+    },
+    "reward_mars_llavero_desc": {
+        "message": "3つのモードすべてで火星に到達しました！火星キーホルダーを獲得しました。"
+    },
+    "ach_mars_trio_name": {
+        "message": "火星トリオ"
+    },
+    "ach_mars_trio_desc": {
+        "message": "3つのゲームモードすべてで火星に到達する。"
+    },
+    "shop_agotado": {
+        "message": "売り切れ"
+    },
+    "tut_hint_meteor": {
+        "message": "☄️ 隕石！"
+    },
+    "tut_hint_dodge_right": {
+        "message": "→でかわそう"
+    },
+    "tut_hint_another": {
+        "message": "☄️ もう一つ！"
+    },
+    "tut_hint_dodge_left": {
+        "message": "今度は ←"
+    },
+    "tut_hint_good_controls": {
+        "message": "いい操作！"
+    },
+    "tut_hint_try_laser": {
+        "message": "レーザーを試そう"
+    },
+    "tut_hint_shield_intro": {
+        "message": "🛡️ シールド: 30秒保護 — レベル1（最初から）"
+    },
+    "tut_hint_shield_active": {
+        "message": "🛡️ シールド発動！"
+    },
+    "tut_hint_laser_intro": {
+        "message": "🔫 レーザー: 直線を破壊 — レベル10"
+    },
+    "tut_hint_laser_ready": {
+        "message": "🔫 レーザー準備完了！ ↑を長押し"
+    },
+    "tut_hint_slow_intro": {
+        "message": "❄️ スロー: すべてが遅くなる — レベル50"
+    },
+    "tut_hint_well_done": {
+        "message": "👏 よくできた！ あとは一人で"
+    },
+    "tut_pause_finish": {
+        "message": "終了"
+    },
+    "tut_pause_finish_title": {
+        "message": "チュートリアルを終了"
+    },
+    "tut_complete_title": {
+        "message": "チュートリアル完了！"
+    },
+    "tut_complete_desc": {
+        "message": "基本操作を覚えました。<br>さあ、太陽系は君のものだ！"
+    },
+    "tut_hit_title": {
+        "message": "被弾！"
+    },
+    "tut_hit_desc": {
+        "message": "チュートリアル中に墜落しました。<br>もう一度挑戦しますか？"
+    },
+    "tut_continue_anyway": {
+        "message": "それでも続ける"
+    },
+    "super_offer_badge": {
+        "message": "🔥 スーパーオファー 🔥"
+    },
+    "super_offer_title": {
+        "message": "限定オファー！"
+    },
+    "super_offer_subtitle": {
+        "message": "たった"
+    },
+    "super_offer_note": {
+        "message": "ですぐにプレイ！"
+    },
+    "super_offer_buy": {
+        "message": "⚡ 購入してプレイ ⚡"
+    },
+    "super_offer_pass": {
+        "message": "スキップ"
+    },
+    "setting_dual_mode": {
+        "message": "デュアルモード（2デバイス）"
+    },
+    "setting_dual_mode_desc": {
+        "message": "2つのデバイス間で経済マージとハートビート検出で同期。"
+    },
+    "skin_old_reward_desc": {
+        "message": "{count}個の古いスキンをお持ちです。+{reward} 🎨 スキンコインを獲得！"
+    },
+    "btn_no_lives_shop": {
+        "message": "リチャージ中！ ライフを購入"
+    },
+    "skin_old_reward_title": {
+        "message": "古いスキン"
+    },
+    "error_generic": {
+        "message": "エラー"
+    },
+    "promo_happy_hour_short": {
+        "message": "ハッピーアワー！"
+    },
+    "abbr_level": {
+        "message": "Lv."
+    },
+    "terms_updated_title": {
+        "message": "🚀 利用規約が更新されました"
+    },
+    "terms_updated_desc": {
+        "message": "利用規約とプライバシーポリシーを更新しました。続行するには再度同意してください。"
+    },
+    "btn_reject": {
+        "message": "拒否"
+    },
+    "terms_update_reject_desc": {
+        "message": "拒否すると、同意するまでプレイできません。退出前にローカルデータをエクスポートできます。"
+    }
+}
