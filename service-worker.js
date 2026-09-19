@@ -320,7 +320,7 @@ async function deleteRankingScores({ name }) {
         let entries = [];
         let updateTime = null;
         if (getResp.ok) {
-          const j = await getResponse.json();
+          const j = await getResp.json();
           updateTime = j.updateTime;
           const f = j.fields || {};
           for (let i = 1; i <= 100; i++) {

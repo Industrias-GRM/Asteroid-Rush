@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Asteroid Rush BETA",
+  "name": "Asteroid Rush",
   "description": "Esquiva meteoritos, recoge power-ups y compite por el récord mundial.",
-  "version": "1.0.0.1",
+  "version": "1.0.0.2",
   "default_locale": "es",
   "icons": {
     "16": "icon16.png",

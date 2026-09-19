@@ -1046,7 +1046,7 @@ function showModeExplanation(mode) {
   document.getElementById("tutorial-overlay").classList.remove("hidden");
   const closeExp = () => {
     localStorage.setItem(mode === 'fast' ? "dodgeFastModeSeen" : "dodgeZigZagModeSeen", "true");
-    modeSelectBtn.classList.remove("glow-btn");
+    if (modeSelectBtn) modeSelectBtn.classList.remove("glow-btn");
     document.getElementById("tutorial-overlay").classList.add("hidden");
     if (skipBtnT) skipBtnT.style.display = "inline-block";
     if (activeSlot !== null) { activeSlot = null; updateSlotButtonUI(); if (typeof updateSlotInfoPanel === 'function') updateSlotInfoPanel(); }
@@ -1057,10 +1057,12 @@ function showModeExplanation(mode) {
     updateModeUI(); updateBestScoreUI(); updateLivesUI(); updateOverlayLivesInfo();
     syncLeaderboardWithGameMode();
     if (rememberModeToggle && rememberModeToggle.checked) saveSetting(SETTINGS_KEYS.lastMode, mode);
-    nextBtn.removeEventListener("click", closeExp);
+    if (nextBtn._modeCloseExp) { nextBtn.removeEventListener("click", nextBtn._modeCloseExp); nextBtn._modeCloseExp = null; }
     nextBtn.addEventListener("click", tutorialNextHandler);
   };
   nextBtn.removeEventListener("click", tutorialNextHandler);
+  if (nextBtn._modeCloseExp) nextBtn.removeEventListener("click", nextBtn._modeCloseExp);
+  nextBtn._modeCloseExp = closeExp;
   nextBtn.addEventListener("click", closeExp);
 }
 

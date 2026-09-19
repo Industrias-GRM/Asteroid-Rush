@@ -60,7 +60,7 @@ i18n.init();
 updateStageScale();
 
 const VERSION_KEY = 'dodgeVersion';
-const CURRENT_VERSION = (typeof Platform !== 'undefined' && Platform.manifest && Platform.manifest.version) ? Platform.manifest.version : '1.0.0.1';
+const CURRENT_VERSION = (typeof Platform !== 'undefined' && Platform.manifest && Platform.manifest.version) ? Platform.manifest.version : '1.0.0.2';
 
 // Comprobar versión guardada: si no existe o no coincide con la actual,
 // y el usuario ya había aceptado términos, mostrar popup de actualización

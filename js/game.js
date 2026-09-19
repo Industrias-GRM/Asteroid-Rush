@@ -220,6 +220,7 @@ function updateTutorialSteps(timestamp) {
           setTimeout(() => {
             hideTutorialHint();
             const wait = setInterval(()=>{
+              if (!tutorialGameActive) { clearInterval(wait); return; }
               if (tutorialMeteorsGone()) { clearInterval(wait); tutorialGameStep=3; tutorialStepStartTime=0; _tutorialAdvancePending=false; }
             }, 100);
           }, 500);
@@ -228,6 +229,7 @@ function updateTutorialSteps(timestamp) {
           setTimeout(() => {
             hideTutorialHint();
             const wait2 = setInterval(()=>{
+              if (!tutorialGameActive) { clearInterval(wait2); return; }
               if (tutorialMeteorsGone()) { clearInterval(wait2); tutorialGameStep=3; tutorialStepStartTime=0; _tutorialAdvancePending=false; }
             }, 100);
           }, 500);
@@ -322,6 +324,10 @@ function completeTutorialGame() {
   try { localStorage.setItem('dodgeFirstGameDone', 'true'); } catch(e) {}
   try { localStorage.setItem('dodgeTutorialSeen', 'true'); } catch(e) {} // extra persist
   try { localStorage.setItem('dodgeFirstGameDone', 'true'); } catch(e) {}
+  // FIX bug tutorial desde popup: quitar el forzado a pulsar Jugar.
+  // canInteract() re-añade 'glow-btn' al play durante el tutorial; si no se
+  // limpia aquí, al volver al menú ese glow sigue bloqueando el resto de botones.
+  try { document.getElementById('menu-play-btn')?.classList.remove('glow-btn'); } catch(e) {}
   score = 15000; lastIntScore = 15000; updateProgressBar(100, 16);
   updateBestScoreUI();
   stopBackgroundMusic(); stopSlowSoundEffect();
@@ -396,6 +402,7 @@ function completeTutorialGame() {
         ov.classList.add('hidden');
         ov.style.display = '';
         FxCanvas.wipe();
+        try { document.getElementById('menu-play-btn')?.classList.remove('glow-btn'); } catch(e) {}
         setOverlayMode('menu'); overlayEl.scrollTop = 0;
         document.getElementById('gameover-overlay').classList.add('hidden');
         if (typeof updateSlotInfoPanel === 'function') updateSlotInfoPanel();
@@ -592,6 +599,7 @@ function gameOver(options = {}) {
             try { localStorage.setItem('dodgeFirstGameDone', 'true'); } catch(e) {}
             try { localStorage.setItem('dodgeTutorialSeen', 'true'); } catch(e) {} // extra persist
   try { localStorage.setItem('dodgeFirstGameDone', 'true'); } catch(e) {}
+            try { document.getElementById('menu-play-btn')?.classList.remove('glow-btn'); } catch(e) {}
             setOverlayMode('menu'); document.getElementById('gameover-overlay').classList.add('hidden');
             try{
               let pending=null; try{pending=JSON.parse(localStorage.getItem('dodgeRewardPending'));}catch(e){}

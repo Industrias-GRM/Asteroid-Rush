@@ -5,7 +5,7 @@
 function hasValidTermsForServer() {
   try {
     if (localStorage.getItem('dodgeLegalAccepted') !== 'true') return false;
-    const cur = (typeof getCurrentAppVersion === 'function') ? getCurrentAppVersion() : ((typeof Platform !== 'undefined' && Platform.manifest && Platform.manifest.version) ? Platform.manifest.version : '1.0.0.1');
+    const cur = (typeof getCurrentAppVersion === 'function') ? getCurrentAppVersion() : ((typeof Platform !== 'undefined' && Platform.manifest && Platform.manifest.version) ? Platform.manifest.version : '1.0.0.2');
     const stored = localStorage.getItem('dodgeVersion');
     if (stored && stored !== cur) return false;
     if (!stored && localStorage.getItem('dodgeLegalAccepted') === 'true') {

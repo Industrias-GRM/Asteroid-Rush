@@ -33,7 +33,7 @@ function canInteract(btn) {
   }
   const glowingButtons = document.querySelectorAll('.glow-btn');
   if (glowingButtons.length > 0) {
-    if (btn.classList.contains('glow-btn')) return true;
+    if (btn && btn.classList.contains('glow-btn')) return true;
     glowingButtons.forEach(b => {
       b.classList.remove('attention-shake');
       void b.offsetWidth;
