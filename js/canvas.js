@@ -25,6 +25,9 @@ const FxCanvas = (function () {
   // Dimensiones del área de dibujo (coordenadas de juego).
   let W = GAME_WIDTH;
   let H = GAME_HEIGHT;
+  // OPT 1.0.0.3: cola debug + dirty flag (definidos arriba para usar en clear())
+  const _debugRects = [];
+  let _hbDirty = false;
 
   // Capa de partículas (explosiones + debris de nave) gestionada aquí
   // para evitar miles de setTimeout por partícula.
@@ -86,13 +89,16 @@ const FxCanvas = (function () {
   function clear() {
     if (!ready) return;
     ctx.clearRect(0, 0, W, H);
-    hbCtx.clearRect(0, 0, W, H);
+    // OPT 1.0.0.3: no limpiar capa hitbox si no hay debug (ahorra un clearRect por frame)
+    if (_debugRects.length > 0 || _hbDirty) { hbCtx.clearRect(0, 0, W, H); _hbDirty = false; }
+    else if (typeof showHitboxes !== 'undefined' && showHitboxes) hbCtx.clearRect(0, 0, W, H);
   }
 
   // Se llama al pausar / ocultar entidades para que no quede "basura".
   function wipe() {
     particles.length = 0;
     _debugRects.length = 0;
+    _hbDirty = false;
     if (ready) {
       ctx.clearRect(0, 0, W, H);
       if (hbCtx) hbCtx.clearRect(0, 0, W, H);
@@ -299,7 +305,8 @@ const FxCanvas = (function () {
     }
     if (!lightsOff()) {
       // Halo de luz que rodea al proyectil (da el aspecto de emitir luz propia).
-      // Se dibuja un resplandor radial detrás del cuerpo del láser.
+      // OPT 1.0.0.3: sin ctx.filter blur (muy caro por proyectil/frame).
+      // El radial gradient ya da el glow.
       const glowCx = x + p.width / 2;
       const glowCy = y + visH / 2;
       const glowR = Math.max(p.width, visH) * 0.2 + 2;
@@ -309,12 +316,10 @@ const FxCanvas = (function () {
       glowGrad.addColorStop(0, midColor);
       glowGrad.addColorStop(1, outColor);
       ctx.save();
-      ctx.filter = "blur(2px)";
       ctx.fillStyle = glowGrad;
       ctx.beginPath();
       ctx.rect(x - glowR, y - glowR, p.width + glowR * 2, visH + glowR * 2);
       ctx.fill();
-      ctx.filter = "none";
       ctx.restore();
     }
     const grad = ctx.createLinearGradient(x, y, x, y + visH);
@@ -364,8 +369,6 @@ const FxCanvas = (function () {
   // ----------------------------------------------------------
   // Cola de hitboxes de depuración (se dibujan encima de todo)
   // ----------------------------------------------------------
-  const _debugRects = [];
-
   function queueDebugRect(x, y, w, h, color) {
     _debugRects.push(x, y, w, h, color);
   }
@@ -376,6 +379,7 @@ const FxCanvas = (function () {
       drawDebugRect(_debugRects[i], _debugRects[i+1], _debugRects[i+2], _debugRects[i+3], _debugRects[i+4]);
     }
     _debugRects.length = 0;
+    _hbDirty = true;
   }
 
   // ----------------------------------------------------------

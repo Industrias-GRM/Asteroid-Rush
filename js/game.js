@@ -2,15 +2,26 @@
 // PUNTUACIÓN
 // ============================================================
 
+let _lastAchCheck = 0;
+let _lastBestUI = 0;
+let _cachedLaveroDiv = null;
 function _afterScoreChanged() {
   const currentIntScore = Math.floor(score);
   if (currentIntScore !== lastIntScore) {
     if (Math.floor(lastIntScore / 1000) < Math.floor(currentIntScore / 1000)) {
       if (currentIntScore > 0) { playScoreUp(); checkSkinUnlocksFromScore(); }
     }
-    checkAchievements();
+    // OPT 1.0.0.3: throttle logros + HUD (antes cada frame -> localStorage/DOM por frame)
+    const now = (typeof performance !== 'undefined' && performance.now) ? performance.now() : Date.now();
+    if (now - _lastAchCheck > 1000 || Math.floor(currentIntScore / 1000) !== Math.floor(lastIntScore / 1000)) {
+      checkAchievements();
+      _lastAchCheck = now;
+    }
+    if (now - _lastBestUI > 250) {
+      updateBestScoreUI();
+      _lastBestUI = now;
+    }
     lastIntScore = currentIntScore;
-    updateBestScoreUI();
   }
 }
 
@@ -885,7 +896,7 @@ function togglePause() {
     if (btnFinishRun) btnFinishRun.classList.remove("hidden");
     if (pauseContinueBtn) { pauseContinueBtn.classList.remove("hidden"); pauseContinueBtn.classList.add("pulse-active"); }
     setOverlayMode("pause"); overlayEl.scrollTop = 0;
-    stopBackgroundMusic();
+    pauseBackgroundMusic();
     pauseBtn.style.display = "none"; muteBtn.style.display = "none";
     if (skipBtn) skipBtn.classList.add("hidden");
   } else {
@@ -902,7 +913,7 @@ function togglePause() {
     playUnpauseSound();
     hideOverlay();
     if (pauseContinueBtn) { pauseContinueBtn.classList.add("hidden"); pauseContinueBtn.classList.remove("pulse-active"); }
-    lastFrameTime = null; updateStageScale(); startBackgroundMusic();
+    lastFrameTime = null; updateStageScale(); resumeBackgroundMusic();
     pauseBtn.style.display = "flex"; muteBtn.style.display = "flex";
     requestGameLoopFrame();
   }
@@ -984,10 +995,13 @@ function gameLoop(timestamp) {
   if (!gameRunning || gamePaused) { requestGameLoopFrame(); return; }
 
   // Helper: dibujar llavero en canvas
+  // OPT 1.0.0.3: cachear querySelector (antes 1 por frame) y evitar getComputedStyle fuera de earthLaunch
   const _drawKeychain = () => {
     if (!keychain || !keychain.imageLoaded || isDying) return;
-    const oldDiv = document.querySelector('#skin-lavero');
-    if (oldDiv) oldDiv.style.display = 'none';
+    if (typeof _cachedLaveroDiv === 'undefined' || !_cachedLaveroDiv || !_cachedLaveroDiv.isConnected) {
+      _cachedLaveroDiv = document.querySelector('#skin-lavero');
+    }
+    if (_cachedLaveroDiv && _cachedLaveroDiv.style.display !== 'none') _cachedLaveroDiv.style.display = 'none';
     const baseLevel = keychain.lastBaseLevel || 1;
     const llavOff = getLlaveroOffset(baseLevel, fastModeActive || swingcopterModeActive);
     const rightPx = parseFloat(llavOff.right) || 0;

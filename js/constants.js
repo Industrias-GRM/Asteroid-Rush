@@ -78,8 +78,8 @@ const SETTINGS_KEYS = {
   betaFreeze: 'dodgeBetaPowerFreeze',
   betaGhost: 'dodgeBetaPowerGhost',
   betaMagnet: 'dodgeBetaPowerMagnet',
-  // --- Sincronización dual ---
-  dualMode: 'dodgeDualMode',
+  // --- Nueva música de juego (BETA) ---
+  betaNewMusic: 'dodgeBetaNewMusic',
   // --- Notificación de promo (hora feliz) ---
   promoNotifications: 'dodgePromoNotifications'
 };

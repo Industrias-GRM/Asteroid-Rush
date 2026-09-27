@@ -130,6 +130,7 @@ let touchControlsOn = false;
 let betaModeActive = false;
 let betaPowerupsEnabled = false;
 let betaStartingScore = 0;
+let betaNewMusicEnabled = false;
 // Flags individuales de cada potenciador beta (accesibles por clave).
 var betaFlags = {
   betaBomb: false,
@@ -256,4 +257,5 @@ try {
   betaFlags.betaFreeze      = localStorage.getItem(SETTINGS_KEYS.betaFreeze)      === "true";
   betaFlags.betaGhost       = localStorage.getItem(SETTINGS_KEYS.betaGhost)       === "true";
   betaFlags.betaMagnet      = localStorage.getItem(SETTINGS_KEYS.betaMagnet)      === "true";
+  betaNewMusicEnabled = localStorage.getItem(SETTINGS_KEYS.betaNewMusic) === "true";
 } catch (e) {}

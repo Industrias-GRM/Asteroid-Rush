@@ -51,7 +51,7 @@ const Platform = (() => {
     }
     // Fallback para web: se lee el manifest.json manualmente
     return {
-      version: '1.0.0.2',
+      version: '1.0.0.3',
       name: 'Asteroid Rush'
     };
   })();

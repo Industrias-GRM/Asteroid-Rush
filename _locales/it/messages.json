@@ -1403,12 +1403,6 @@
     "super_offer_pass": {
         "message": "Salta"
     },
-    "setting_dual_mode": {
-        "message": "Modalità doppia (2 dispositivi)"
-    },
-    "setting_dual_mode_desc": {
-        "message": "Sincronizzazione tra due dispositivi con merge economia e rilevamento heartbeat."
-    },
     "skin_old_reward_desc": {
         "message": "Hai {count} vecchie skin. Ricevi +{reward} 🎨 Skin Coins!"
     },
@@ -1438,5 +1432,11 @@
     },
     "terms_update_reject_desc": {
         "message": "Se rifiuti, non potrai giocare finché non accetti. Puoi esportare i tuoi dati locali prima di uscire."
+    },
+    "beta_music_title": {
+        "message": "Nuova musica di gioco"
+    },
+    "beta_music_desc": {
+        "message": "Riproduce Game Music.mp3 in loop invece della musica procedurale."
     }
 }

@@ -267,6 +267,7 @@ function initBetaPanel() {
   betaFlags.betaFreeze      = localStorage.getItem(SETTINGS_KEYS.betaFreeze) === "true";
   betaFlags.betaGhost       = localStorage.getItem(SETTINGS_KEYS.betaGhost) === "true";
   betaFlags.betaMagnet      = localStorage.getItem(SETTINGS_KEYS.betaMagnet) === "true";
+  betaNewMusicEnabled = localStorage.getItem(SETTINGS_KEYS.betaNewMusic) === "true";
 
   buildBetaPowerupRows();
   applyBetaVisibility();
@@ -311,14 +312,19 @@ function initBetaPanel() {
       deactivateBetaMode();
     });
   }
-  // Toggle dual mode
-  const dualToggle = document.getElementById("beta-dual-toggle");
-  if (dualToggle) {
-    dualToggle.checked = localStorage.getItem(SETTINGS_KEYS.dualMode) === "true";
-    dualToggle.addEventListener("change", () => {
-      saveSetting(SETTINGS_KEYS.dualMode, dualToggle.checked);
-      _dualEnabled = dualToggle.checked;
+  // Toggle nueva música de juego (BETA): usa Game Music.mp3 en loop
+  const musicBetaToggle = document.getElementById("beta-music-toggle");
+  if (musicBetaToggle) {
+    musicBetaToggle.checked = betaNewMusicEnabled;
+    musicBetaToggle.addEventListener("change", () => {
+      betaNewMusicEnabled = musicBetaToggle.checked;
+      saveSetting(SETTINGS_KEYS.betaNewMusic, betaNewMusicEnabled);
       playMenuClickSound();
+      // Si hay partida en curso, aplicar al momento
+      try {
+        if (gameRunning && !gamePaused && soundOn && musicOn) startBackgroundMusic();
+        else if (!musicOn || !soundOn) stopBackgroundMusic();
+      } catch (e) {}
     });
   }
 

@@ -1403,12 +1403,6 @@
     "super_offer_pass": {
         "message": "Passar"
     },
-    "setting_dual_mode": {
-        "message": "Mode dual (2 dispositius)"
-    },
-    "setting_dual_mode_desc": {
-        "message": "Sincronització entre dos dispositius amb fusió d'economia i detecció de heartbeat."
-    },
     "skin_old_reward_desc": {
         "message": "Tens {count} skin(s) antiga(es). Rep +{reward} 🎨 Skin Coins!"
     },
@@ -1438,5 +1432,11 @@
     },
     "terms_update_reject_desc": {
         "message": "Si rebutges, no podràs jugar fins que acceptis. Pots exportar les teves dades locals abans de sortir."
+    },
+    "beta_music_title": {
+        "message": "Nova música de joc"
+    },
+    "beta_music_desc": {
+        "message": "Reprodueix Game Music.mp3 en bucle en comptes de la música procedural."
     }
 }

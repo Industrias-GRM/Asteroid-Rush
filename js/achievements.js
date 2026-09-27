@@ -47,6 +47,7 @@ function processAchievementQueue() {
   }, 3500);
 }
 
+let _achCache = { t: 0, totTime: 0, totAst: 0, marsTrio: false };
 function checkAchievements() {
   // En tutorial no se conceden logros. En modo BETA tampoco.
   if (typeof tutorialGameActive !== 'undefined' && tutorialGameActive) return;
@@ -73,15 +74,23 @@ function checkAchievements() {
   check('galactic_legend', maxBest >= 500000);
   check('impossible_score',maxBest >= 1000000);
   check('mars_hero',       marsSequenceTriggered);
-  check('mars_trio',       (()=>{ try{ return ['normal','fast','swingcopter'].every(m=> localStorage.getItem('dodgeMarsReached_'+m)==='true'); }catch(e){return false;} })());
+  // OPT 1.0.0.3: cachear lecturas localStorage caras (antes 3-4 por llamada, llamada por frame)
+  const _nowAch = (typeof performance !== 'undefined' && performance.now) ? performance.now() : Date.now();
+  if (_nowAch - _achCache.t > 2000) {
+    try { const v = parseInt(localStorage.getItem('dodgeTotalGameTime') || '0', 10); _achCache.totTime = isNaN(v)?0:v; } catch(e) {}
+    try { const v = parseInt(localStorage.getItem('dodgeTotalAsteroids') || '0', 10); _achCache.totAst = isNaN(v)?0:v; } catch(e) {}
+    try { _achCache.marsTrio = ['normal','fast','swingcopter'].every(m=> localStorage.getItem('dodgeMarsReached_'+m)==='true'); } catch(e) { _achCache.marsTrio = false; }
+    _achCache.t = _nowAch;
+  }
+  check('mars_trio',       _achCache.marsTrio);
   check('iron_pilot',      level >= 25 && sessionPowerupsCollected === 0);
   check('asteroid_buster', sessionAsteroidsDestroyed >= 50);
   check('pacifist',        level >= 25 && sessionLaserFiredCount === 0);
   check('fast_elite',      fastModeActive && score >= 100000);
   check('zigzag_pro',      swingcopterModeActive && score >= 100000);
 
-  let _totTime = 0; try { const v = parseInt(localStorage.getItem('dodgeTotalGameTime') || '0', 10); _totTime = isNaN(v)?0:v; } catch(e) {}
-  let _totAst = 0; try { const v = parseInt(localStorage.getItem('dodgeTotalAsteroids') || '0', 10); _totAst = isNaN(v)?0:v; } catch(e) {}
+  let _totTime = _achCache.totTime;
+  let _totAst = _achCache.totAst;
   check('viajero',           (_totTime + gameDuration) >= 7200000);
   check('caza_recompensas',  unlockedAchievements.length >= 5);
   check('destructor_estelar', (_totAst + sessionAsteroidsDestroyed) >= 250);

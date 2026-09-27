@@ -6,7 +6,8 @@ const AUDIO_FILES = {
   asteroid: "sounds/asteroid.mp3",
   laserHit: "sounds/laser_hit.mp3",
   shield: "sounds/shield.mp3",
-  eliminated: "sounds/eliminated.mp3"
+  eliminated: "sounds/eliminated.mp3",
+  gameMusic: "sounds/Game Music.mp3"
 };
 
 const audioCache = {};
@@ -45,7 +46,7 @@ function playAudioFile(key, volume = 0.5) {
 const AUDIO_CONFIG = {
   masterVolume: 0.3,
   sfxVolume: 0.4,
-  musicVolume: 0.45,
+  musicVolume: 0.55,
   effects: {
     scoreUp:   { notes: [880, 1100, 1320], durations: [90, 90, 120], volumes: [0.35, 0.25, 0.3], type: "triangle", delay: [0, 80, 160] },
     levelUp:   { notes: [660, 990, 1320, 1650], durations: [80, 120, 100, 150], volumes: [0.4, 0.4, 0.4, 0.35], type: "square", delay: [0, 80, 160, 280] },
@@ -78,6 +79,64 @@ let backgroundOscillators = [];
 let backgroundGains = [];
 let melodyTimer = null;
 let backgroundFilter = null;
+// Nueva música de juego (BETA): archivo Game Music.mp3 en loop
+let gameMusicAudio = null;
+// Paso de la melodía procedural (persistente para continuar tras pausa/slot)
+let backgroundMelodyStep = 0;
+
+function isBetaGameMusicEnabled() {
+  try {
+    return (typeof betaModeActive !== 'undefined' && betaModeActive) &&
+           (typeof betaNewMusicEnabled !== 'undefined' && betaNewMusicEnabled);
+  } catch (e) { return false; }
+}
+
+function startGameMusicFile(resumeTime) {
+  try {
+    if (!gameMusicAudio) {
+      gameMusicAudio = new Audio();
+      gameMusicAudio.src = Platform.resolveURL(AUDIO_FILES.gameMusic);
+      gameMusicAudio.loop = true;
+      gameMusicAudio.preload = "auto";
+    }
+    // Si se pasa un tiempo explícito (slot), saltar ahí; si no, continuar
+    // desde currentTime actual (pausa) en vez de reiniciar a 0.
+    if (typeof resumeTime === "number" && isFinite(resumeTime) && resumeTime >= 0) {
+      try {
+        const dur = gameMusicAudio.duration;
+        gameMusicAudio.currentTime = (isFinite(dur) && dur > 0) ? (resumeTime % dur) : resumeTime;
+      } catch (e) { try { gameMusicAudio.currentTime = resumeTime; } catch (e2) {} }
+    }
+    gameMusicAudio.volume = AUDIO_CONFIG.masterVolume * AUDIO_CONFIG.musicVolume;
+    const p = gameMusicAudio.play();
+    if (p !== undefined) p.catch(() => {});
+  } catch (e) {}
+}
+
+function stopGameMusicFile(reset = true) {
+  try {
+    if (gameMusicAudio) {
+      gameMusicAudio.pause();
+      if (reset) { try { gameMusicAudio.currentTime = 0; } catch (e) {} }
+    }
+  } catch (e) {}
+}
+
+function pauseGameMusicFile() {
+  try { if (gameMusicAudio && !gameMusicAudio.paused) gameMusicAudio.pause(); } catch (e) {}
+}
+
+// Estado guardable de la música (para slots): dónde iba el audio
+function getMusicSaveState() {
+  try {
+    if (isBetaGameMusicEnabled() && gameMusicAudio) {
+      const t = gameMusicAudio.currentTime;
+      if (typeof t === "number" && isFinite(t) && t > 0) return { musicMode: "file", musicTime: t };
+      return { musicMode: "file", musicTime: 0 };
+    }
+    return { musicMode: "procedural", musicStep: backgroundMelodyStep || 0 };
+  } catch (e) { return { musicMode: "procedural", musicStep: 0 }; }
+}
 
 // ============================================================
 // FUNCIONES DE AUDIO
@@ -118,10 +177,26 @@ function playSound(effectName, customConfig = {}) {
   });
 }
 
-function startBackgroundMusic() {
+function startBackgroundMusic(resumeState) {
   if (!soundOn || !musicOn) return;
+  // BETA: nueva música de juego (archivo MP3 en loop)
+  if (isBetaGameMusicEnabled()) {
+    stopProceduralBackgroundMusic();
+    const t = resumeState && typeof resumeState.musicTime === "number" ? resumeState.musicTime : undefined;
+    startGameMusicFile(t);
+    return;
+  }
+  // Si se reanuda la procedural tras pausa/slot, no reiniciar el fichero ni el paso
+  const isResume = !!(resumeState && (typeof resumeState.musicStep === "number" || resumeState.fromPause));
+  if (!isResume) stopGameMusicFile(true);
   initAudio();
-  stopBackgroundMusic();
+  if (!isResume) stopProceduralBackgroundMusic(true);
+  else stopProceduralBackgroundMusic(false);
+  if (resumeState && typeof resumeState.musicStep === "number" && isFinite(resumeState.musicStep) && resumeState.musicStep >= 0) {
+    backgroundMelodyStep = Math.floor(resumeState.musicStep);
+  }
+  // Si veníamos de pausa con el contexto suspendido, reanudarlo
+  try { if (audioCtx && audioCtx.state === "suspended") audioCtx.resume(); } catch (e) {}
   const now = audioCtx.currentTime;
   const masterGain = audioCtx.createGain();
   masterGain.gain.value = AUDIO_CONFIG.masterVolume * AUDIO_CONFIG.musicVolume;
@@ -153,13 +228,14 @@ function startBackgroundMusic() {
   melodyOsc.connect(melodyGain).connect(melodyFilter).connect(compressor); melodyOsc.start();
   backgroundOscillators.push(melodyOsc); backgroundGains.push(melodyGain);
   const notes = [220, 261.63, 329.63, 392.0, 440, 329.63, 261.63];
-  let step = 0;
   const playStep = () => {
     if (!audioCtx || audioCtx.state === "closed") return;
+    // Pausa con contexto suspendido: no avanzar el paso hasta reanudar
+    if (audioCtx.state === "suspended") { melodyTimer = setTimeout(playStep, 300); return; }
     const difficultyBoost = 1 + (Math.min(score, 50000) / 50000) * 0.5;
     const speedBoost = fastModeActive ? 1.3 : 1;
     backgroundFilter.frequency.setTargetAtTime(900 * difficultyBoost, audioCtx.currentTime, 0.3);
-    const note = notes[step % notes.length] * speedBoost;
+    const note = notes[backgroundMelodyStep % notes.length] * speedBoost;
     const n = audioCtx.currentTime;
     melodyOsc.frequency.setTargetAtTime(note, n, 0.05);
     melodyGain.gain.cancelScheduledValues(n);
@@ -167,7 +243,7 @@ function startBackgroundMusic() {
     melodyGain.gain.linearRampToValueAtTime(0.035, n + 0.08);
     melodyGain.gain.linearRampToValueAtTime(0.02, n + 0.3);
     melodyGain.gain.exponentialRampToValueAtTime(0.01, n + 0.5);
-    step++;
+    backgroundMelodyStep++;
     const baseInterval = 300;
     const speedFactor = fastModeActive ? 1 / FAST_MODE_MULTIPLIER : 1;
     melodyTimer = setTimeout(playStep, baseInterval * speedFactor);
@@ -175,8 +251,8 @@ function startBackgroundMusic() {
   playStep();
 }
 
-function stopBackgroundMusic() {
-  if (!audioCtx) return;
+function stopProceduralBackgroundMusic(resetStep = true) {
+  if (!audioCtx) { if (resetStep) backgroundMelodyStep = 0; return; }
   const now = audioCtx.currentTime;
   backgroundOscillators.forEach(osc => { try { osc.stop(now + 0.1); osc.disconnect(); } catch (e) {} });
   backgroundOscillators.length = 0;
@@ -184,6 +260,31 @@ function stopBackgroundMusic() {
   backgroundGains.length = 0;
   if (melodyTimer) { clearTimeout(melodyTimer); melodyTimer = null; }
   if (backgroundFilter) { try { backgroundFilter.disconnect(); } catch (e) {} backgroundFilter = null; }
+  if (resetStep) backgroundMelodyStep = 0;
+}
+
+function stopBackgroundMusic(reset = true) {
+  stopGameMusicFile(reset);
+  stopProceduralBackgroundMusic(reset);
+}
+
+// Pausa que conserva la posición: el MP3 hace pause sin reset y la
+// procedural guarda el paso de la melodía (los osciladores se paran pero el step se conserva)
+function pauseBackgroundMusic() {
+  pauseGameMusicFile();
+  if (melodyTimer) { clearTimeout(melodyTimer); melodyTimer = null; }
+  // Parar osciladores pero conservar backgroundMelodyStep para continuar
+  try { stopProceduralBackgroundMusic(false); } catch (e) {}
+  try { stopSlowSoundEffect(); } catch (e) {}
+}
+
+function resumeBackgroundMusic() {
+  if (!soundOn || !musicOn || !gameRunning || gamePaused) return;
+  if (isBetaGameMusicEnabled()) {
+    startGameMusicFile();
+    return;
+  }
+  startBackgroundMusic({ musicStep: backgroundMelodyStep, fromPause: true });
 }
 
 // ============================================================

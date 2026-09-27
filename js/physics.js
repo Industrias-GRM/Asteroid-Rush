@@ -3,6 +3,8 @@
 // ============================================================
 
 let _cachedPlayerX = null;
+let _lastPlayerTransform = null;
+let _lastLaserLeft = null;
 function getPlayerCollisionRect() {
   const now = performance.now();
   if (cachedPlayerCollisionRectTime && now - cachedPlayerCollisionRectTime < 8 && _cachedPlayerX !== null && Math.abs(playerX - _cachedPlayerX) < 0.5) return cachedPlayerCollisionRect;
@@ -48,7 +50,9 @@ function updatePlayer(delta) {
 
     if (playerX > maxX) { playerX = maxX; if (playerVelocity > 0) playerVelocity = 0; swingcopterDirection = -1; }
     else if (playerX < minX) { playerX = minX; if (playerVelocity < 0) playerVelocity = 0; swingcopterDirection =  1; }
-    playerEl.style.transform = `translate3d(${playerX}px, 0, 0)`;
+    // OPT 1.0.0.3: evitar escritura DOM si no cambió
+    const _t1 = `translate3d(${playerX}px, 0, 0)`;
+    if (_t1 !== _lastPlayerTransform) { playerEl.style.transform = _t1; _lastPlayerTransform = _t1; }
 
   } else {
     const speedMultiplier = _fast ? 2.5 : 1;
@@ -78,7 +82,9 @@ function updatePlayer(delta) {
       if (dir < 0) tilt = " rotateZ(-5deg)";
       else if (dir > 0) tilt = " rotateZ(5deg)";
     }
-    playerEl.style.transform = `translate3d(${playerX}px, 0, 0)${tilt}`;
+    // OPT 1.0.0.3: evitar escritura DOM si no cambió
+    const _t2 = `translate3d(${playerX}px, 0, 0)${tilt}`;
+    if (_t2 !== _lastPlayerTransform) { playerEl.style.transform = _t2; _lastPlayerTransform = _t2; }
   }
 
   if (showHitboxes) {
@@ -87,5 +93,9 @@ function updatePlayer(delta) {
     FxCanvas.queueDebugRect(rect.left, rect.top, rect.right - rect.left, rect.bottom - rect.top, FxCanvas.HITBOX_COLORS.player);
   }
 
-  if (laserBeamEl && laserActive) laserBeamEl.style.left = playerX + PLAYER_WIDTH / 2 + "px";
+  if (laserBeamEl && laserActive) {
+    // OPT 1.0.0.3: evitar escritura DOM si no cambió
+    const _ll = playerX + PLAYER_WIDTH / 2;
+    if (_ll !== _lastLaserLeft) { laserBeamEl.style.left = _ll + "px"; _lastLaserLeft = _ll; }
+  }
 }

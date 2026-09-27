@@ -1406,12 +1406,6 @@
     "super_offer_pass": {
         "message": "Skip"
     },
-    "setting_dual_mode": {
-        "message": "Dual mode (2 devices)"
-    },
-    "setting_dual_mode_desc": {
-        "message": "Sync between two devices with economy merge and heartbeat detection."
-    },
     "skin_old_reward_desc": {
         "message": "You have {count} old skin(s). Receive +{reward} 🎨 Skin Coins!"
     },
@@ -1438,5 +1432,11 @@
     },
     "terms_update_reject_desc": {
         "message": "If you reject, you won't be able to play until you accept. You can export your local data before leaving."
+    },
+    "beta_music_title": {
+        "message": "New game music"
+    },
+    "beta_music_desc": {
+        "message": "Play Game Music.mp3 on loop instead of procedural music."
     }
 }

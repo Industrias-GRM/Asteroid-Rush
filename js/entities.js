@@ -178,14 +178,15 @@ function updatePowerUps(effectiveDelta) {
     if (magnetActive) {
       const dx = playerCx - (p.x + p.size / 2);
       const dy = playerCy - (p.y + p.size / 2);
-      const dist = Math.hypot(dx, dy) || 1;
+      const dist = Math.sqrt(dx * dx + dy * dy) || 1;
       const pull = 600 * dt;
       p.x += (dx / dist) * pull;
       p.y += (dy / dist) * pull;
     }
     if (p.y > GAME_HEIGHT + p.size) { try { p.el.remove(); } catch(e) {} toRemove.push(i); return; }
-    p.el.style.top = p.y + "px";
-    if (magnetActive) p.el.style.left = p.x + "px";
+    // OPT 1.0.0.3: evitar escrituras DOM redundantes + hypot -> distancia cuadrada
+    if (p._lastY !== p.y) { p.el.style.top = p.y + "px"; p._lastY = p.y; }
+    if (magnetActive && p._lastX !== p.x) { p.el.style.left = p.x + "px"; p._lastX = p.x; }
     const pSize = p.size * POWERUP_COLLISION_FACTOR;
     const pLeft = p.x + (p.size - pSize) / 2;
     const pTop  = p.y + (p.size - pSize) / 2;
@@ -259,9 +260,13 @@ function updateProjectiles(effectiveDelta) {
       }
     }
   });
-  // Fix #10: deduplicar índices para no borrar proyectil equivocado
-  const uniq = [...new Set(toRemoveProj)].sort((a,b)=>b-a);
-  for (let i = 0; i < uniq.length; i++) projectiles.splice(uniq[i], 1);
+  // OPT 1.0.0.3: toRemoveProj ya viene en orden ascendente y sin duplicados
+  // (cada pIndex se visita una vez). Evita [...new Set()].sort() por frame.
+  for (let i = toRemoveProj.length - 1; i >= 0; i--) {
+    const idx = toRemoveProj[i];
+    if (i > 0 && idx === toRemoveProj[i - 1]) continue;
+    projectiles.splice(idx, 1);
+  }
 }
 
 function updateAutoShootProgress(timestamp) {

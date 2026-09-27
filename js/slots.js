@@ -107,9 +107,12 @@ let _resumeShieldRemaining = 0;
 let _resumeLaserRemaining = 0;
 let _resumeSlowActive = false;
 let _resumeSlowElapsedTime = 0;
+let _resumeMusicState = null; // posición del audio guardada (musicTime/musicStep)
 
 function _buildSaveData() {
   const effectiveNow = (gamePaused && pauseStartTime > 0) ? pauseStartTime : performance.now();
+  let musicState = null;
+  try { if (typeof getMusicSaveState === "function") musicState = getMusicSaveState(); } catch (e) { musicState = null; }
   return {
     score, playerX, level, difficultyFactor, gameDuration,
     fastModeActive, swingcopterModeActive, swingcopterDirection, marsSequenceTriggered,
@@ -119,6 +122,9 @@ function _buildSaveData() {
     slowActive, slowElapsedTime,
     autoShootElapsed: Math.max(0, effectiveNow - lastAutoShootTime), // Fix #2: progreso de carga
     sessionPowerupsCollected, sessionShieldsCollected, sessionLasersCollected, sessionSlowsCollected, sessionLaserFiredCount, sessionAsteroidsDestroyed, // Fix #3: contadores de logros
+    musicMode: musicState ? musicState.musicMode : undefined,
+    musicTime: musicState && typeof musicState.musicTime === "number" ? musicState.musicTime : undefined,
+    musicStep: musicState && typeof musicState.musicStep === "number" ? musicState.musicStep : undefined,
     timestamp: Date.now(),
     meteors:      meteors.map(m => ({ x: m.x, y: m.y, size: m.size, speed: m.speed, speedX: m.speedX })),
     powerups:     powerups.map(p => ({ x: p.x, y: p.y, size: p.size, speed: p.speed, type: p.type })),
@@ -204,7 +210,7 @@ function skipCountdown() {
   else { slowActive = false; slowElapsedTime = 0; }
   _resumeAutoShootElapsed = 0; _resumeShieldRemaining = 0; _resumeLaserRemaining = 0;
   _resumeSlowActive = false; _resumeSlowElapsedTime = 0;
-  startBackgroundMusic(); playUnpauseSound();
+  startBackgroundMusic(_resumeMusicState); _resumeMusicState = null; playUnpauseSound();
   // No reiniciar el gameLoop aquí: puede generar bucles duplicados y picos de lag.
 }
 
@@ -246,7 +252,7 @@ function startResumeCountdown() {
       else { slowActive = false; slowElapsedTime = 0; }
       _resumeAutoShootElapsed = 0; _resumeShieldRemaining = 0; _resumeLaserRemaining = 0;
       _resumeSlowActive = false; _resumeSlowElapsedTime = 0;
-      startBackgroundMusic();
+      startBackgroundMusic(_resumeMusicState); _resumeMusicState = null;
       // No reiniciar el gameLoop aquí: puede duplicar loops y causar picos de lag.
     }
   }, 1000);
@@ -352,6 +358,12 @@ function resumeGameFromLoad(data) {
   if (pauseContinueBtn) pauseContinueBtn.classList.add("hidden");
   updateTouchControlsVisibility();
   _resumeAutoShootElapsed = data.autoShootElapsed || 0; 
+  _resumeMusicState = null;
+  try {
+    if (typeof data.musicTime === "number" || typeof data.musicStep === "number") {
+      _resumeMusicState = { musicMode: data.musicMode, musicTime: data.musicTime, musicStep: data.musicStep };
+    }
+  } catch (e) { _resumeMusicState = null; }
   startResumeCountdown();
 }
 
