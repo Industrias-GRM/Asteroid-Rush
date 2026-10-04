@@ -5305,7 +5305,7 @@ button:hover:not(.shop-buy-btn):not(.lives-buy-btn):not(.super-offer-buy-btn):no
 #earth-horizon {
   bottom: -130px;
   /* Visible al inicio - Ajustado para evitar línea de píxeles */
-  background-image: url('images/tierra.png');
+  background-image: url('images/Tierra.png');
   box-shadow: 0 -10px 80px rgba(79, 195, 247, 0.3);
   /* Resplandor externo azul */
   transform: translateY(0);
@@ -5321,7 +5321,7 @@ button:hover:not(.shop-buy-btn):not(.lives-buy-btn):not(.super-offer-buy-btn):no
 #mars-horizon {
   top: -150px;
   /* Más abajo para que se vea más planeta */
-  background-image: url('images/marte.png');
+  background-image: url('images/Marte.png');
   box-shadow: 0 10px 80px rgba(216, 67, 21, 0.4);
   /* Resplandor ABAJO */
   opacity: 0;
