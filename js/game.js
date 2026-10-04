@@ -11,16 +11,15 @@ function _afterScoreChanged() {
     if (Math.floor(lastIntScore / 1000) < Math.floor(currentIntScore / 1000)) {
       if (currentIntScore > 0) { playScoreUp(); checkSkinUnlocksFromScore(); }
     }
-    // OPT 1.0.0.3: throttle logros + HUD (antes cada frame -> localStorage/DOM por frame)
+    // 1.0.0.4: HUD cada frame (antes throttle 250ms -> marcador desactualizado).
+    // updateBestScoreUI() ya hace diff por spans, es barato llamarlo por frame.
     const now = (typeof performance !== 'undefined' && performance.now) ? performance.now() : Date.now();
     if (now - _lastAchCheck > 1000 || Math.floor(currentIntScore / 1000) !== Math.floor(lastIntScore / 1000)) {
       checkAchievements();
       _lastAchCheck = now;
     }
-    if (now - _lastBestUI > 250) {
-      updateBestScoreUI();
-      _lastBestUI = now;
-    }
+    try { updateBestScoreUI(); } catch (e) {}
+    _lastBestUI = now;
     lastIntScore = currentIntScore;
   }
 }
@@ -1122,6 +1121,9 @@ function gameLoop(timestamp) {
 
   // Dibujar llavero (después de drawCanvasEntities que limpia el canvas)
   _drawKeychain();
+
+  // 1.0.0.4: refrescar marcador cada frame renderizado (barato por diff de spans).
+  try { if (typeof updateBestScoreUI === 'function') updateBestScoreUI(); } catch (e) {}
 
   // Hitboxes de depuración: encima de todo.
   requestGameLoopFrame();

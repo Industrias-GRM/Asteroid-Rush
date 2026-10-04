@@ -7,7 +7,7 @@
   <title data-i18n="app_title"></title>
   <style>
     /* Critical CSS: establece límites de layout antes de parsear popup.css y antes de i18n apply */
-    #game-container{width:430px;height:480px;aspect-ratio:430/480;min-height:480px;contain:size layout}
+    #game-container{width:430px;height:auto;aspect-ratio:430/480;min-height:0;contain:size layout}
     #top-bar{height:50px;min-height:50px;contain:size layout}
     #instructions-btn{min-width:90px;max-width:140px;height:30px;contain:layout style}
     #fullscreen-btn{width:32px;height:32px;contain:layout style}
@@ -1122,6 +1122,8 @@
   <script src="js/dom.js"></script>
   <script src="js/audio.js"></script>
   <script src="js/i18n.js"></script>
+  <!-- 1.0.0.4: keys.js vía <script> (funciona en file:// sin CORS). Si no existe (gitignore), 404 silencioso y SWFallback sigue offline -->
+  <script src="keys.js" onerror="window.__keysMissing=true"></script>
   <script src="js/sw-fallback.js"></script>
   <script src="js/sync.js"></script>
   <script src="js/backend.js"></script>

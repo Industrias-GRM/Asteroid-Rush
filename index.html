@@ -8,12 +8,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Asteroid Rush BETA</title>
+  <title>Asteroid Rush</title>
   <script>
-    // Si ya estamos en popup.html con fullscreen, no redirigir en bucle
-    if (window.location.pathname.endsWith('index.html')) {
-      window.location.replace('popup.html?fullscreen=true');
-    }
+    // 1.0.0.4: entrada web -> popup.html?fullscreen=true
+    // Funciona en http(s), file:// y tanto con /index.html como con / (root).
+    // No requiere CORS ni fetch: la redirección es un replace, y popup.html
+    // carga keys.js vía <script> (apta para file://) con fallback offline.
+    (function () {
+      try {
+        var p = window.location.pathname || '';
+        var isIndex = p.endsWith('index.html') || p.endsWith('/') || p === '';
+        var isPopup = p.endsWith('popup.html');
+        if (isIndex && !isPopup) {
+          var base = p.slice(0, p.lastIndexOf('/') + 1);
+          window.location.replace(base + 'popup.html?fullscreen=true');
+        }
+      } catch (e) {
+        try { window.location.replace('popup.html?fullscreen=true'); } catch (_) {}
+      }
+    })();
   </script>
 </head>
 <body>

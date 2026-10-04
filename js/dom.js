@@ -101,6 +101,12 @@ const settingsBtn = document.getElementById("settings-btn");
 const settingsOverlay = document.getElementById("settings-overlay");
 const settingsCloseBtn = document.getElementById("settings-close-btn");
 
+// 1.0.0.4: elementos externos que entran en el recálculo del popup.
+const topBarEl = document.getElementById("top-bar");
+const topBarTitleEl = topBarEl ? topBarEl.querySelector("h1") : null;
+const gameFooterEl = document.getElementById("game-footer");
+const gameWrapperEl = document.getElementById("game-wrapper");
+
 const slotSelectBtn = document.getElementById("slot-select-btn");
 const btnSaveQuit = document.getElementById("btn-save-quit");
 const btnFinishRun = document.getElementById("btn-finish-run");
@@ -140,31 +146,150 @@ const importDataBtn = document.getElementById("import-data-btn");
 })();
 
 // ============================================================
-// ESCALA DEL STAGE
+// ESCALA DEL STAGE (base 430x480, adaptable a cada pantalla)
 // ============================================================
+// En el popup de extensión la ventana la dimensiona el contenido, así que
+// `100vw` es circular y los max-width nunca encogen solos: si la pantalla
+// (o el zoom) deja menos sitio que la base, se encoge el body a ese ancho
+// y el resto (max-widths + escala del stage) se adapta solo.
+function updatePopupBaseScale() {
+  if (document.body.classList.contains("fullscreen-mode")) return 1;
+  try {
+    // Pestaña web (localhost, file://, http): viewport externo y estable,
+    // puede fluir a lo ancho con tope. El popup real de extensión no entra
+    // aquí (ver rama de abajo): su ventana la dimensiona el contenido.
+    const isExt = (typeof Platform !== "undefined" && Platform.isExtension);
+    if (!isExt) {
+      document.body.classList.add("web-fluid");
+      document.documentElement.classList.add("web-fluid-root");
+      return 1;
+    }
+    const baseW = 440, baseH = 580, baseGameW = 430;
+    // Solo la pantalla como referencia: la ventana del popup la dimensiona el
+    // contenido (usar vw/innerWidth es circular y colapsa a una línea fina).
+    // Los anchos se fijan en px explícitos, nunca con vw.
+    if (!window.screen) return 1;
+    const dpr = window.devicePixelRatio || 1;
+    const scrW = (window.screen.availWidth || window.screen.width || 0) / dpr;
+    const scrH = (window.screen.availHeight || window.screen.height || 0) / dpr;
+    if (!(scrW > 0) || !(scrH > 0)) return 1;
+    const s = Math.min(1, scrW / baseW, scrH / baseH);
+    if (s < 1) {
+      document.body.style.width = `${Math.floor(baseW * s)}px`;
+      // Altura automática para no dejar hueco bajo el stage escalado.
+      document.body.style.height = "auto";
+      document.body.style.minHeight = "0";
+      if (typeof containerEl !== "undefined" && containerEl) {
+        containerEl.style.width = `${Math.floor(baseGameW * s)}px`;
+      }
+    } else {
+      document.body.style.width = "";
+      document.body.style.height = "";
+      document.body.style.minHeight = "";
+      if (typeof containerEl !== "undefined" && containerEl) {
+        containerEl.style.width = "";
+      }
+    }
+    return s;
+  } catch (e) {}
+  return 1;
+}
+
+// 1.0.0.4: todo lo que queda FUERA del #stage entra en el mismo recálculo
+// que este (lo de dentro —menú, HUD, overlays— escala solo por transform;
+// los táctiles van por --stage-scale). Cubre popup, fullscreen y web-fluid,
+// en ambas direcciones. Todo en px explícitos (nada de vw). Cerca de 1 manda
+// el CSS base. El contenedor reserva 120·s para este cromo: encaje exacto.
+function updateExternalScale(s) {
+  const clear = (typeof s !== "number" || isNaN(s) || (s >= 0.98 && s <= 1.02));
+  try {
+    const px = (v) => `${Math.round(v * 10) / 10}px`;
+    if (topBarEl) {
+      topBarEl.style.height = clear ? "" : px(50 * s);
+      // El min-height:50px del CSS pisaría la altura escalada: también escala.
+      topBarEl.style.minHeight = clear ? "" : px(50 * s);
+      topBarEl.style.gap = clear ? "" : px(6 * s);
+      topBarEl.style.padding = clear ? "" : `0 ${px(8 * s)} ${px(10 * s)}`;
+    }
+    if (settingsBtn) {
+      settingsBtn.style.width = clear ? "" : px(32 * s);
+      settingsBtn.style.height = clear ? "" : px(32 * s);
+      settingsBtn.style.fontSize = clear ? "" : px(18 * s);
+      // El radio también escala: si no, con zoom se ve más/menos arqueado.
+      settingsBtn.style.borderRadius = clear ? "" : px(8 * s);
+      // El grosor acompaña al tamaño para no verse desproporcionado.
+      settingsBtn.style.borderWidth = clear ? "" : px(1 * s);
+    }
+    if (typeof fullscreenBtn !== "undefined" && fullscreenBtn) {
+      fullscreenBtn.style.width = clear ? "" : px(32 * s);
+      fullscreenBtn.style.height = clear ? "" : px(32 * s);
+      fullscreenBtn.style.borderRadius = clear ? "" : px(8 * s);
+      fullscreenBtn.style.borderWidth = clear ? "" : px(1 * s);
+    }
+    if (typeof instructionsBtn !== "undefined" && instructionsBtn) {
+      instructionsBtn.style.minWidth = clear ? "" : px(90 * s);
+      instructionsBtn.style.maxWidth = clear ? "" : px(140 * s);
+      instructionsBtn.style.height = clear ? "" : px(30 * s);
+      instructionsBtn.style.fontSize = clear ? "" : px(11 * s);
+      instructionsBtn.style.padding = clear ? "" : `0 ${px(10 * s)}`;
+      instructionsBtn.style.borderRadius = clear ? "" : px(8 * s);
+      instructionsBtn.style.borderWidth = clear ? "" : px(1 * s);
+    }
+    if (topBarTitleEl) topBarTitleEl.style.fontSize = clear ? "" : px(22 * s);
+    if (gameFooterEl) {
+      gameFooterEl.style.fontSize = clear ? "" : px(12 * s);
+      gameFooterEl.style.marginTop = clear ? "" : px(10 * s);
+    }
+    // El rectángulo del juego también: radio y grosor acompañan al factor
+    // para no curvarse ni verse desproporcionados con zoom.
+    // Bases por modo (popup: 16px/2px, fullscreen: 16px/3px).
+    if (typeof containerEl !== "undefined" && containerEl) {
+      const fsb = document.body.classList.contains("fullscreen-mode");
+      containerEl.style.borderRadius = clear ? "" : px(16 * s);
+      containerEl.style.borderWidth = clear ? "" : px((fsb ? 3 : 2) * s);
+    }
+    // El espacio entre textos y rectángulo también escala: si gap/paddings
+    // quedan fijos, al hacer zoom el hueco crece en proporción. Bases por
+    // modo (popup: 2/10/20, fullscreen: 10/0/0).
+    if (gameWrapperEl) {
+      const fs = document.body.classList.contains("fullscreen-mode");
+      const gapBase = fs ? 10 : 2;
+      gameWrapperEl.style.gap = clear ? "" : px(gapBase * s);
+      if (!fs) {
+        gameWrapperEl.style.paddingTop = clear ? "" : px(10 * s);
+        gameWrapperEl.style.paddingBottom = clear ? "" : px(20 * s);
+      } else {
+        gameWrapperEl.style.paddingTop = "";
+        gameWrapperEl.style.paddingBottom = "";
+      }
+    }
+  } catch (e) {}
+}
 function updateStageScale() {
   if (!containerEl || !stageEl) return;
-  // El contenedor ahora es fluido (min(430px, 100vw-10px)): con zoom alto el
-  // viewport CSS se estrecha y el contenedor encoge en vez de desbordar.
+  // Primero: encoger la base si la pantalla es más estrecha que el popup.
+  updatePopupBaseScale();
   // La escala se calcula sobre el ancho real y se sincroniza la altura del
   // contenedor con el stage escalado para no dejar hueco (alargado abajo).
   const cw = containerEl.clientWidth || 430;
   if (cw <= 0) return;
   const raw = cw / 430;
   // Solo tope inferior: con deszoom (viewport grande) la escala debe crecer
-  // libre para que el stage llene el contenedor; caparla dejaba hueco.
+  // libre para que el stage llene el contenedor. Todo lo exterior la sigue
+  // linealmente, así las proporciones se conservan a cualquier zoom.
   const scale = Math.max(0.2, raw);
   document.documentElement.style.setProperty("--stage-scale", scale);
+  // Los halos exteriores también escalan (si no, dominan al encoger).
+  // Sin suelo: la sombra solo pinta, nunca come interior ni rompe layout.
+  document.documentElement.style.setProperty("--sh-scale", scale > 0.01 ? scale : 1);
   stageEl.style.transformOrigin = "top left";
   stageEl.style.transform = `scale(${scale})`;
-  // transform no afecta al layout: en popup se fija altura explícita para
-  // no dejar hueco. En fullscreen la altura la manda el CSS (aspect-ratio),
-  // así que se limpia el inline para no pelear con él.
-  if (document.body.classList.contains("fullscreen-mode")) {
-    containerEl.style.height = "";
-  } else {
-    containerEl.style.height = `${Math.round(480 * scale)}px`;
-  }
+  // transform no afecta al layout: la altura del contenedor la manda
+  // siempre el aspect-ratio 430/480 a partir del ancho (el alto sigue al ancho).
+  // Se limpia cualquier inline para no pelear con él.
+  containerEl.style.height = "";
+  // Toda la pantalla entra en el resize: externos con la misma escala del stage.
+  try { updateExternalScale(scale); } catch (e) {}
 }
 
 window.addEventListener("resize", updateStageScale);

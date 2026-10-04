@@ -2,17 +2,64 @@ const SWFallback = (() => {
   'use strict';
 
 let _keys = null;
+let _keysMissing = false;
 let BASE_URL = '';
 let NEWS_BASE_URL = '';
-const getKeys = () => _keys || fetch('../keys.js').then(r => r.text()).then(text => {
-  const PROJECT_ID = text.match(/PROJECT_ID\s*=\s*"([^"]+)"/)[1];
-  const API_KEY = text.match(/API_KEY\s*=\s*"([^"]+)"/)[1];
-  const NEWS_API_KEY = text.match(/NEWS_API_KEY\s*=\s*"([^"]+)"/)[1];
-  _keys = { PROJECT_ID, API_KEY, NEWS_API_KEY };
-  BASE_URL = `https://firestore.googleapis.com/v1/projects/${PROJECT_ID}/databases/(default)/documents`;
-  NEWS_BASE_URL = `https://firestore.googleapis.com/v1/projects/asteroid-rush-news/databases/(default)/documents`;
+function _keysFromGlobals() {
+  try {
+    // keys.js cargado vía <script src="keys.js"> define const globales.
+    // En file:// los <script> sí cargan (fetch no por CORS), por eso se prioriza.
+    const g = (typeof window !== 'undefined') ? window : self;
+    const pid = g.PROJECT_ID || (typeof PROJECT_ID !== 'undefined' ? PROJECT_ID : null);
+    const ak = g.API_KEY || (typeof API_KEY !== 'undefined' ? API_KEY : null);
+    const nak = g.NEWS_API_KEY || (typeof NEWS_API_KEY !== 'undefined' ? NEWS_API_KEY : null);
+    if (pid && ak) return { PROJECT_ID: pid, API_KEY: ak, NEWS_API_KEY: nak || ak };
+  } catch (e) {}
+  return null;
+}
+function _parseKeysText(text) {
+  try {
+    const mPid = text.match(/PROJECT_ID\s*=\s*["']([^"']+)["']/);
+    const mAk = text.match(/(?:^|[^_A-Z])API_KEY\s*=\s*["']([^"']+)["']/m);
+    const mNak = text.match(/NEWS_API_KEY\s*=\s*["']([^"']+)["']/);
+    if (mPid && mAk) return { PROJECT_ID: mPid[1], API_KEY: mAk[1], NEWS_API_KEY: (mNak && mNak[1]) || mAk[1] };
+  } catch (e) {}
+  return null;
+}
+function _applyKeys(k) {
+  _keys = k;
+  try {
+    BASE_URL = `https://firestore.googleapis.com/v1/projects/${k.PROJECT_ID}/databases/(default)/documents`;
+    NEWS_BASE_URL = `https://firestore.googleapis.com/v1/projects/asteroid-rush-news/databases/(default)/documents`;
+  } catch (e) {}
   return _keys;
-});
+}
+const getKeys = async () => {
+  if (_keys) return _keys;
+  // 1) Globales de <script src="keys.js"> (funciona en file:// sin CORS)
+  const fromGlobals = _keysFromGlobals();
+  if (fromGlobals && !String(fromGlobals.API_KEY).includes('TU_API_KEY')) return _applyKeys(fromGlobals);
+  // 2) fetch relativo al documento (popup.html está en root: 'keys.js', no '../keys.js')
+  const candidates = ['keys.js', './keys.js'];
+  for (const url of candidates) {
+    try {
+      const r = await fetch(url);
+      if (!r || !r.ok) continue;
+      const text = await r.text();
+      const parsed = _parseKeysText(text);
+      if (parsed && !String(parsed.API_KEY).includes('TU_API_KEY')) return _applyKeys(parsed);
+      if (parsed) return _applyKeys(parsed);
+    } catch (e) {
+      // file:// con CORS desactivado / 404 -> probar siguiente candidato
+      continue;
+    }
+  }
+  // 3) Si había globales aunque sean placeholder de ejemplo, úsalas para no romper URLs
+  if (fromGlobals) return _applyKeys(fromGlobals);
+  // 4) Sin claves: juego sigue offline (ranking/noticias devuelven ok:false, no crash)
+  _keysMissing = true;
+  return _applyKeys({ PROJECT_ID: 'asteroid-rush-odyssey', API_KEY: '', NEWS_API_KEY: '' });
+};
   const NEWS_FIREBASE_CONFIG = { projectId: "asteroid-rush-news" };
 
   const COLLECTION_NAME = "Asteroid_Rush";
@@ -36,6 +83,7 @@ const getKeys = () => _keys || fetch('../keys.js').then(r => r.text()).then(text
     try {
       const mono = (payload && typeof payload.mono === 'number') ? payload.mono : Date.now();
       const k = await getKeys();
+      if (!k || !k.API_KEY) return { ok: false, error: 'missing_keys' };
       const res = await fetch(`${BASE_URL}?key=${k.API_KEY}&pageSize=1`);
       const serverMs = await _captureServerDate(res);
       if (serverMs === null) return { ok: false };
@@ -61,6 +109,11 @@ const getKeys = () => _keys || fetch('../keys.js').then(r => r.text()).then(text
     const cache = leaderboardCache[mode];
     if (forceRefresh) { const timeSinceLastRefresh = now - (lastRefreshTimestamps[mode] || 0); if (timeSinceLastRefresh < REFRESH_COOLDOWN && cache.data) { return { ok: true, data: cache.data, timestamp: cache.timestamp, fromCache: true }; } }
     if (!forceRefresh && cache.data && (now - cache.timestamp < CACHE_DURATION)) { return { ok: true, data: cache.data, timestamp: cache.timestamp, fromCache: true }; }
+    // 1.0.0.4: sin API key (index.html en file:// o keys.js ausente) -> offline, no romper juego
+    if (!k || !k.API_KEY) {
+      if (cache.data) return { ok: true, data: cache.data, timestamp: cache.timestamp, fromCache: true, offline: true };
+      return { ok: false, error: 'missing_keys' };
+    }
     const docId = mode === "fast" ? "Rapido" : (mode === "swingcopter" ? "Swingcopter" : "Normal");
     const url = `${BASE_URL}/${encodeURIComponent(COLLECTION_NAME)}/${docId}?key=${k.API_KEY}`;
     try {
@@ -75,6 +128,8 @@ const getKeys = () => _keys || fetch('../keys.js').then(r => r.text()).then(text
 
   async function submitScore({ mode, score, name, duration }) {
     const k = await getKeys();
+    // 1.0.0.4: sin claves no se puede enviar, pero el juego continúa (score local sí guarda)
+    if (!k || !k.API_KEY) return { ok: false, error: 'missing_keys' };
     leaderboardCache[mode].timestamp = 0; lastRefreshTimestamps[mode] = 0;
     if (duration && score > 1000) { if (score > (duration * (mode === 'fast' ? FAST_MODE_MULTIPLIER : 1) * SCORE_RATE) * CHEAT_MARGIN) return { ok: false, error: "Puntuación sospechosa." }; }
     const MAX_RETRIES = 5;
@@ -109,6 +164,11 @@ const getKeys = () => _keys || fetch('../keys.js').then(r => r.text()).then(text
 
   async function getNews() {
     const k = await getKeys();
+    // 1.0.0.4: noticias offline si faltan claves (index.html file://)
+    if (!k || !k.NEWS_API_KEY) {
+      if (newsCache.data) return { ok: true, data: newsCache.data, fromCache: true, offline: true };
+      return { ok: false, error: 'missing_keys' };
+    }
     const url = `${NEWS_BASE_URL}/${encodeURIComponent(NEWS_COLLECTION_NAME)}?key=${k.NEWS_API_KEY}`;
     try {
       const response = await fetch(url);
